@@ -1,10 +1,8 @@
 <template>
   <div>
     <header class="header"> 
-    </header>
-    <nav class="nav">
       <div class="div-header">
-        <ul class="ul-nav">
+        <ul class="ul-header">
           <li class="btn-header sepBtn border-li1"><a href="#">Inicio</a></li>
           <li class="btn-header sepBtn"><a class="aBtn" href="#">Contactanos</a></li>
           <li class="btn-header sepBtn"><a class="aBtn" href="#">Equipo</a></li>
@@ -12,7 +10,7 @@
           <li class="btn-header sepBtn border-li2"><a href="#">Informacion</a></li>
         </ul>
       </div>
-      </nav>
+    </header>
       <section class="seccion1">
         <div class="videoContainer">
         <video autoplay loop muted class="video-seccion">
@@ -100,6 +98,7 @@ export default {
   padding: 0; 
   box-sizing: border-box;
   justify-content: center;
+  align-items: end;
 }
 /* .div-logo {
   display: flex;
@@ -110,16 +109,7 @@ export default {
   width: 180px;
   height: 200px;
 } */
-/* Nav */
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 157, 0);
-  width: 100%;
-  height: 60px;
-}
-.ul-nav {
+.ul-header {
   list-style: none;
   display: flex;
   margin: 0;
