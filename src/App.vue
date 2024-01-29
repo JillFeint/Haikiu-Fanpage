@@ -5,11 +5,11 @@
     <nav class="nav">
       <div class="div-header">
         <ul class="ul-nav">
-          <li class="btn-header border-li1"><a href="#">Inicio</a></li>
-          <li class="btn-header sepBtn"><a href="#">Contactanos</a></li>
-          <li class="btn-header sepBtn"><a href="#">Equipo</a></li>
-          <li class="btn-header sepBtn"><a href="#">Partidos</a></li>
-          <li class="btn-header border-li2"><a href="#">Informacion</a></li>
+          <li class="btn-header sepBtn border-li1"><a href="#">Inicio</a></li>
+          <li class="btn-header sepBtn"><a class="aBtn" href="#">Contactanos</a></li>
+          <li class="btn-header sepBtn"><a class="aBtn" href="#">Equipo</a></li>
+          <li class="btn-header sepBtn"><a class="aBtn" href="#">Partidos</a></li>
+          <li class="btn-header sepBtn border-li2"><a href="#">Informacion</a></li>
         </ul>
       </div>
       </nav>
@@ -56,13 +56,11 @@
         </div>
         </section>
         <section class="seccion4">
-          <p> pLorem ipsum dolor sit amet.
+          <p class="footerText"> pLorem ipsum dolor sit amet.
           pLorem ipsum1 dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!
-          pLorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!
-          pLorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!
           pLorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!4</p>
         <div class="socialMedia">
-        <h2>Gaysbook</h2>
+        <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
         </section>
         <footer class="footer">
@@ -103,7 +101,7 @@ export default {
   box-sizing: border-box;
   justify-content: center;
 }
-.div-logo {
+/* .div-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,48 +109,79 @@ export default {
 .logo {
   width: 180px;
   height: 200px;
-}
+} */
 /* Nav */
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 166, 0);
+  background-color: rgb(255, 157, 0);
+  width: 100%;
+  height: 60px;
 }
 .ul-nav {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+.aBtn{
+  display: flex;
+  justify-content: center;
 }
 /* Botones */
 .btn-header a {
+  display: flex;
   text-decoration: none;
   background-color: rgb(255, 123, 0);
   color: rgb(255, 255, 255);
   padding: 10px;
   font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  transition: 1s;
+  transform: skewX(-15deg);
+  border: none;
+  box-shadow: 6px 6px 0 black;
+  border-right: 1px solid black;
+  animation: color_anim 1s infinite 0.2s;
+  margin: 0.3em;
+  z-index: 9999;
 }
 .border-li1 a {
-  border-top-left-radius: 10px;
-  border-right: 1px solid black;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  animation: color_anim 1s infinite 0.2s;
+
 }
 .border-li2 a {
-  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border-right: 1px solid black;
+  animation: color_anim 1s infinite 0.2s;
 }
 .border-li1 a:hover {
-  border-top-left-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 6px 6px 0 black;
+  animation: color_anim 1s infinite 0.2s;
 }
 .border-li2 a:hover {
-  border-top-right-radius: 10px;
-}
-.sepBtn{
-  border-right: 1px solid black;
+  transition: 0.5s;
+  box-shadow: 6px 6px 0 black;
+  animation: color_anim 1s infinite 0.2s;
 }
 .btn-header a:hover{
-  background-color: rgb(222, 137, 58);
-  color: rgb(0, 0, 0);
+  background-color: rgba(255, 10, 6, 0.883);
+  color: rgb(255, 255, 255);
   padding: 10px;
+}
+.sepBtn{
+  padding-left: 5px;
+  width: 10em;
 }
 /* Video */
 .seccion1 {
@@ -165,7 +194,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(244, 167, 14);
+  background-color: rgb(255, 123, 0);
 }
 .video-seccion {
   width: 50em;
@@ -198,7 +227,7 @@ p{
   justify-content: center;
   text-align: justify;
   color: rgb(0, 0, 0);
-  width: 97%;
+  width: 95%;
 }
 /* Cajas del Grid */
 .div1-seccion2 {
@@ -226,19 +255,20 @@ p{
   grid-column: 2;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 10px 0;
   height: 26em;
   border-left: rgb(56, 56, 56, 0.3) 2px solid;
 }
 .instaGram{
   width: 270px;  
   height: 400px; 
+  margin-top: 25px;
 }
 .div4-seccion2 {
   grid-row: 2;
   grid-column: 2;
   background-color: blue;
-  padding: 10px;
+  padding: 10px 0;
   background-color: rgb(255, 166, 0);
   height: 26em;
   border-left: rgb(56, 56, 56, 0.3) 2px solid;
@@ -256,13 +286,21 @@ p{
 .seccion4 {
   height: 100%;
   width: 100%;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 123, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: justify;
   color: white;
   padding: 15px;
+}
+.footerText{
+  border-right: rgb(56, 56, 56, 0.5) 1px solid;
+  padding: 10px;
+}
+.footerLogo {
+  width: 180px;
+  height: 200px;
 }
 /* Footer */
 .footer{
@@ -271,7 +309,7 @@ p{
   justify-content: center;
   align-items: center;
   color: azure;
-  padding: 20px;
+  padding: 5px;
 }
 .footer:hover{
   color: rgb(110, 110, 110);
