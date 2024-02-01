@@ -1,137 +1,105 @@
 <template>
-  <div class="galleryGlobalContainer">
-    <div class="boxContainer5">
-    <div class="divContainer1 hoverAll">
-      <img class="1 sizeAll" src="../assets/1.jpeg" alt="">
-    </div>
-    <div class="divContainer2 hoverAll">
-      <img class="2 sizeAll" src="../assets/2.jpeg" alt="">
-    </div>
-    <div class="divContainer3 hoverAll">   
-      <img class="3 sizeAll" src="../assets/3.jpeg" alt="">
-    </div>
-    <div class="divContainer4 hoverAll">   
-      <img class="4 sizeAll" src="../assets/4.jpeg" alt="">
-    </div>
-    <div class="divContainer5 hoverAll">   
-      <img class="5 sizeAll" src="../assets/5.jpeg" alt="">
-    </div>
-    <div class="divContainer6 hoverAll">
-      <img class="6 sizeAll" src="../assets/6.jpeg" alt="">
-    </div>
-    <div class="divContainer7 hoverAll">
-      <img class="7 sizeAll" src="../assets/7.jpeg" alt="">
-    </div>
-    <div class="divContainer8 hoverAll">   
-      <img class="8 sizeAll" src="../assets/8.png" alt="">
-    </div>
-    <div class="divContainer9 hoverAll">   
-      <img class="9 sizeAll" src="../assets/9.png" alt="">
-    </div>
-    <div class="divContainer10 hoverAll">   
-      <img class="10 sizeAll" src="../assets/10.jpeg" alt="">
-    </div>
-    </div>
+  <div class="contactWeGlobal">
+  <div class="contactWe1">
+    <h2>Contactanos</h2>
+    <p>Por favor, envíanos tus consultas y comentarios. Estaremos encantados de ayudarte.</p>
+    <form class="contactForm">
+      <div class="formGroup">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+      </div>
+      <div class="formGroup">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+      </div>
+      <div class="formGroup">
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Escribe aquí tu mensaje"></textarea>
+      </div>
+      <button type="submit">Enviar mensaje</button>
+    </form>
   </div>
+</div>
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      isVisibleShow5: false,
+    };
+  },
+};
 </script>
 
+<style scoped>
 
-<style>
-.galleryGlobalContainer{
-padding: 10px;
+.contactWeGlobal {
+display: flex;
+justify-content: center;
+background-color: #ff9900;
 }
-.divContainer1 {
-  grid-column: 1;
-  grid-row: 1;
+.contactWe1 {
+  width: 80%;
+  background-color: azure;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.divContainer2 {
-  grid-column: 2;
-  grid-row: 2;
+
+.contactWe h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
 }
-.divContainer3 {
-  grid-column: 3;
-  grid-row: 3;
+
+.contactWe p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
 }
-.divContainer4 {
-  grid-column: 4;
-  grid-row: 4;
-}
-.divContainer5 {
-  grid-column: 5;
-  grid-row: 5;
-}
-.divContainer6 {
-  grid-column: 1;
-  grid-row: 2;
-}
-.divContainer7 {
-  grid-column: 4;
-  grid-row: 5;
-}
-.divContainer8 {
-  grid-column: 5;
-  grid-row: 1;
-}
-.divContainer9 {
-  grid-column: 1;
-  grid-row: 5;
-}
-.divContainer10 {
-  grid-column: 2;
-  grid-row: 5;
-}
-.boxContainer5{
+
+.contactForm {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1f 1fr;
-  width: 100%;
-  height: 45em;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  grid-gap: 20px;
-  padding: 20px;
-  background-color: rgb(6, 27, 100);
+  grid-template-columns: 1fr;
+  gap: 15px;
 }
-.hoverAll {
-  position: relative; /* Asegura que el ::after sea relativo a este elemento */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  height: 100%; 
-  width: 100%;
-  max-height: 8em;
-  max-width: 9.5em;
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.formGroup input, .formGroup textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.formGroup textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff7b00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
 }
-.hoverAll:hover{
-  transform: translateY(-10px);
-}
-.hoverAll::after {
-  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-  content: "Descripción de la imagen";
-  font-size: 13px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  color: azure;
-}
-.hoverAll:hover::after {
-  visibility: visible; /* Hace visible el texto al hacer hover */
-}
-/* Img */
-.sizeAll{
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+
+button[type="submit"]:hover {
+  background-color: #ff6300;
 }
 </style>

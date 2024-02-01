@@ -1,3 +1,18 @@
+<!-- pendiente
+Colocar el carrucel automatico que vaya pasando de cosas y al inicio
+Arreglar el titulo de las redes sociales y que no parezcan anuncios
+en la gallería colocar un botón que cambie a videos
+cambiar la letra
+y colocar abajo videos aleatorios para que la gente se entretenga
+y colocar en el texto de reglas algo gris para evitar que sea tanto naranjado
+y los links de los videos hipervinculados para que los lleve al youtube de cada video.
+numeros de contacto información demografica lugar de entrenamiento hora un mapa de google map y
+las rutas, que servicios prestamos, en equipo mision vision quienes somos, en partidos colocar el calendario
+y cronograma, noticias
+en quienes somos los acontecimientos importantes, actualidad
+en la pagina de información poner la descripcion de cada jugador osea todos que así sean 30 
+más adelante colocar un grupo de fans con usuario registrado para hacer comunidad.
+-->
 <template>
   <div>
     <!-- Header -->
@@ -27,19 +42,25 @@
           <div class="div1SeccionTwo">
             <p class="divInvi"></p>
           </div>
+        <div class="textDown">
           <h2>Quienes Somos</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+        <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
           deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
+        </div>
         </div>
         <div class="div2-seccion2">
           <div class="div1SeccionTwo">
             <p class="divInvi2"></p>
           </div>
+          <div class="textDown">
           <h2>Reglas</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
-            itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+          <img src="./assets/1.jpeg" alt="">
+          <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
+            itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!
+          </p>
+            <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
           deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
+          </div>
           </div>
           <div class="div3-seccion2">
             <div class="div-faceb">
@@ -76,7 +97,7 @@
   <div v-show="isVisibleShow4" class="infoProject"><homeIniStartFour/></div>
   <div v-show="isVisibleShow5" class="contactWe"><homeIniStartFive/></div>
   <footer class="footer">
-    &copy; Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.
+    &copy; Moncada & Jill Angel LLC, a subsidiary of Compas del codigo de hierro, 2024 Inc. All Rights Reserved.
   </footer>
 </template>
 
@@ -253,15 +274,12 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 123, 0);
+  background-color: rgba(255, 123, 0, 0.853);
 }
 .video-seccion {
   width: 50em;
   height: auto;
 } 
-/* .bodyHide{
-  display: none;
-} */
 /* Cuerpo con Grid */
 .seccion2 {
   display: grid;
@@ -274,7 +292,7 @@ h2 {
   color: aliceblue;
 }
 h2:hover{
-  color:rgb(53, 54, 68);
+  color:rgb(255, 123, 0);
 }
 .galer{
   padding: 10px;
@@ -296,7 +314,7 @@ p{
   /* Izquierda arriba */
   grid-column: 1;
   grid-row: 1;
-  background-color: rgb(255, 166, 0);
+  background-color: #ff9900;
   padding: 30px;
   height: 26em;
   text-align: justify;
@@ -309,13 +327,23 @@ p{
     /* Izquierda abajo */
   grid-column: 1;
   grid-row: 2;
-  background-color: rgb(255, 166, 0);
+  background-color: #ff9900;
   padding: 30px;
   height: 26em; 
 }
+.textDown{
+  background-color: rgb(56, 56, 56); 
+  flex-direction: column;
+  box-shadow: 0px 0px 7px rgba(196, 196, 196, 0.5);
+  color: azure;
+  height: 24em;
+}
+.textDownParr{
+  color: azure;
+}
 .div3-seccion2 {
   /* Facebook */
-  background-color: rgb(255, 166, 0);
+  background-color: #ff9900;
   grid-column: 2;
   grid-row: 1;
   display: flex;
@@ -345,7 +373,7 @@ p{
   grid-column: 2;
   background-color: blue;
   padding: 10px 0;
-  background-color: rgb(255, 166, 0);
+  background-color: #ff9900;
   height: 100%;
 }
 /* Gallery */
@@ -385,6 +413,7 @@ p{
   align-items: center;
   color: azure;
   padding-top: 15px;
+  padding-bottom: 4px;
 }
 .footer:hover{
   color: rgb(110, 110, 110);
