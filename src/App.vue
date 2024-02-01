@@ -1,16 +1,19 @@
 <template>
   <div>
+    <!-- Header -->
     <header class="header"> 
       <div class="div-header">
         <ul class="ul-header">
-          <li class="btn-header sepBtn border-li1"><a href="#">Inicio</a></li>
-          <li class="btn-header sepBtn"><a class="aBtn" href="#">Contactanos</a></li>
-          <li class="btn-header sepBtn"><a class="aBtn" href="#">Equipo</a></li>
-          <li class="btn-header sepBtn"><a class="aBtn" href="#">Partidos</a></li>
-          <li class="btn-header sepBtn border-li2"><a href="#">Informacion</a></li>
+          <li class="btn-header sepBtn border-li1"><a @click="clickEvent('homeIni')" class="aBtn" href="#">Inicio</a></li>
+          <li class="btn-header sepBtn"><a @click="clickEvent('teamFull')" class="aBtn" href="#">Equipo</a></li>
+          <li class="btn-header sepBtn"><a @click="clickEvent('partidosAll')" class="aBtn" href="#">Partidos</a></li>
+          <li class="btn-header sepBtn border-li2"><a @click="clickEvent('infoProject')" href="#">Informacion</a></li>
+          <li class="btn-header sepBtn"><a @click="clickEvent('contactWe')" class="aBtn" href="#">Contactanos</a></li>
         </ul>
       </div>
-    </header>
+    </header>  
+    <div class="bodyHide" v-show="bodyHideBd">
+    <!-- Video -->
       <section class="seccion1">
         <div class="videoContainer">
         <video autoplay loop muted class="video-seccion">
@@ -18,6 +21,7 @@
         </video>
         </div>
         </section>
+      <!-- Cuerpo -->
       <section class="seccion2">
         <div class="div1-seccion2">
           <div class="div1SeccionTwo">
@@ -36,22 +40,25 @@
             itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
           deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
-        
           </div>
           <div class="div3-seccion2">
-            <apiFacebookReal/>      
+            <div class="div-faceb">
+              <apiFacebookReal/>             
+            </div>
           </div>
           <div class="div4-seccion2">
             <iframe class="instaGram" src="https://www.instagram.com/haikyuuu.official/embed/">
             </iframe>
           </div>
         </section>
+      <!-- Galeria -->  
         <section class="seccion3">
           <div class="div-seccion3">
-          <h2 class="galer"> Galería
-          </h2>
-          <apiFacebook/>
-        </div>
+            <h2 class="galer"> Galería
+            </h2>
+            <galleryNoCarru/>
+            <carrucelDeVideos/>
+          </div>
         </section>
         <section class="seccion4">
           <p class="footerText"> pLorem ipsum dolor sit amet.
@@ -61,22 +68,83 @@
         <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
         </section>
-        <footer class="footer">
-          &copy; Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.
-        </footer>
-  </div>
+    </div>
+  </div>   
+  <div v-show="isVisibleShow" class="homeIni"><homeIniStart/></div>
+  <div v-show="isVisibleShow2" class="teamFull"><homeIniStartTwo/></div>
+  <div v-show="isVisibleShow3" class="partidosAll"><homeIniStartThree/></div>
+  <div v-show="isVisibleShow4" class="infoProject"><homeIniStartFour/></div>
+  <div v-show="isVisibleShow5" class="contactWe"><homeIniStartFive/></div>
+  <footer class="footer">
+    &copy; Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.
+  </footer>
 </template>
 
 <script>
-import apiFacebook from "./components/apiFacebook.vue";
+import galleryNoCarru from "./components/galleryNoCarru.vue";
 import apiFacebookReal from "./components/apiFacebookReal.vue";
+import homeIniStart from "./components/homeIniStart.vue";
+import homeIniStartTwo from "./components/homeIniStartTwo.vue";
+import homeIniStartThree from "./components/homeIniStartThree.vue";
+import homeIniStartFour from "./components/homeIniStartFour.vue";
+import homeIniStartFive from "./components/homeIniStartFive.vue";
+import carrucelDeVideos from "./components/carrucelDeVideos.vue";
 export default {
   components: {
-  apiFacebook,
+  galleryNoCarru,
   apiFacebookReal,
+  homeIniStart,
+  homeIniStartTwo,
+  homeIniStartThree,
+  homeIniStartFour,
+  homeIniStartFive,
+  carrucelDeVideos, 
+},
+  data() 
+  {
+    return {
+    bodyHideBd: true,
+    isVisibleShow: false,      
+    isVisibleShow1: false,
+    isVisibleShow2: false,
+    isVisibleShow3: false,
+    isVisibleShow4: false,
+    isVisibleShow5: false,
+    };
+  },
+  methods: {
+    clickEvent(componentName) {
+      this.isVisibleShow = false;
+      this.isVisibleShow2 = false;
+      this.isVisibleShow3 = false;
+      this.isVisibleShow4 = false;
+      this.isVisibleShow5 = false;     
+      switch (componentName) {
+        case 'homeIni':
+        window.location.reload();
+          break;
+        case 'teamFull':
+          this.isVisibleShow2 = true;
+          break;
+        case 'partidosAll':
+          this.isVisibleShow3 = true;
+          break;
+        case 'infoProject':
+          this.isVisibleShow4 = true;
+          break;
+        case 'contactWe':
+          this.isVisibleShow5 = true;
+          break;
+        default:
+          break;
+      }
+      
+      // Ocultar el contenido principal
+      this.bodyHideBd = false;
+    }
+  },
 }
-}
-</script>
+  </script>
 
 <style>
 /* Global */
@@ -170,6 +238,7 @@ export default {
   padding: 10px;
 }
 .sepBtn{
+  /* Otra subclass del ul-header */
   padding-left: 5px;
   width: 10em;
 }
@@ -190,6 +259,9 @@ export default {
   width: 50em;
   height: auto;
 } 
+/* .bodyHide{
+  display: none;
+} */
 /* Cuerpo con Grid */
 .seccion2 {
   display: grid;
@@ -221,8 +293,9 @@ p{
 }
 /* Cajas del Grid */
 .div1-seccion2 {
-  grid-row: 1;
+  /* Izquierda arriba */
   grid-column: 1;
+  grid-row: 1;
   background-color: rgb(255, 166, 0);
   padding: 30px;
   height: 26em;
@@ -233,35 +306,47 @@ p{
   border-bottom: 0.4vh solid rgb(0, 0, 0, 0.2);
 }
 .div2-seccion2 {
-  grid-row: 2;
+    /* Izquierda abajo */
   grid-column: 1;
+  grid-row: 2;
   background-color: rgb(255, 166, 0);
   padding: 30px;
   height: 26em; 
 }
 .div3-seccion2 {
+  /* Facebook */
   background-color: rgb(255, 166, 0);
-  grid-row: 1;
   grid-column: 2;
+  grid-row: 1;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 5px;
   height: 26em;
   border-left: rgb(56, 56, 56, 0.3) 2px solid;
 }
+.div-faceb {
+  position: relative;
+  padding: 0;
+  height: 30em; 
+  width: 100%;
+  overflow: hidden;
+}
 .instaGram{
   width: 270px;  
-  height: 400px; 
+  height: 96%; 
   margin-top: 25px;
+  border: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 .div4-seccion2 {
+  /* Instagram */
+  border-left: rgb(56, 56, 56, 0.3) 2px solid;
   grid-row: 2;
   grid-column: 2;
   background-color: blue;
   padding: 10px 0;
   background-color: rgb(255, 166, 0);
-  height: 26em;
-  border-left: rgb(56, 56, 56, 0.3) 2px solid;
+  height: 100%;
 }
 /* Gallery */
 .div-seccion3{
@@ -299,7 +384,7 @@ p{
   justify-content: center;
   align-items: center;
   color: azure;
-  padding: 5px;
+  padding-top: 15px;
 }
 .footer:hover{
   color: rgb(110, 110, 110);
