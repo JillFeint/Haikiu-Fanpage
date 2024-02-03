@@ -43,7 +43,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
             <p class="divInvi"></p>
           </div>
         <div class="textDown">
-          <h2>Quienes Somos</h2>
+          <h2 class="text-h2">Quienes Somos</h2>
         <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
           deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
         </div>
@@ -64,10 +64,12 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
           </div>
           <div class="div3-seccion2">
             <div class="div-faceb">
+              <h3>Facebook</h3>
               <apiFacebookReal/>             
             </div>
           </div>
           <div class="div4-seccion2">
+              <h3>Instagram</h3>
             <iframe class="instaGram" src="https://www.instagram.com/haikyuuu.official/embed/">
             </iframe>
           </div>
@@ -315,12 +317,14 @@ p{
   grid-column: 1;
   grid-row: 1;
   background-color: #ff9900;
-  padding: 30px;
+  padding: 10px;
   height: 26em;
   text-align: justify;
+  padding-top: 0;
+  padding-bottom: 5px;
 }
 .div1SeccionTwo{
-  background-color: rgb(53, 54, 68, 0.0);
+  background-color: rgba(31, 33, 70, 0);
   border-bottom: 0.4vh solid rgb(0, 0, 0, 0.2);
 }
 .div2-seccion2 {
@@ -328,15 +332,22 @@ p{
   grid-column: 1;
   grid-row: 2;
   background-color: #ff9900;
-  padding: 30px;
-  height: 26em; 
+  padding: 15px 10px;
+  height: 26em;
+  padding-top: 5px;
 }
 .textDown{
   background-color: rgb(56, 56, 56); 
   flex-direction: column;
   box-shadow: 0px 0px 7px rgba(196, 196, 196, 0.5);
   color: azure;
-  height: 24em;
+  height: 100%;
+}
+.text-h2 {
+  color: orange;
+}
+.text-h2:hover {
+  color: white;
 }
 .textDownParr{
   color: azure;
@@ -348,21 +359,25 @@ p{
   grid-row: 1;
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 0;
   height: 26em;
+  width: 100%;
   border-left: rgb(56, 56, 56, 0.3) 2px solid;
+}
+h3 {
+  display: flex;
+  justify-content: center;
 }
 .div-faceb {
   position: relative;
   padding: 0;
-  height: 30em; 
+  height: 27em; 
   width: 100%;
   overflow: hidden;
 }
 .instaGram{
   width: 270px;  
-  height: 96%; 
-  margin-top: 25px;
+  height: 95%; 
   border: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }

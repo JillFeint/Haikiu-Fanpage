@@ -89,6 +89,10 @@
   height: 15px;
   border-radius: 15px;
   display: inline-block;
+  margin: 5px;
+}
+.button-slider1:hover {
+  background-color: gray;
 }
 .videoContainer1 .button-holder1 {
   position: absolute;
