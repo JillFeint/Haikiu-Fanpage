@@ -1,4 +1,9 @@
 <template>
+  <div class="btnsSec3">
+      <!-- Aun no e creado los eventos en js -->
+      <a @click="clickEvent('galleryNoCarru')" class="btnSec3" href="#">Fotos</a>
+      <a @click="clickEvent('arrucelDeVideos')" class="btnSec3" href="#">videos</a>
+    </div>
   <div class="seccionG3">
       <div class="grid-container">
         <img class="grid-item hoverAll" src="../assets/fotos/lo logramos.jpg">
@@ -149,9 +154,27 @@ export default {}
   opacity: 0.9;
   transition: visibility 0s, opacity 0.3s ease-in-out;
 }
-
 .hoverAll:hover::after {
   opacity: 1; /* Agrega esta línea para garantizar que la opacidad sea 1 al hacer hover */
+}
+.btnsSec3 {
+  display: flex;
+  gap: 2em;
+}
+.btnSec3 {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: rgb(255, 123, 0);
+  padding: 7px;
+  font-size: 21px;
+  transition: 1s;
+  transform: skewX(-15deg);
+  border: none;
+  box-shadow: 4px 4px 0 black;
+  border-right: 1px solid black;
+  animation: color_anim 1s infinite 0.2s;
+  margin: 0.3em;
+  z-index: 9999;
 }
 </style>
 <!-- <template>

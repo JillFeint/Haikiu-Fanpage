@@ -78,11 +78,11 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
       <section class="seccion3">
           <div class="div-seccion3">
             <h2 class="galer">Galería</h2>
-            <div class="btnsSec3">
-              <!-- Aun no e creado los eventos en js -->
+            <!-- <div class="btnsSec3">
+              !-- Aun no e creado los eventos en js --
               <a @click="clickEvent('galleryNoCarru')" class="btnSec3" href="#">Galeria</a>
               <a @click="clickEvent('arrucelDeVideos')" class="btnSec3" href="#">Carrusel</a>
-            </div>
+            </div> -->
             <galleryNoCarru/>
             <div>
               <carrucelDeVideos/>
@@ -401,7 +401,7 @@ h3 {
   padding: 10px;
   height: 100%;
 }
-.btnsSec3 {
+/* .btnsSec3 {
   display: flex;
   gap: 2em;
 }
@@ -419,7 +419,7 @@ h3 {
   animation: color_anim 1s infinite 0.2s;
   margin: 0.3em;
   z-index: 9999;
-}
+} */
 /* Antes del footer */
 .seccion4 {
   height: 100%;
