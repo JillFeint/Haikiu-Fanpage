@@ -2,22 +2,24 @@
   <div class="contactWeGlobal">
   <div class="contactWe1">
     <h2>Contactanos</h2>
-    <p>Por favor, envíanos tus consultas y comentarios. Estaremos encantados de ayudarte.</p>
+    <p class="pComponentContac">Por favor, envíanos tus consultas y comentarios. Estaremos encantados de ayudarte.</p>
     <form class="contactForm">
-      <div class="formGroup">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+      <div  class="formGroup">
+        <label class="pComponentContac" for="name">Nombre:</label>
+        <input type="text" class="nameBackg" id="name" name="name" placeholder="Ingresa tu nombre">
       </div>
       <div class="formGroup">
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+        <label class="pComponentContac" for="email">Correo electrónico:</label>
+        <input type="email" class="nameBackg" id="email" name="email" placeholder="Ingresa tu correo electrónico">
       </div>
       <div class="formGroup">
-        <label for="message">Mensaje:</label>
+        <label class="pComponentContac" for="message">Mensaje:</label>
         <textarea id="message" name="message" rows="4" placeholder="Escribe aquí tu mensaje"></textarea>
       </div>
-      <button type="submit">Enviar mensaje</button>
-    </form>
+      <div class="btnSubmit">
+        <button class="btnSubmit1" type="submit">Enviar mensaje</button>
+      </div>
+      </form>
   </div>
 </div>
 </template>
@@ -31,32 +33,31 @@ export default {
   },
 };
 </script>
-
 <style scoped>
-
+.pComponentContac{
+  color:#fff
+}
 .contactWeGlobal {
-display: flex;
-justify-content: center;
-background-color: #ff9900;
+  display: flex;
+  justify-content: center;
+  background-color: #ff9900;
 }
 .contactWe1 {
-  width: 80%;
-  background-color: azure;
+  width: 75%;
+  background-color: rgb(255, 255, 255);
   padding: 30px;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.contactWe h2 {
+.contactWe1 h2 {
   font-size: 24px;
-  color: #333;
+  color: #000000;
   margin-bottom: 10px;
 }
-
-.contactWe p {
+.contactWe1 p {
   font-size: 16px;
-  color: #666;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -70,10 +71,13 @@ background-color: #ff9900;
   display: flex;
   flex-direction: column;
 }
-
+.nameBackg{
+  background-color:  rgb(255, 255, 255);
+  color: black;
+}
 .formGroup label {
-  font-size: 16px;
-  color: #333;
+  font-size: 18px;
+  color: #000000;
   margin-bottom: 5px;
 }
 
@@ -83,11 +87,21 @@ background-color: #ff9900;
   border-radius: 5px;
   font-size: 16px;
 }
-
+::placeholder {
+    color: rgb(137, 137, 137);
+}
 .formGroup textarea {
   resize: vertical;
 }
-
+.btnSubmit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+}
+.btnSubmit1{
+  height: 2.8em;
+}
 button[type="submit"] {
   padding: 10px 20px;
   background-color: #ff7b00;
@@ -97,9 +111,12 @@ button[type="submit"] {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 70%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 button[type="submit"]:hover {
-  background-color: #ff6300;
+  background-color:  rgba(255, 10, 6, 0.883);
+  width: 70%;
 }
 </style>

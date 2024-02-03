@@ -1,4 +1,5 @@
 <template>
+  <div class="containerHaikyu">
   <div class="haikyu-info">
     <h2 class="title">Información de Haikyu!!</h2>
     <div class="description">
@@ -18,6 +19,7 @@
       <p><strong>Fecha de publicación del manga:</strong> 20 de febrero de 2012 - presente</p>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -27,29 +29,36 @@ export default {
 </script>
 
 <style scoped>
+.containerHaikyu{
+  display: flex;
+  justify-content: center;
+  background-color: #ff9900;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
 .haikyu-info {
   max-width: 100%;
   margin: 0;
   padding: 50px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #ff9900;
-
+  border-radius: 10px;
+  background-color: rgb(53, 54, 68);
+  width: 75%;
 }
-
 .title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-
 .description {
   margin-bottom: 20px;
 }
-
+.description p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
 .details p {
   margin-bottom: 10px;
+  color: #ccc;
 }
-
 .details strong {
   font-weight: bold;
 }
