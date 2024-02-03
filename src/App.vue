@@ -75,12 +75,18 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
           </div>
         </section>
       <!-- Galeria -->  
-        <section class="seccion3">
+      <section class="seccion3">
           <div class="div-seccion3">
-            <h2 class="galer"> Galería
-            </h2>
+            <h2 class="galer">Galería</h2>
+            <div class="btnsSec3">
+              <!-- Aun no e creado los eventos en js -->
+              <a @click="clickEvent('galleryNoCarru')" class="btnSec3" href="#">Galeria</a>
+              <a @click="clickEvent('arrucelDeVideos')" class="btnSec3" href="#">Carrusel</a>
+            </div>
             <galleryNoCarru/>
-            <carrucelDeVideos/>
+            <div>
+              <carrucelDeVideos/>
+            </div>
           </div>
         </section>
         <section class="seccion4">
@@ -99,7 +105,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
   <div v-show="isVisibleShow4" class="infoProject"><homeIniStartFour/></div>
   <div v-show="isVisibleShow5" class="contactWe"><homeIniStartFive/></div>
   <footer class="footer">
-    &copy; Moncada & Jill Angel LLC, a subsidiary of Compas del codigo de hierro, 2024 Inc. All Rights Reserved.
+    &copy; Moncada, Ballestero & Jill Angel LLC, a subsidiary of Compas del codigo de hierro, 2024 Inc. All Rights Reserved.
   </footer>
 </template>
 
@@ -393,6 +399,26 @@ h3 {
   align-items: center;
   flex-direction: column;
   padding: 10px;
+  height: 100%;
+}
+.btnsSec3 {
+  display: flex;
+  gap: 2em;
+}
+.btnSec3 {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: rgb(255, 123, 0);
+  padding: 7px;
+  font-size: 21px;
+  transition: 1s;
+  transform: skewX(-15deg);
+  border: none;
+  box-shadow: 4px 4px 0 black;
+  border-right: 1px solid black;
+  animation: color_anim 1s infinite 0.2s;
+  margin: 0.3em;
+  z-index: 9999;
 }
 /* Antes del footer */
 .seccion4 {
