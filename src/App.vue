@@ -43,7 +43,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
             <p class="divInvi"></p>
           </div>
         <div class="textDown">
-          <h2 class="text-h2">Quienes Somos</h2>
+          <h2>Quienes Somos</h2>
         <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
           deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
         </div>
@@ -291,18 +291,18 @@ export default {
 h2 {
   padding: 25px;
   text-align: center;
-  color: aliceblue;
+  color: rgb(255, 123, 0);
 }
 h2:hover{
-  color:rgb(255, 123, 0);
+  color: white;
 }
 .galer{
   padding: 10px;
   text-align: center;
-  color: aliceblue;
+  color: rgb(255, 123, 0);
 }
 .galer:hover{
-  color: rgb(255, 166, 0)
+  color: white;
 }
 p{
   display: flex;
@@ -342,12 +342,6 @@ p{
   box-shadow: 0px 0px 7px rgba(196, 196, 196, 0.5);
   color: azure;
   height: 100%;
-}
-.text-h2 {
-  color: orange;
-}
-.text-h2:hover {
-  color: white;
 }
 .textDownParr{
   color: azure;
@@ -431,6 +425,6 @@ h3 {
   padding-bottom: 4px;
 }
 .footer:hover{
-  color: rgb(110, 110, 110);
+  color: rgba(255, 10, 6, 0.883);
 }
 </style>
