@@ -1,83 +1,83 @@
 <template>
-  <div class="btnsSec3">
-      <a @click="clickChangeToVideo('grid-container')" class="btnSec3" href="#">Fotos</a>
-      <a @click="clickChangeToVideo('gridVideos')" class="btnSec3" href="#">videos</a>
+      <div class="btnsSec3">
+        <a @click="clickChangeToVideo('grid-container')" class="btnSec3" href="#"><i class="animation"></i>Fotos<i class="animation"></i></a>
+        <a @click="clickChangeToVideo('gridVideos')" class="btnSec3" href="#"><i class="animation"></i>Videos<i class="animation"></i></a>
     </div>
   <div class="seccionG3">
-      <div class="grid-container" v-if="seccionG3Show">
-        <img class="grid-item hoverAll" src="../assets/fotos/lo logramos.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/descarga (1).jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/descarga.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Fly ✨.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/G L O R I O S O ✨.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/haikyuu.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Kageyama, Number Nine by aislingkiera.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Karasuno sticker (1).jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Karasuno Volleyball Logo Sticker by itsboattime.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Team Karasuno Magnet.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Karasuno.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/simbolitos chinos.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/asa ッ (closed).jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Atsumu.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/descarga (4).jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/descarga (3).jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/descarga (2).jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Haikyuuttt.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/DESENHANDO HINATA SHOYO DE HAIKYUU.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Haikyuu ONE-SHOTS [edición 2020] - Nishinoya Yū.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/letras rusas.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Wallpapers Haikyuu.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Реакция haikyuu _ волейбол.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Pegatinas_ Haikyuu.jpg">
-        <img class="grid-item hoverAll" src="../assets/fotos/_3.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/_33.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/4b1d0086-dacf-44ef-a9d6-9013d0b0c983.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/82f2a123-26f5-4721-9912-fc07ce53ba7f.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/37848cc9-1a28-44a1-bba0-d85aafcb165e.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/28876200-8f05-4688-8f1a-12c02d5226e2.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/alosed) (1).jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/asa closed).jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/asaclosed) (1).jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/asaclosed).jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/cara.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/dc762ac4-74c2-448f-becb-d0cf7ba59c27.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/h a i k y u u.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Haikyuu Wallpapers 30.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/hayyba.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/kageyama tobio  hiromizu.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Kageyama tobio.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Las mejores versiones de HaikyuuHappy Haikyuu.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/My pretty boy Akaashi keiji.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Nishnoya.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/noya.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Oiwaka Tooru.jpeg">
-        <!-- <img class="grid-item hoverAll" src="../assets/fotos/rojo"> -->
-        <img class="grid-item hoverAll" src="../assets/fotos/Segundos (Oikawa x Reader).jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/ShoyoHinata.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Sweatshirt Tendō.jpeg">
-        <img class="grid-item hoverAll" src="../assets/fotos/Tanaka.jpeg">
-        <!-- <img class="grid-item hoverAll" src="../assets/fotos/Your Haikyuu Life!.jpeg"> -->
-        <!-- <img class="grid-item hoverAll" src="../assets/fotos/Your Haikyuu! Lover.jpeg"> -->
-        <img class="grid-item hoverAll" src="../assets/fotos/Yuu Nishinoya Icon.jpeg">
-        <!-- <img class="grid-item hoverAll" src="../assets/fotos/𝐀 𝐂𝐇𝐀𝐎𝐓𝐈𝐂 𝐆𝐑𝐎𝐔𝐏 𝐂𝐇𝐀𝐓.jpeg"> -->
-        <!-- <img class="grid-item hoverAll" src="../assets/fotos/𝑘𝑢𝑟𝑜𝑜.jpeg"> -->
-        <!-- <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos">
-        <img class="grid-item hoverAll" src="../assets/fotos"> -->
-
+    <div class="grid-container" v-if="seccionG3Show">
+      <img class="grid-item hoverAll" src="../assets/fotos/lo logramos.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/descarga (1).jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/descarga.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Fly ✨.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/G L O R I O S O ✨.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/haikyuu.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Kageyama, Number Nine by aislingkiera.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Karasuno sticker (1).jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Karasuno Volleyball Logo Sticker by itsboattime.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Team Karasuno Magnet.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Karasuno.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/simbolitos chinos.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/asa ッ (closed).jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Atsumu.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/descarga (4).jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/descarga (3).jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/descarga (2).jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Haikyuuttt.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/DESENHANDO HINATA SHOYO DE HAIKYUU.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Haikyuu ONE-SHOTS [edición 2020] - Nishinoya Yū.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/letras rusas.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Wallpapers Haikyuu.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Реакция haikyuu _ волейбол.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Pegatinas_ Haikyuu.jpg">
+      <img class="grid-item hoverAll" src="../assets/fotos/_3.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/_33.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/4b1d0086-dacf-44ef-a9d6-9013d0b0c983.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/82f2a123-26f5-4721-9912-fc07ce53ba7f.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/37848cc9-1a28-44a1-bba0-d85aafcb165e.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/28876200-8f05-4688-8f1a-12c02d5226e2.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/alosed) (1).jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/asa closed).jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/asaclosed) (1).jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/asaclosed).jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/cara.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/dc762ac4-74c2-448f-becb-d0cf7ba59c27.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/h a i k y u u.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Haikyuu Wallpapers 30.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/hayyba.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/kageyama tobio  hiromizu.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Kageyama tobio.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Las mejores versiones de HaikyuuHappy Haikyuu.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/My pretty boy Akaashi keiji.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Nishnoya.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/noya.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Oiwaka Tooru.jpeg">
+      <!-- <img class="grid-item hoverAll" src="../assets/fotos/rojo"> -->
+      <img class="grid-item hoverAll" src="../assets/fotos/Segundos (Oikawa x Reader).jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/ShoyoHinata.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Sweatshirt Tendō.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Tanaka.jpeg">
+      <!-- <img class="grid-item hoverAll" src="../assets/fotos/Your Haikyuu Life!.jpeg"> -->
+      <!-- <img class="grid-item hoverAll" src="../assets/fotos/Your Haikyuu! Lover.jpeg"> -->
+      <img class="grid-item hoverAll" src="../assets/fotos/Yuu Nishinoya Icon.jpeg">
+      <!-- <img class="grid-item hoverAll" src="../assets/fotos/𝐀 𝐂𝐇𝐀𝐎𝐓𝐈𝐂 𝐆𝐑𝐎𝐔𝐏 𝐂𝐇𝐀𝐓.jpeg"> -->
+      <!-- <img class="grid-item hoverAll" src="../assets/fotos/𝑘𝑢𝑟𝑜𝑜.jpeg"> -->
+      <!-- <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos">
+      <img class="grid-item hoverAll" src="../assets/fotos"> -->
+        
       </div>
       <div class="gridVideos" v-if="seccionVideosShow">
         <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
@@ -122,15 +122,15 @@
         <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-</template>
+  </template>
 <script>
 export default {
   data() 
   {
     return {
-    seccionG3Show: true,
+      seccionG3Show: true,
     seccionVideosShow: false,      
-    };
+  };
   },
   methods: {
     clickChangeToVideo(componentName) {
@@ -227,11 +227,51 @@ export default {
 .hoverAll:hover::after {
   opacity: 1; /* Agrega esta línea para garantizar que la opacidad sea 1 al hacer hover */
 }
+.btnSec3 {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 123, 0);
+  min-width: 180px;
+  border: black solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 13px 20px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btnSec3:hover {
+  opacity: .95;
+  background-color: rgb(53, 54, 68);
+}
+
+.btnSec3 .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
 .btnsSec3 {
   display: flex;
-  gap: 2em;
+  gap: 1em;
 }
-.btnSec3 {
+/* .btnSec3 {
   text-decoration: none;
   color: aliceblue;
   background-color: rgb(255, 123, 0);
@@ -245,7 +285,7 @@ export default {
   animation: color_anim 1s infinite 0.2s;
   margin: 0.3em;
   z-index: 9999;
-}
+} */
 </style>
 <!-- <template>
   <div class="galleryGlobalContainer">
