@@ -176,6 +176,7 @@ export default {
 }
 .titleTop{
   color: #000000;
+  font-family: 'DIMIS___', sans-serif;
 }
 .titleTop:hover{
   color: white;

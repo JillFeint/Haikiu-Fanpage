@@ -2,7 +2,7 @@
   <div class="galleryGlobalContainer3">
     <div class="calendar">
       <div class="logosTop"><img class="logoLeft" src="../assets/stickerclean.png" alt="">
-        <h1>Calendario de Karasuno!!</h1>
+        <h1 class="titleCalen">Calendario de Karasuno!!</h1>
         <img class="logoRight" src="../assets/loguito2.png" alt="">
       </div>
       <div class="buttonsCalendar">
@@ -182,11 +182,11 @@ export default {
   align-items: center;
   gap: 40px
 }
-h1 {
+.titleCalen{
   text-align: center;
   color: #333;
+  font-family: 'DIMIS___', sans-serif;
 }
-
 .months {
   margin-top: 20px;
 }

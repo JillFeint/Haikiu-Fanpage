@@ -1,7 +1,6 @@
 <!-- pendiente
 Colocar el carrucel automatico que vaya pasando de cosas y al inicio
 Arreglar el titulo de las redes sociales y que no parezcan anuncios
-en la gallería colocar un botón que cambie a videos
 cambiar la letra
 y colocar abajo videos aleatorios para que la gente se entretenga
 y colocar en el texto de reglas algo gris para evitar que sea tanto naranjado
@@ -22,7 +21,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
           <li class="btn-header sepBtn border-li1"><a @click="clickEvent('homeIni')" class="aBtn" href="#">Inicio</a></li>
           <li class="btn-header sepBtn"><a @click="clickEvent('teamFull')" class="aBtn" href="#">Equipo</a></li>
           <li class="btn-header sepBtn"><a @click="clickEvent('partidosAll')" class="aBtn" href="#">Partidos</a></li>
-          <li class="btn-header sepBtn border-li2"><a @click="clickEvent('infoProject')" href="#">Informacion</a></li>
+          <li class="btn-header sepBtn border-li2"><a @click="clickEvent('infoProject')" class="aBtn" href="#">Informacion</a></li>
           <li class="btn-header sepBtn"><a @click="clickEvent('contactWe')" class="aBtn" href="#">Contactanos</a></li>
         </ul>
       </div>
@@ -77,12 +76,6 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
       <!-- Galeria -->  
       <section class="seccion3">
           <div class="div-seccion3">
-            <h2 class="galer">Galería</h2>
-            <!-- <div class="btnsSec3">
-              !-- Aun no e creado los eventos en js --
-              <a @click="clickEvent('galleryNoCarru')" class="btnSec3" href="#">Galeria</a>
-              <a @click="clickEvent('arrucelDeVideos')" class="btnSec3" href="#">Carrusel</a>
-            </div> -->
             <galleryNoCarru/>
             <div>
               <carrucelDeVideos/>
@@ -176,7 +169,14 @@ export default {
   </script>
 
 <style>
+@font-face {
+  font-family: 'DIMIS___';
+  src: url('./assets/fonts/DIMIS___.TTF') format('truetype');
+}
 /* Global */
+h1 h2 h3  {
+  font-family: 'DIMIS___', sans-serif;
+}
 * {
   padding: 0;
   margin: 0;
@@ -197,15 +197,6 @@ export default {
   justify-content: center;
   align-items: end;
 }
-/* .div-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo {
-  width: 180px;
-  height: 200px;
-} */
 .ul-header {
   list-style: none;
   display: flex;
@@ -215,6 +206,7 @@ export default {
 .aBtn{
   display: flex;
   justify-content: center;
+  font-family: 'DIMIS___', sans-serif;
 }
 /* Botones */
 .btn-header a {
@@ -302,14 +294,6 @@ h2 {
 h2:hover{
   color: white;
 }
-.galer{
-  padding: 10px;
-  text-align: center;
-  color: rgb(255, 123, 0);
-}
-.galer:hover{
-  color: white;
-}
 p{
   display: flex;
   justify-content: center;
@@ -359,10 +343,11 @@ p{
   grid-row: 1;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 5px;
   height: 26em;
   width: 100%;
   border-left: rgb(56, 56, 56, 0.3) 2px solid;
+  font-family: 'DIMIS___', sans-serif;
 }
 h3 {
   display: flex;
@@ -390,6 +375,7 @@ h3 {
   padding: 10px 0;
   background-color: #ff9900;
   height: 100%;
+  font-family: 'DIMIS___', sans-serif;
 }
 /* Gallery */
 .div-seccion3{
@@ -401,25 +387,6 @@ h3 {
   padding: 10px;
   height: 100%;
 }
-/* .btnsSec3 {
-  display: flex;
-  gap: 2em;
-}
-.btnSec3 {
-  text-decoration: none;
-  color: aliceblue;
-  background-color: rgb(255, 123, 0);
-  padding: 7px;
-  font-size: 21px;
-  transition: 1s;
-  transform: skewX(-15deg);
-  border: none;
-  box-shadow: 4px 4px 0 black;
-  border-right: 1px solid black;
-  animation: color_anim 1s infinite 0.2s;
-  margin: 0.3em;
-  z-index: 9999;
-} */
 /* Antes del footer */
 .seccion4 {
   height: 100%;
