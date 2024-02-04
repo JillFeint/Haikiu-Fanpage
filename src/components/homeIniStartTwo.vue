@@ -7,99 +7,143 @@
     <!-- Jugador 1 -->
     <div class="teamMember">
       <div class="memberImage">
-        <img src="../assets/1.jpeg" alt="Player 1">
+        <img src="../assets/jugadores/Yū Nishinoya.jpeg" alt="Player 1">
       </div>
       <div class="memberDetails">
-        <h3 class="memberOne">Shoyo Hinata</h3>
-        <p>Posición: Colocador</p>
-        <p>Altura: 162.8 cm</p>
-        <p>Peso: 51 kg</p>
+        <h3 class="memberOne">Yū Nishinoya</h3>
+        <p>Posición: Libero</p>
+        <p>Altura: 159,3 cm</p>
+        <p>Peso: 51,1 kg</p>
+        <p>Numero: 4</p>
+        <p>Edad: 17</p>
       </div>
     </div>
     <!-- Jugador 2 -->
     <div class="teamMember">
       <div class="memberImage">
-        <img src="../assets/1.jpeg" alt="Player 2">
+        <img src="../assets/jugadores/Ryūnosuke Tanaka.jpeg" alt="Player 2">
       </div>
       <div class="memberDetails">
-        <h3>Tobio Kageyama</h3>
-        <p>Posición: Colocador</p>
-        <p>Altura: 180.6 cm</p>
-        <p>Peso: 66 kg</p>
+        <h3>Ryūnosuke Tanaka</h3>
+        <p>Posición: Punta Receptor</p>
+        <p>Altura: 177,2 cm</p>
+        <p>Peso: 68,8 kg</p>
+        <p>Numero: 5</p>
+        <p>Edad: 16</p>
       </div>
     </div>
-    <!-- Jugador 3 -->
-    <div class="teamMember">
-      <div class="memberImage">
-        <img src="../assets/3.jpeg" alt="Player 3">
-      </div>
-      <div class="memberDetails">
-        <h3 class="memberThree">Daichi Sawamura</h3>
-        <p>Posición: Capitán / Levantador</p>
-        <p>Altura: 179.6 cm</p>
-        <p>Peso: 70 kg</p>
-      </div>
+        <!-- Jugador 3 -->
+        <div class="teamMember">
+    <div class="memberImage">
+      <img src="../assets/jugadores/Chikara Ennoshita.jpeg" alt="Player 3">
+    </div>
+    <div class="memberDetails">
+      <h3>Chikara Ennoshita</h3>
+      <p>Posición: Punta receptor</p>
+      <p>Altura: 175,4 cm</p>
+      <p>Peso: 66,4 kg</p>
+      <p>Numero: 6</p>
+      <p>Edad: 18</p>
+    </div>
     </div>
     <!-- Jugador 4 -->
     <div class="teamMember">
       <div class="memberImage">
-        <img src="../assets/4.jpeg" alt="Player 4">
+        <img src="../assets/jugadores/Asahi Azumane.jpeg" alt="Player 4">
       </div>
       <div class="memberDetails">
-        <h3>Koshi Sugawara</h3>
-        <p>Posición: Levantador</p>
-        <p>Altura: 176.8 cm</p>
-        <p>Peso: 64 kg</p>
+        <h3>Asahi Azumane</h3>
+        <p>Posición: Punta receptor</p>
+        <p>Altura: 184,7 cm</p>
+        <p>Peso: 75,2 kg</p>
+        <p>Numero: 3</p>
+        <p>Edad: 18</p>
+      </div>
+    </div>
+    <!-- Jugador 5 -->
+    <div class="teamMember">
+      <div class="memberImage">
+        <img src="../assets/jugadores/Daichi Sawamura.jpeg" alt="Player 5">
+      </div>
+      <div class="memberDetails">
+        <h3>Daichi Sawamura</h3>
+        <p>Posición: Capitan/Opuesto</p>
+        <p>Altura: 17,.8 cm</p>
+        <p>Peso: 70,1 kg</p>
+        <p>Numero: 1</p>
+        <p>Edad: 18</p>
       </div>
     </div>
     </div>
     <div class="teamFourOne2">
-    <!-- Jugador 5 -->
-    <div class="teamMember">
-    <div class="memberImage">
-      <img src="../assets/5.jpeg" alt="Player 5">
-    </div>
-    <div class="memberDetails">
-      <h3>Koshi Sugawara</h3>
-      <p>Posición: Levantador</p>
-      <p>Altura: 176.8 cm</p>
-      <p>Peso: 64 kg</p>
-    </div>
-    </div>
     <!-- Jugador 6 -->
     <div class="teamMember">
     <div class="memberImage">
-      <img src="../assets/6.jpeg" alt="Player 6">
+      <img src="../assets/jugadores/Tobio Kageyama.jpeg" alt="Player 6">
     </div>
     <div class="memberDetails">
-      <h3>Koshi Sugawara</h3>
-      <p>Posición: Levantador</p>
-      <p>Altura: 176.8 cm</p>
-      <p>Peso: 64 kg</p>
+      <h3>Tobio Kageyama</h3>
+      <p>Posición: Armador</p>
+      <p>Altura: 180,6 cm</p>
+      <p>Peso: 66,3 kg</p>
+      <p>Numero: 9</p>
+      <p>Edad: 15</p>
     </div>
     </div>
     <!-- Jugador 7 -->
     <div class="teamMember">
     <div class="memberImage">
-      <img src="../assets/7.jpeg" alt="Player 7">
+      <img src="../assets/jugadores/Shōyō Hinata.jpeg" alt="Player 7">
     </div>
     <div class="memberDetails">
-      <h3>Koshi Sugawara</h3>
-      <p>Posición: Levantador</p>
-      <p>Altura: 176.8 cm</p>
-      <p>Peso: 64 kg</p>
+      <h3>Shōyō Hinata</h3>
+      <p>Posición: Bloqueador Central</p>
+      <p>Altura: 162,8 cm</p>
+      <p>Peso: 51,9 kg</p>
+      <p>Numero: 10</p>
+      <p>Edad: 16</p>
     </div>
     </div>
     <!-- Jugador 8 -->
     <div class="teamMember">
     <div class="memberImage">
-      <img src="../assets/1.jpeg" alt="Player 8">
+      <img src="../assets/jugadores/Kei Tsukishima.jpeg" alt="Player 8">
+    </div>
+    <div class="memberDetails">
+      <h3>Kei Tsukishima</h3>
+      <p>Posición: Bloqueador Central</p>
+      <p>Altura: 188.3 cm</p>
+      <p>Peso: 68,4 kg</p>
+      <p>Numero: 16</p>
+      <p>Edad: 17</p>
+    </div>
+    </div>
+        <!-- Jugador 9 -->
+        <div class="teamMember">
+    <div class="memberImage">
+      <img src="../assets/jugadores/Tadashi Yamaguchi.jpeg" alt="Player 9">
+    </div>
+    <div class="memberDetails">
+      <h3>Tadashi Yamaguchi</h3>
+      <p>Posición: Central/Sacador de apoyo</p>
+      <p>Altura: 179,5 cm</p>
+      <p>Peso: 63 kg</p>
+      <p>Numero: 12</p>
+      <p>Edad: 15</p>
+    </div>
+    </div>
+    <!-- Jugador 10 -->
+    <div class="teamMember">
+    <div class="memberImage">
+      <img src="../assets/jugadores/Kōshi Sugawara.jpeg" alt="Player 10">
     </div>
     <div class="memberDetails">
       <h3>Koshi Sugawara</h3>
-      <p>Posición: Levantador</p>
-      <p>Altura: 176.8 cm</p>
-      <p>Peso: 64 kg</p>
+      <p>Posición: Armador suplente</p>
+      <p>Altura: 174,3 cm</p>
+      <p>Peso: 63,5 kg</p>
+      <p>Numero: 2</p>
+      <p>Edad: 18</p>
     </div>
     </div>
     </div>
@@ -152,7 +196,7 @@ export default {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 10px solid black;
-  padding: 25px;
+  padding: 33px;
 }
 .teamFull h2 {
   font-size: 24px;
