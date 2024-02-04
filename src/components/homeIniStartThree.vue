@@ -185,7 +185,7 @@ export default {
 .titleCalen{
   text-align: center;
   color: #333;
-  font-family: 'DIMIS___', sans-serif;
+  font-family: 'DIMISTRI', sans-serif;
 }
 .months {
   margin-top: 20px;

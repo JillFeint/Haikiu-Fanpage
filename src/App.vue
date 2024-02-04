@@ -25,8 +25,9 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
           <li class="btn-header sepBtn"><a @click="clickEvent('contactWe')" class="aBtn" href="#">Contactanos</a></li>
         </ul>
       </div>
-    </header>  
+    </header> 
     <div class="bodyHide" v-show="bodyHideBd">
+      <div class="homeIni" v-show="appView">
     <!-- Video -->
       <section class="seccion1">
         <div class="videoContainer">
@@ -91,8 +92,9 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
         </div>
         </section>
     </div>
+    </div> 
   </div>   
-  <div v-show="isVisibleShow" class="homeIni"><homeIniStart/></div>
+  <div v-show="isVisibleShow" class="homeIni1"><homeIniStart/></div>
   <div v-show="isVisibleShow2" class="teamFull"><homeIniStartTwo/></div>
   <div v-show="isVisibleShow3" class="partidosAll"><homeIniStartThree/></div>
   <div v-show="isVisibleShow4" class="infoProject"><homeIniStartFour/></div>
@@ -126,8 +128,8 @@ export default {
   {
     return {
     bodyHideBd: true,
-    isVisibleShow: false,      
-    isVisibleShow1: false,
+    appView: true,
+    isVisibleShow: false,
     isVisibleShow2: false,
     isVisibleShow3: false,
     isVisibleShow4: false,
@@ -136,6 +138,7 @@ export default {
   },
   methods: {
     clickEvent(componentName) {
+      this.appView = false;
       this.isVisibleShow = false;
       this.isVisibleShow2 = false;
       this.isVisibleShow3 = false;
@@ -143,7 +146,7 @@ export default {
       this.isVisibleShow5 = false;     
       switch (componentName) {
         case 'homeIni':
-        window.location.reload();
+          this.appView = true;
           break;
         case 'teamFull':
           this.isVisibleShow2 = true;
@@ -160,9 +163,6 @@ export default {
         default:
           break;
       }
-      
-      // Ocultar el contenido principal
-      this.bodyHideBd = false;
     }
   },
 }
@@ -173,10 +173,11 @@ export default {
   font-family: 'DIMIS___';
   src: url('./assets/fonts/DIMIS___.TTF') format('truetype');
 }
-/* Global */
-h1 h2 h3  {
-  font-family: 'DIMIS___', sans-serif;
+@font-face {
+  font-family: 'DIMISTRI';
+  src: url('./assets/fonts/DIMISTRI.TTF') format('truetype');
 }
+/* Global */
 * {
   padding: 0;
   margin: 0;
@@ -213,7 +214,7 @@ h1 h2 h3  {
   display: flex;
   text-decoration: none;
   background-color: rgb(255, 123, 0);
-  color: rgb(255, 255, 255);
+  color: rgb(250, 245, 245);
   padding: 10px;
   font-size: 20px;
   transition: 1s;
@@ -224,6 +225,7 @@ h1 h2 h3  {
   animation: color_anim 1s infinite 0.2s;
   margin: 0.3em;
   z-index: 9999;
+  letter-spacing: 0.5px;
 }
 .border-li1 a {
   display: flex;
@@ -255,7 +257,7 @@ h1 h2 h3  {
 }
 .btn-header a:hover{
   background-color: rgba(255, 10, 6, 0.883);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 10px;
 }
 .sepBtn{
@@ -347,7 +349,7 @@ p{
   height: 26em;
   width: 100%;
   border-left: rgb(56, 56, 56, 0.3) 2px solid;
-  font-family: 'DIMIS___', sans-serif;
+  font-family: 'DIMISTRI';
 }
 h3 {
   display: flex;
@@ -375,7 +377,7 @@ h3 {
   padding: 10px 0;
   background-color: #ff9900;
   height: 100%;
-  font-family: 'DIMIS___', sans-serif;
+  font-family: 'DIMISTRI';
 }
 /* Gallery */
 .div-seccion3{

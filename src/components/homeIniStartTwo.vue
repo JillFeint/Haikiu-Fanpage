@@ -176,10 +176,11 @@ export default {
 }
 .titleTop{
   color: #000000;
-  font-family: 'DIMIS___', sans-serif;
+  font-family: 'DIMISTRI', sans-serif;
+  letter-spacing: 2px;
 }
 .titleTop:hover{
-  color: white;
+  color: rgb(222, 222, 222);
 }
 .teamFourOrden{
   display: flex;
