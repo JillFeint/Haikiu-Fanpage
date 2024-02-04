@@ -1,137 +1,257 @@
 <template>
-  <div class="galleryGlobalContainer">
-    <div class="boxContainer3">
-    <div class="divContainer1 hoverAll">
-      <img class="1 sizeAll" src="../assets/1.jpeg" alt="">
+  <div class="galleryGlobalContainer3">
+    <div class="calendar">
+      <div class="logosTop"><img class="logoLeft" src="../assets/stickerclean.png" alt="">
+        <h1>Calendario de Karasuno!!</h1>
+        <img class="logoRight" src="../assets/loguito2.png" alt="">
+      </div>
+      <div class="buttonsCalendar">
+        <button class="buttonCalendar" @click="clickChange('months')">Entrenamiento proximos</button>
+        <button class="buttonCalendar" @click="clickChange('showTwo')">Partidos que se aproximan</button>
+      </div>
+      <div class="months"  v-show="calendarShow">
+        <!-- Aquí se generan los meses y los días automáticamente con JavaScript -->
+      </div>
+      <div class="showTwo" v-show="showTwoShow">
+        <ul class="match-list">
+          <li>
+            <span class="match-date">Enero 10, 2024</span> - Haikui vs. Equipo A
+          </li>
+          <li id="otherColor">
+            <span class="match-date" id="otherColor">Febrero 2, 2024</span> - Haikui vs. Equipo B
+          </li>
+          <li>
+            <span class="match-date">Marzo 15, 2024</span> - Haikui vs. Equipo C
+          </li>
+          <li id="otherColor">
+            <span class="match-date" id="otherColor">Abril 5, 2024</span> - Haikui vs. Equipo D
+          </li>
+          <li>
+            <span class="match-date">Mayo 20, 2024</span> - Haikui vs. Equipo E
+          </li>
+          <li id="otherColor">
+            <span class="match-date" id="otherColor">Junio 8, 2024</span> - Haikui vs. Equipo F
+          </li>
+          <li>
+            <span class="match-date">Julio 12, 2024</span> - Haikui vs. Equipo G
+          </li>
+          <li id="otherColor">
+            <span class="match-date" id="otherColor">Agosto 3, 2024</span> - Haikui vs. Equipo H
+          </li>
+          <li>
+            <span class="match-date">Septiembre 18, 2024</span> - Haikui vs. Equipo I
+          </li>
+          <li id="otherColor">
+            <span id="otherColor" class="match-date">Octubre 10, 2024</span> - Haikui vs. Equipo J
+          </li>
+          <li>
+            <span class="match-date">Noviembre 5, 2024</span> - Haikui vs. Equipo K
+          </li>
+          <li id="otherColor">
+            <span class="match-date" id="otherColor">Diciembre 22, 2024</span> - Haikui vs. Equipo L
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="divContainer2 hoverAll">
-      <img class="2 sizeAll" src="../assets/2.jpeg" alt="">
-    </div>
-    <div class="divContainer3 hoverAll">   
-      <img class="3 sizeAll" src="../assets/3.jpeg" alt="">
-    </div>
-    <div class="divContainer4 hoverAll">   
-      <img class="4 sizeAll" src="../assets/4.jpeg" alt="">
-    </div>
-    <div class="divContainer5 hoverAll">   
-      <img class="5 sizeAll" src="../assets/5.jpeg" alt="">
-    </div>
-    <div class="divContainer6 hoverAll">
-      <img class="6 sizeAll" src="../assets/6.jpeg" alt="">
-    </div>
-    <div class="divContainer7 hoverAll">
-      <img class="7 sizeAll" src="../assets/7.jpeg" alt="">
-    </div>
-    <div class="divContainer8 hoverAll">   
-      <img class="8 sizeAll" src="../assets/8.png" alt="">
-    </div>
-    <div class="divContainer9 hoverAll">   
-      <img class="9 sizeAll" src="../assets/9.png" alt="">
-    </div>
-    <div class="divContainer10 hoverAll">   
-      <img class="10 sizeAll" src="../assets/10.jpeg" alt="">
-    </div>
-    </div>
-  </div>
+</div>
 </template>
-
 <script>
+export default {
+  data() 
+  {
+    return {
+    calendarShow: true,
+    showTwoShow: false,      
+    };
+  },
+  methods: {
+    clickChange(componentName) {
+      this.calendarShow = false;
+      this.showTwoShow = false;  
+      switch (componentName) {
+        case 'months':
+        this.calendarShow = true;
+          break;
+        case 'showTwo':
+          this.showTwoShow = true;
+          break;
+      }
+    }
+  },
+  mounted() {
+    const monthsContainer = this.$el.querySelector('.months');
+    const months = [
+      'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+      'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+    ];
+    // Define los días que deseas resaltar para cada mes
+    const highlightedDays = {
+      'Enero': [1, 15, 28],
+      'Febrero': [14],
+      'Marzo': [8, 20, 21, 22, 23, 28],
+      'Junio': [8, 10, 14, 15, 16, 20],
+      'Julio': [1, 3, 5, 8, 20, 22, 26 , 28],
+      'Agosto': [1, 3, 5, 8, 20, 22, 26 , 28],
+      'Septiembre': [8, 20],
+      'Noviembre': [8, 12, 13, 15, 16, 20],
+      
+      // Agrega más meses y días según lo necesites
+    };
 
+    months.forEach(month => {
+      const monthDiv = document.createElement('div');
+      monthDiv.classList.add('month');
+      monthDiv.innerHTML = `<h2>${month}</h2>`;
+      
+      const daysDiv = document.createElement('div');
+      daysDiv.classList.add('days');
+      
+      for (let i = 1; i <= 31; i++) {
+        const dayDiv = document.createElement('div');
+        dayDiv.classList.add('day');
+        dayDiv.textContent = i;
+
+        // Verifica si el día debe tener un color diferente
+        if (highlightedDays[month] && highlightedDays[month].includes(i)) {
+          dayDiv.classList.add('highlighted');
+        }
+
+        daysDiv.appendChild(dayDiv);
+      }
+      
+      monthDiv.appendChild(daysDiv);
+      monthsContainer.appendChild(monthDiv);
+    });
+  }
+}
 </script>
 
-
 <style>
-.galleryGlobalContainer{
-padding: 10px;
+/* Estilo adicional para los días resaltados */
+.highlighted {
+  background-color: rgb(53, 54, 68);
+  color: #fff;
 }
-.divContainer1 {
-  grid-column: 1;
-  grid-row: 1;
+.galleryGlobalContainer3 {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #ff9900;
+  margin: 0;
+  padding: 0;
 }
-.divContainer2 {
-  grid-column: 2;
-  grid-row: 2;
+.buttonsCalendar{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  gap:10px;
 }
-.divContainer3 {
-  grid-column: 3;
-  grid-row: 3;
-}
-.divContainer4 {
-  grid-column: 4;
-  grid-row: 4;
-}
-.divContainer5 {
-  grid-column: 5;
-  grid-row: 5;
-}
-.divContainer6 {
-  grid-column: 1;
-  grid-row: 2;
-}
-.divContainer7 {
-  grid-column: 4;
-  grid-row: 5;
-}
-.divContainer8 {
-  grid-column: 5;
-  grid-row: 1;
-}
-.divContainer9 {
-  grid-column: 1;
-  grid-row: 5;
-}
-.divContainer10 {
-  grid-column: 2;
-  grid-row: 5;
-}
-.boxContainer3{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1f 1fr;
-  width: 100%;
-  height: 45em;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  grid-gap: 20px;
-  padding: 20px;
-  background-color: rgb(250, 250, 0);
-}
-.hoverAll {
-  position: relative; /* Asegura que el ::after sea relativo a este elemento */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  height: 100%; 
-  width: 100%;
-  max-height: 8em;
-  max-width: 9.5em;
+.buttonCalendar{
+  padding: 10px;
+  background-color: rgb(255, 123, 0);
+  border: rgb(48, 48, 48, 0.3) solid 0.5px;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  color: white;
 }
-.hoverAll:hover{
-  transform: translateY(-10px);
+.buttonCalendar:hover{
+  background-color: rgba(255, 10, 6, 0.883);
 }
-.hoverAll::after {
-  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-  content: "Descripción de la imagen";
-  font-size: 13px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.calendar {
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
   padding: 20px;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  color: azure;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
 }
-.hoverAll:hover::after {
-  visibility: visible; /* Hace visible el texto al hacer hover */
+.logoLeft{
+  width: auto;
+  height: 4em;
 }
-/* Img */
-.sizeAll{
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.logoRight{
+  width: auto; 
+  height: 4em;
 }
+.logosTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.months {
+  margin-top: 20px;
+}
+
+.month {
+  margin-bottom: 20px;
+}
+
+.month h2 {
+  background-color: rgb(255, 123, 0);
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+/* Partidos futuros */
+.match-list {
+  list-style: none;
+  padding: 0;
+}
+/* Clase de los partidos en naranja*/
+#otherColor{
+  background-color: rgb(53, 54, 68);
+  color: white;
+}
+.match-list li:hover{
+  background-color: rgb(255, 123, 0);
+}
+.match-list li {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.match-date {
+  font-weight: bold;
+  color: #333333;
+}
+.match-opponent {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #666666;
+}
+.match-opponent:before {
+  content: "- ";
+}
+.match-opponent a {
+  text-decoration: none;
+  color: #007bff;
+}
+.match-opponent a:hover {
+  text-decoration: underline;
+}
+
 </style>
