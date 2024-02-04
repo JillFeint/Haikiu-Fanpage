@@ -1,11 +1,10 @@
 <template>
   <div class="btnsSec3">
-      <!-- Aun no e creado los eventos en js -->
-      <a @click="clickEvent('galleryNoCarru')" class="btnSec3" href="#">Fotos</a>
-      <a @click="clickEvent('arrucelDeVideos')" class="btnSec3" href="#">videos</a>
+      <a @click="clickChangeToVideo('grid-container')" class="btnSec3" href="#">Fotos</a>
+      <a @click="clickChangeToVideo('gridVideos')" class="btnSec3" href="#">videos</a>
     </div>
   <div class="seccionG3">
-      <div class="grid-container">
+      <div class="grid-container" v-if="seccionG3Show">
         <img class="grid-item hoverAll" src="../assets/fotos/lo logramos.jpg">
         <img class="grid-item hoverAll" src="../assets/fotos/descarga (1).jpg">
         <img class="grid-item hoverAll" src="../assets/fotos/descarga.jpg">
@@ -80,14 +79,85 @@
         <img class="grid-item hoverAll" src="../assets/fotos"> -->
 
       </div>
+      <div class="gridVideos" v-if="seccionVideosShow">
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
 </template>
-
 <script>
-export default {}
+export default {
+  data() 
+  {
+    return {
+    seccionG3Show: true,
+    seccionVideosShow: false,      
+    };
+  },
+  methods: {
+    clickChangeToVideo(componentName) {
+      this.seccionG3Show = false;
+      this.seccionVideosShow = false;  
+      switch (componentName) {
+        case 'grid-container':
+          this.seccionG3Show = true;
+          break;
+        case 'gridVideos':
+          this.seccionVideosShow = true;
+          break;
+      }
+    }
+  },
+}
 </script>
-
 <style>
+.gridVideos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  gap: 20px;
+  height: 27em;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
   .seccionG3 {
   height: 100%;
   width: 68%;
