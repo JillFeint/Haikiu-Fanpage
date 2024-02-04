@@ -128,7 +128,7 @@ export default {
   data() 
   {
     return {
-      seccionG3Show: true,
+    seccionG3Show: true,
     seccionVideosShow: false,      
   };
   },
