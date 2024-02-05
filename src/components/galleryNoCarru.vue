@@ -79,46 +79,46 @@
         
       </div>
       <div class="gridVideos" v-if="seccionVideosShow">
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
-        <iframe class="grid-item hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/Lv59h1zDl-U" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/5f9U9a6zBD8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/AH-nw5EYOYw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/LAo7Q3nnYZQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/ReiuuLolkHk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/zOQGr0K75kY" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/xFQzzdUSV7k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="grid-itemVds hoverAll" width="300" height="300" src="https://www.youtube.com/embed/cAlg-4YgEUE" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </template>
@@ -148,32 +148,23 @@ export default {
 }
 </script>
 <style>
-.gridVideos{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 150px);
-  gap: 20px;
-  height: 27em;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
-}
   .seccionG3 {
-  height: 100%;
-  width: 74%;
-  background-color: rgb(53, 54, 68);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 1em 0;
-  padding-left: 1em;
-  margin: 1em 0;
-  overflow-y: auto;
-}
-/* Estilos específicos para la barra de desplazamiento en navegadores WebKit en navegadores basados en WebKit (como Google Chrome y Safari)*/
-.seccionG3::-webkit-scrollbar {
-  width: 0.5em; /* Ancho de la barra de desplazamiento */
-}
-.seccionG3::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color del pulgar de la barra de desplazamiento */
+    height: 100%;
+    width: 74%;
+    background-color: rgb(53, 54, 68);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1em 0;
+    padding-left: 1em;
+    margin: 1em 0;
+    overflow-y: auto;
+  }
+  /* Estilos específicos para la barra de desplazamiento en navegadores WebKit en navegadores basados en WebKit (como Google Chrome y Safari)*/
+  .seccionG3::-webkit-scrollbar {
+    width: 0.5em; /* Ancho de la barra de desplazamiento */
+  }
+  .seccionG3::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color del pulgar de la barra de desplazamiento */
 }
 .seccionG3::-webkit-scrollbar-track {
   background-color: transparent; /* Color de la pista de la barra de desplazamiento */
@@ -197,6 +188,23 @@ export default {
   transition: filter 0.3s ease-in-out;
   width: 220px;
   height: 170px;
+  object-fit: cover;
+  background-color: lightgray;
+}
+.gridVideos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px;
+  height: 40em;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+.grid-itemVds {
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
   background-color: lightgray;
 }
