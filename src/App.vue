@@ -42,24 +42,27 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
           <div class="div1SeccionTwo">
             <p class="divInvi"></p>
           </div>
-        <div class="textDown">
+        <div class="textDown-1">
           <h2>Quienes Somos</h2>
         <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
           deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
+        <p class="textDownParr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit similique nam tempora id quia esse officia porro nobis eaque.
+          Asperiores similique molestias culpa a quisquam vel voluptatibus repellat doloremque numquam.</p>
         </div>
         </div>
         <div class="div2-seccion2">
           <div class="div1SeccionTwo">
             <p class="divInvi2"></p>
           </div>
-          <div class="textDown">
+          <div class="textDown-2">
           <h2>Reglas</h2>
-          <img src="./assets/1.jpeg" alt="">
-          <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
-            itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!
-          </p>
-            <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
-          deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
+          <div class="subText-2">
+            <img src="./assets/reglas.jpg" alt="">
+            <p class="textDownParr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
+              itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+              deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
+          </div>
           </div>
           </div>
           <div class="div3-seccion2">
@@ -328,7 +331,22 @@ p{
   height: 26em;
   padding-top: 5px;
 }
-.textDown{
+.textDown-1{
+  background-color: rgb(56, 56, 56); 
+  flex-direction: column;
+  box-shadow: 0px 0px 7px rgba(196, 196, 196, 0.5);
+  color: azure;
+  height: 100%;
+}
+.textDown-1 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 90%;
+  margin: 15px auto;
+}
+.textDown-2{
   background-color: rgb(56, 56, 56); 
   flex-direction: column;
   box-shadow: 0px 0px 7px rgba(196, 196, 196, 0.5);
@@ -337,6 +355,29 @@ p{
 }
 .textDownParr{
   color: azure;
+}
+.subText-2 {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 90%;
+}
+.subText-2 img {
+  height: 20em;
+  width: 14em;
+  padding-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.subText-2 p {
+  padding-top: 10px;
+  margin: 10px;
+  padding-left: 30px;
+}
+.textDownParr-2{
+  color: azure;
+  display: flex;
+  flex-direction: column;
 }
 .div3-seccion2 {
   /* Facebook */
