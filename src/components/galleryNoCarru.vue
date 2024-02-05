@@ -51,29 +51,28 @@
       <img class="grid-item hoverAll" src="../assets/fotos/Nishnoya.jpeg">
       <img class="grid-item hoverAll" src="../assets/fotos/noya.jpeg">
       <img class="grid-item hoverAll" src="../assets/fotos/Oiwaka Tooru.jpeg">
-      <!-- <img class="grid-item hoverAll" src="../assets/fotos/rojo"> -->
+      <img class="grid-item hoverAll" src="../assets/fotos/rojo123.jpeg">
       <img class="grid-item hoverAll" src="../assets/fotos/Segundos (Oikawa x Reader).jpeg">
       <img class="grid-item hoverAll" src="../assets/fotos/ShoyoHinata.jpeg">
       <img class="grid-item hoverAll" src="../assets/fotos/Sweatshirt Tendō.jpeg">
       <img class="grid-item hoverAll" src="../assets/fotos/Tanaka.jpeg">
-      <!-- <img class="grid-item hoverAll" src="../assets/fotos/Your Haikyuu Life!.jpeg"> -->
-      <!-- <img class="grid-item hoverAll" src="../assets/fotos/Your Haikyuu! Lover.jpeg"> -->
+      <img class="grid-item hoverAll" src="../assets/fotos/Your Haikyuu Life.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/Your Haikyuu Lover.jpeg">
       <img class="grid-item hoverAll" src="../assets/fotos/Yuu Nishinoya Icon.jpeg">
-      <!-- <img class="grid-item hoverAll" src="../assets/fotos/𝐀 𝐂𝐇𝐀𝐎𝐓𝐈𝐂 𝐆𝐑𝐎𝐔𝐏 𝐂𝐇𝐀𝐓.jpeg"> -->
-      <!-- <img class="grid-item hoverAll" src="../assets/fotos/𝑘𝑢𝑟𝑜𝑜.jpeg"> -->
+      <img class="grid-item hoverAll" src="../assets/fotos/espaldaa.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/circulo22.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/123cancer.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/icons hinata.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/kurooo.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/123rojoo.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/pandalinn.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/asahi 123.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/keishi ukani.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/interest 3.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/kenma1.jpeg">
+      <img class="grid-item hoverAll" src="../assets/fotos/interes 245.jpeg">
+      
       <!-- <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
-      <img class="grid-item hoverAll" src="../assets/fotos">
       <img class="grid-item hoverAll" src="../assets/fotos">
       <img class="grid-item hoverAll" src="../assets/fotos">
       <img class="grid-item hoverAll" src="../assets/fotos"> -->
@@ -160,7 +159,7 @@ export default {
 }
   .seccionG3 {
   height: 100%;
-  width: 68%;
+  width: 74%;
   background-color: rgb(53, 54, 68);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   color: white;
@@ -186,19 +185,18 @@ export default {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 155px);
+  grid-template-columns: repeat(auto-fill, 220px);
   gap: 20px;
-  height: 36em;
+  height: 34em;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
   overflow-y: auto;
 }
 .grid-item {
   cursor: pointer;
   transition: filter 0.3s ease-in-out;
-  width: 230px;
-  height: 200px;
+  width: 220px;
+  height: 170px;
   object-fit: cover;
   background-color: lightgray;
 }
