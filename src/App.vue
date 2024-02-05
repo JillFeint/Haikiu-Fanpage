@@ -94,7 +94,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
     </div>
     </div> 
   </div>   
-  <div v-show="isVisibleShow" class="homeIni1"><homeIniStart/></div>
+  <!-- <div v-show="isVisibleShow" class="homeIni1"><homeIniStart/></div> No tocar -->
   <div v-show="isVisibleShow2" class="teamFull"><homeIniStartTwo/></div>
   <div v-show="isVisibleShow3" class="partidosAll"><homeIniStartThree/></div>
   <div v-show="isVisibleShow4" class="infoProject"><homeIniStartFour/></div>
@@ -107,7 +107,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
 <script>
 import galleryNoCarru from "./components/galleryNoCarru.vue";
 import apiFacebookReal from "./components/apiFacebookReal.vue";
-import homeIniStart from "./components/homeIniStart.vue";
+// import homeIniStart from "./components/homeIniStart.vue" No tocar;
 import homeIniStartTwo from "./components/homeIniStartTwo.vue";
 import homeIniStartThree from "./components/homeIniStartThree.vue";
 import homeIniStartFour from "./components/homeIniStartFour.vue";
@@ -117,7 +117,7 @@ export default {
   components: {
   galleryNoCarru,
   apiFacebookReal,
-  homeIniStart,
+  // homeIniStart No tocar,
   homeIniStartTwo,
   homeIniStartThree,
   homeIniStartFour,
