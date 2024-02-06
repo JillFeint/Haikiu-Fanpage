@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(53, 54, 68);
+  background-color: rgb(255, 123, 0);
 }
 .videoContainer1{
   background-color: rgb(255, 123, 0);

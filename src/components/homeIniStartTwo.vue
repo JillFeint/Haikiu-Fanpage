@@ -10,7 +10,7 @@
         <img src="../assets/jugadores/Yū Nishinoya.jpeg" alt="Player 1">
       </div>
       <div class="memberDetails">
-        <h3 class="memberOne">Yū Nishinoya</h3>
+        <h3 class="h3-equipo memberOne">Yū Nishinoya</h3>
         <p>Posición: Libero</p>
         <p>Altura: 159,3 cm</p>
         <p>Peso: 51,1 kg</p>
@@ -24,7 +24,7 @@
         <img src="../assets/jugadores/Ryūnosuke Tanaka.jpeg" alt="Player 2">
       </div>
       <div class="memberDetails">
-        <h3>Ryūnosuke Tanaka</h3>
+        <h3 class="h3-equipo">Ryūnosuke Tanaka</h3>
         <p>Posición: Punta Receptor</p>
         <p>Altura: 177,2 cm</p>
         <p>Peso: 68,8 kg</p>
@@ -38,7 +38,7 @@
       <img src="../assets/jugadores/Chikara Ennoshita.jpeg" alt="Player 3">
     </div>
     <div class="memberDetails">
-      <h3>Chikara Ennoshita</h3>
+      <h3 class="h3-equipo">Chikara Ennoshita</h3>
       <p>Posición: Punta receptor</p>
       <p>Altura: 175,4 cm</p>
       <p>Peso: 66,4 kg</p>
@@ -52,7 +52,7 @@
         <img src="../assets/jugadores/Asahi Azumane.jpeg" alt="Player 4">
       </div>
       <div class="memberDetails">
-        <h3>Asahi Azumane</h3>
+        <h3 class="h3-equipo">Asahi Azumane</h3>
         <p>Posición: Punta receptor</p>
         <p>Altura: 184,7 cm</p>
         <p>Peso: 75,2 kg</p>
@@ -66,7 +66,7 @@
         <img src="../assets/jugadores/Daichi Sawamura.jpeg" alt="Player 5">
       </div>
       <div class="memberDetails">
-        <h3>Daichi Sawamura</h3>
+        <h3 class="h3-equipo">Daichi Sawamura</h3>
         <p>Posición: Capitan/Opuesto</p>
         <p>Altura: 17,.8 cm</p>
         <p>Peso: 70,1 kg</p>
@@ -82,7 +82,7 @@
       <img src="../assets/jugadores/Tobio Kageyama.jpeg" alt="Player 6">
     </div>
     <div class="memberDetails">
-      <h3>Tobio Kageyama</h3>
+      <h3 class="h3-equipo">Tobio Kageyama</h3>
       <p>Posición: Armador</p>
       <p>Altura: 180,6 cm</p>
       <p>Peso: 66,3 kg</p>
@@ -96,7 +96,7 @@
       <img src="../assets/jugadores/Shōyō Hinata.jpeg" alt="Player 7">
     </div>
     <div class="memberDetails">
-      <h3>Shōyō Hinata</h3>
+      <h3 class="h3-equipo">Shōyō Hinata</h3>
       <p>Posición: Bloqueador Central</p>
       <p>Altura: 162,8 cm</p>
       <p>Peso: 51,9 kg</p>
@@ -110,7 +110,7 @@
       <img src="../assets/jugadores/Kei Tsukishima.jpeg" alt="Player 8">
     </div>
     <div class="memberDetails">
-      <h3>Kei Tsukishima</h3>
+      <h3 class="h3-equipo">Kei Tsukishima</h3>
       <p>Posición: Bloqueador Central</p>
       <p>Altura: 188.3 cm</p>
       <p>Peso: 68,4 kg</p>
@@ -124,7 +124,7 @@
       <img src="../assets/jugadores/Tadashi Yamaguchi.jpeg" alt="Player 9">
     </div>
     <div class="memberDetails">
-      <h3>Tadashi Yamaguchi</h3>
+      <h3 class="h3-equipo">Tadashi Yamaguchi</h3>
       <p>Posición: Central/Sacador de apoyo</p>
       <p>Altura: 179,5 cm</p>
       <p>Peso: 63 kg</p>
@@ -138,7 +138,7 @@
       <img src="../assets/jugadores/Kōshi Sugawara.jpeg" alt="Player 10">
     </div>
     <div class="memberDetails">
-      <h3>Koshi Sugawara</h3>
+      <h3 class="h3-equipo">Koshi Sugawara</h3>
       <p>Posición: Armador suplente</p>
       <p>Altura: 174,3 cm</p>
       <p>Peso: 63,5 kg</p>
@@ -183,6 +183,10 @@ export default {
   color: rgb(222, 222, 222);
 }
 .teamFourOrden{
+  display: flex;
+  justify-content: center;
+}
+.h3-equipo {
   display: flex;
   justify-content: center;
 }

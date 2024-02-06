@@ -1,28 +1,34 @@
 <template>
   <div class="containerHaikyu">
-  <div class="haikyu-info">
-    <h2 class="title">Información de Haikyu!!</h2>
-    <div class="description">
-      <p>Haikyu!! es un anime japonés que gira en torno al deporte del voleibol. La historia sigue a Shoyo Hinata, un estudiante de secundaria con una pasión ardiente por el voleibol, quien se une al equipo de su escuela con el objetivo de convertirse en el mejor jugador. A lo largo de la serie, Hinata enfrenta desafíos, trabaja en equipo y lucha por alcanzar sus sueños.</p>
-      <p>El anime se caracteriza por su emocionante acción en la cancha, sus intensos partidos de voleibol y la profundidad de sus personajes. Además del aspecto deportivo, también explora temas como la amistad, la superación personal y la rivalidad.</p>
+    <div class="haikyu-info">
+      <h2 class="title">Información de Haikyu!!</h2>
+      <div class="description">
+        <div class="detail-container">
+          <p>Haikyu!! es un anime japonés que gira en torno al deporte del voleibol. La historia sigue a Shoyo Hinata, un estudiante de secundaria con una pasión ardiente por el voleibol, quien se une al equipo de su escuela con el objetivo de convertirse en el mejor jugador. A lo largo de la serie, Hinata enfrenta desafíos, trabaja en equipo y lucha por alcanzar sus sueños.</p>
+          <p>El anime se caracteriza por su emocionante acción en la cancha, sus intensos partidos de voleibol y la profundidad de sus personajes. Además del aspecto deportivo, también explora temas como la amistad, la superación personal y la rivalidad.</p>
+        </div>
+        <div class="details">
+          <div class="details-left">
+            <div class="details-right">
+              <p><strong>Título:</strong> Haikyu!!</p>
+              <p><strong>Género:</strong> Deporte, Comedia, Drama, Escolar, Shonen</p>
+            <p><strong>Estudio de animación:</strong> Production I.G</p>
+            <p><strong>Director:</strong> Susumu Mitsunaka</p>
+            <p><strong>Año de emisión:</strong> 2014 - 2020</p>
+            <p><strong>Número de temporadas:</strong> 4</p>
+            <p><strong>Número de episodios:</strong> 85</p>
+            <p><strong>Manga original:</strong> Escrito por Haruichi Furudate</p>
+            <p><strong>Fecha de publicación del manga:</strong> 20 de febrero de 2012 - presente</p>
+            <p><strong>Editorial del manga:</strong> Shueisha</p>
+          </div>
+        </div>
+        </div>
     </div>
-    <div class="details">
-      <p><strong>Título:</strong> Haikyu!!</p>
-      <p><strong>Género:</strong> Deporte, Comedia, Drama, Escolar, Shonen</p>
-      <p><strong>Estudio de animación:</strong> Production I.G</p>
-      <p><strong>Director:</strong> Susumu Mitsunaka</p>
-      <p><strong>Año de emisión:</strong> 2014 - 2020</p>
-      <p><strong>Número de temporadas:</strong> 4</p>
-      <p><strong>Número de episodios:</strong> 85</p>
-      <p><strong>Manga original:</strong> Escrito por Haruichi Furudate</p>
-      <p><strong>Editorial del manga:</strong> Shueisha</p>
-      <p><strong>Fecha de publicación del manga:</strong> 20 de febrero de 2012 - presente</p>
+    <div class="iframe-container">
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5929918232378!2d139.7414604751261!3d35.66239817259337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7dabe6e4c7%3A0x2e63cece78e68104!2sShueisha%20Manga%20Art%20Heritage!5e0!3m2!1ses-419!2sco!4v1706982028625!5m2!1ses-419!2sco" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-    <div class="iframe-container">  
-      <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5929918232378!2d139.7414604751261!3d35.66239817259337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7dabe6e4c7%3A0x2e63cece78e68104!2sShueisha%20Manga%20Art%20Heritage!5e0!3m2!1ses-419!2sco!4v1706982028625!5m2!1ses-419!2sco" 
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
   </div>
 </template>
 
@@ -33,7 +39,8 @@ export default {
 </script>
 
 <style scoped>
-.containerHaikyu{
+.containerHaikyu {
+  font-size: 15px;
   display: flex;
   justify-content: center;
   background-color: #ff9900;
@@ -46,11 +53,18 @@ export default {
   padding: 50px;
   border-radius: 10px;
   background-color: rgb(53, 54, 68);
-  width: 75%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
 }
 .title {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 10px;
+  font-family: 'DIMISTRI', sans-serif;
+  letter-spacing: 1px;
 }
 .description {
   margin-bottom: 20px;
@@ -62,9 +76,13 @@ export default {
 .details p {
   margin-bottom: 10px;
   color: #ccc;
+  padding-left: 40px;
 }
 .details strong {
   font-weight: bold;
+}
+.detail-container {
+  padding-left: 40px;
 }
 .iframe-container {
   position: relative;
@@ -80,3 +98,4 @@ export default {
   border: 0;
 }
 </style>
+

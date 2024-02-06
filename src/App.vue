@@ -29,13 +29,9 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
     <div class="bodyHide" v-show="bodyHideBd">
       <div class="homeIni" v-show="appView">
     <!-- Video -->
-      <section class="seccion1">
-        <div class="videoContainer">
-        <video autoplay loop muted class="video-seccion">
-          <source src="./assets/seccion.mp4" type="video/mp4">
-        </video>
-        </div>
-        </section>
+    <section class="seccion1">
+      <carrucelDeVideos/>
+    </section>
       <!-- Cuerpo -->
       <section class="seccion2">
         <div class="div1-seccion2">
@@ -67,12 +63,12 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
           </div>
           <div class="div3-seccion2">
             <div class="div-faceb">
-              <h3>Facebook</h3>
+              <h3 class="redes-sociales">Facebook</h3>
               <apiFacebookReal/>             
             </div>
           </div>
           <div class="div4-seccion2">
-              <h3>Instagram</h3>
+              <h3 class="redes-sociales">Instagram</h3>
             <iframe class="instaGram" src="https://www.instagram.com/haikyuuu.official/embed/">
             </iframe>
           </div>
@@ -81,8 +77,12 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
       <section class="seccion3">
           <div class="div-seccion3">
             <galleryNoCarru/>
-            <div>
-              <carrucelDeVideos/>
+            <div>            
+              <div class="videoContainer">
+              <video autoplay loop muted class="video-seccion">
+                <source src="./assets/seccion.mp4" type="video/mp4">
+              </video>
+              </div>
             </div>
           </div>
         </section>
@@ -311,7 +311,7 @@ p{
   /* Izquierda arriba */
   grid-column: 1;
   grid-row: 1;
-  background-color: #ff9900;
+  background-color: rgb(255, 123, 0);
   padding: 10px;
   height: 26em;
   text-align: justify;
@@ -326,7 +326,7 @@ p{
     /* Izquierda abajo */
   grid-column: 1;
   grid-row: 2;
-  background-color: #ff9900;
+  background-color: rgb(255, 123, 0);
   padding: 15px 10px;
   height: 26em;
   padding-top: 5px;
@@ -381,7 +381,7 @@ p{
 }
 .div3-seccion2 {
   /* Facebook */
-  background-color: #ff9900;
+  background-color: #353644;
   grid-column: 2;
   grid-row: 1;
   display: flex;
@@ -392,9 +392,11 @@ p{
   border-left: rgb(56, 56, 56, 0.3) 2px solid;
   font-family: 'DIMISTRI';
 }
-h3 {
+.redes-sociales {
   display: flex;
   justify-content: center;
+  font-size: 30px;
+  color: rgb(255, 123, 0);
 }
 .div-faceb {
   position: relative;
@@ -405,7 +407,7 @@ h3 {
 }
 .instaGram{
   width: 270px;  
-  height: 95%; 
+  height: 93%; 
   border: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
@@ -416,7 +418,7 @@ h3 {
   grid-column: 2;
   background-color: blue;
   padding: 10px 0;
-  background-color: #ff9900;
+  background-color: #353644;
   height: 100%;
   font-family: 'DIMISTRI';
 }
