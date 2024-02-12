@@ -4,8 +4,18 @@
       <h2 class="title">Información de Haikyu!!</h2>
       <div class="description">
         <div class="detail-container">
-          <p>Haikyu!! es un anime japonés que gira en torno al deporte del voleibol. La historia sigue a Shoyo Hinata, un estudiante de secundaria con una pasión ardiente por el voleibol, quien se une al equipo de su escuela con el objetivo de convertirse en el mejor jugador. A lo largo de la serie, Hinata enfrenta desafíos, trabaja en equipo y lucha por alcanzar sus sueños.</p>
-          <p>El anime se caracteriza por su emocionante acción en la cancha, sus intensos partidos de voleibol y la profundidad de sus personajes. Además del aspecto deportivo, también explora temas como la amistad, la superación personal y la rivalidad.</p>
+          <p>"Haikyuu!!" es un popular manga y anime japonés que gira en torno al vóley masculino de preparatoria. 
+            Fue creado por Haruichi Furudate. La serie se centra en Shoyo Hinata, un estudiante de secundaria con una
+            estatura baja pero una gran pasión por el vóley. A pesar de sus limitaciones físicas, Hinata se une al equipo de 
+            vóley de su escuela secundaria y se embarca en un viaje para convertirse en un jugador destacado.</p>
+          <p>La trama sigue las experiencias de Hinata y sus compañeros de equipo mientras participan en diferentes
+            torneos y compiten contra otros equipos poderosos. La serie no solo se enfoca en los partidos emocionantes,
+            sino también en el desarrollo de los personajes, sus relaciones y cómo superan desafíos tanto dentro como fuera de la cancha.</p>
+          <p>"Haikyuu!!" ha sido elogiado por su animación de alta calidad, su emocionante acción deportiva y sus personajes carismáticos y 
+            bien desarrollados. Ha ganado una gran base de fanáticos tanto en Japón como en el extranjero desde su debut en 2012.</p>
+          <p>Además del manga y el anime, "Haikyuu!!" ha inspirado películas, obras de teatro, videojuegos y una variedad 
+            de productos de mercancía. Es considerado uno de los mejores trabajos en su género y ha contribuido significativamente 
+            a aumentar el interés en el vóley en Japón y en todo el mundo.</p>
         </div>
         <div class="details">
           <div class="details-left">
@@ -77,6 +87,10 @@ export default {
   margin-bottom: 10px;
   color: #ccc;
   padding-left: 40px;
+}
+.details strong {
+  color: #ff9900;
+  padding-right: 5px;
 }
 .details strong {
   font-weight: bold;
