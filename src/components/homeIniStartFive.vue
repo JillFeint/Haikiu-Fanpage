@@ -21,9 +21,6 @@
       </div>
       </form>
   </div>
-  <div>
-    <a href="https://es.wikipedia.org/wiki/Haiky%C5%AB!!">wiki</a>
-  </div>
 <div class="main">
   <div class="up">
     <button class="card1">
