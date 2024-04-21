@@ -1,7 +1,7 @@
 <template>
   <div class="containerHaikyu">
     <div class="haikyu-info">
-      <h2 class="title">Información de Haikyu!!</h2>
+      <h2 id="title-info">Información de Haikyu!!</h2>
       <div class="description">
         <div class="detail-container">
           <p>"Haikyuu!!" es un popular manga y anime japonés que gira en torno al vóley masculino de preparatoria. 
@@ -19,22 +19,25 @@
         </div>
         <div class="details">
           <div class="details-left">
-            <div class="details-right">
-              <p><strong>Título:</strong> Haikyu!!</p>
-              <p><strong>Género:</strong> Deporte, Comedia, Drama, Escolar, Shonen</p>
-            <p><strong>Estudio de animación:</strong> Production I.G</p>
-            <p><strong>Director:</strong> Susumu Mitsunaka</p>
-            <p><strong>Año de emisión:</strong> 2014 - 2020</p>
-            <p><strong>Número de temporadas:</strong> 4</p>
-            <p><strong>Número de episodios:</strong> 85</p>
-            <p><strong>Manga original:</strong> Escrito por Haruichi Furudate</p>
-            <p><strong>Fecha de publicación del manga:</strong> 20 de febrero de 2012 - presente</p>
-            <p><strong>Editorial del manga:</strong> Shueisha</p>
+              <div class="info-img--left"><img img class="info-img--left-dimension" src="../assets/21406d787b688124db6945b3f1fa5e1c-removebg-preview.png" alt=""></div>
+          <div class="details-right">
+              <p><strong class="info-titles--font">Título:</strong> Haikyu!!</p>
+              <p><strong class="info-titles--font">Género:</strong> Deporte, Comedia, Drama, Escolar, Shonen</p>
+              <p><strong class="info-titles--font">Estudio de animación:</strong> Production I.G</p>
+              <p><strong class="info-titles--font">Director:</strong> Susumu Mitsunaka</p>
+              <p><strong class="info-titles--font">Año de emisión:</strong> 2014 - 2020</p>
+              <p><strong class="info-titles--font">Número de temporadas:</strong> 4</p>
+              <p><strong class="info-titles--font">Número de episodios:</strong> 85</p>
+              <p><strong class="info-titles--font">Manga original:</strong> Escrito por Haruichi Furudate</p>
+              <p><strong class="info-titles--font">Fecha de publicación del manga:</strong> 20 de febrero de 2012 - presente</p>
+              <p><strong class="info-titles--font">Editorial del manga:</strong> Shueisha</p>
           </div>
         </div>
+        <div class="info-img--right"> <img class="info-img--right-dimension" src="../assets/efre-removebg-preview.png" alt=""></div>
         </div>
     </div>
     <div class="iframe-container">
+      <br>
         <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5929918232378!2d139.7414604751261!3d35.66239817259337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7dabe6e4c7%3A0x2e63cece78e68104!2sShueisha%20Manga%20Art%20Heritage!5e0!3m2!1ses-419!2sco!4v1706982028625!5m2!1ses-419!2sco" 
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -53,43 +56,88 @@ export default {
   font-size: 15px;
   display: flex;
   justify-content: center;
-  background-color: #ff9900;
+  background-color: rgb(255, 123, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  padding-top: 1.5em;
 }
 .haikyu-info {
   max-width: 100%;
   margin: 0;
   padding: 50px;
   border-radius: 10px;
-  background-color: rgb(53, 54, 68);
+  background-color: rgb(255, 255, 255);
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 20px;
 }
-.title {
+#title-info {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 1px;
+  color: #000000;
 }
 .description {
   margin-bottom: 20px;
 }
 .description p {
   margin-bottom: 20px;
-  color: #ccc;
+  color: #000000;
+}
+.details-left{
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1f, 1f, 1f;
+  grid-auto-rows: 1f;
+  padding: 0;
+  width: 100%;
+  background-color: bisque;
+}
+.info-img--left{
+  background-color: aquamarine;
+  grid-column: 1;
+  grid-row: 1;
+  padding: 0;
+  height: auto;
+  width: 25%;
+}
+.details-right{
+  background-color: rgb(238, 92, 7);
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0;
+  height: auto;
+  width: 50%;
+}
+.info-img--right{
+  background-color: rgb(192, 8, 229);
+  grid-column: 3;
+  grid-row: 1;
+  padding: 0;
+  height: auto;
+  width: 25%;
+}
+
+.info-img--left-dimension{
+  height: auto;
+  width: 25%;
+  background-color: blueviolet;
+}
+.info-img--right-dimension{
+  height: auto;
+  width: 10%;
+  background-color: chartreuse;
 }
 .details p {
   margin-bottom: 10px;
-  color: #ccc;
+  color: #000000;
   padding-left: 40px;
 }
 .details strong {
-  color: #ff9900;
   padding-right: 5px;
 }
 .details strong {
@@ -98,11 +146,14 @@ export default {
 .detail-container {
   padding-left: 40px;
 }
+.info-titles--font{
+  color: #ff9900;
+}
 .iframe-container {
   position: relative;
   width: 100%;
   padding-bottom: 40%;
-}
+  border: solid 1px rgb(255, 123, 0, 0.1);}
 .maps {
   position: absolute;
   top: 0;
