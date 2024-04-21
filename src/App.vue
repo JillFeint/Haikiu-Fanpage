@@ -95,6 +95,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
         </div>
         </section>
     </div>
+    <botonRedes/>
     </div> 
   </div>   
   <!-- <div v-show="isVisibleShow" class="homeIni1"><homeIniStart/></div> No tocar -->
@@ -116,6 +117,7 @@ import homeIniStartThree from "./components/homeIniStartThree.vue";
 import homeIniStartFour from "./components/homeIniStartFour.vue";
 import homeIniStartFive from "./components/homeIniStartFive.vue";
 import carrucelDeVideos from "./components/carrucelDeVideos.vue";
+import botonRedes from './components/botonRedes.vue';
 export default {
   components: {
   galleryNoCarru,
@@ -126,6 +128,7 @@ export default {
   homeIniStartFour,
   homeIniStartFive,
   carrucelDeVideos, 
+  botonRedes,
 },
   data() 
   {
