@@ -2,79 +2,80 @@
   <div class="teamFull">
     <div class="topTitle">
       <h2 class="titleTop">Equipo de Haikyu</h2></div>
-    <div class="teamFourOrden">
-    <div class="teamFourOne">
-    <!-- Jugador 1 -->
-    <div class="teamMember">
+    <div class="equip-container--all">    
+      <div class="teamFourOrden">
+      <div class="teamFourOne">
+      <!-- Jugador 1 -->
+      <div class="teamMember">
+        <div class="memberImage">
+          <img src="../assets/jugadores/Yū Nishinoya.jpeg" alt="Player 1">
+        </div>
+        <div class="memberDetails">
+          <h3 class="h3-equipo memberOne">Yū Nishinoya</h3>
+          <p>Posición: Libero</p>
+          <p>Altura: 159,3 cm</p>
+          <p>Peso: 51,1 kg</p>
+          <p>Numero: 4</p>
+          <p>Edad: 17</p>
+        </div>
+      </div>
+      <!-- Jugador 2 -->
+      <div class="teamMember">
+        <div class="memberImage">
+          <img src="../assets/jugadores/Ryūnosuke Tanaka.jpeg" alt="Player 2">
+        </div>
+        <div class="memberDetails">
+          <h3 class="h3-equipo">Ryūnosuke Tanaka</h3>
+          <p>Posición: Punta Receptor</p>
+          <p>Altura: 177,2 cm</p>
+          <p>Peso: 68,8 kg</p>
+          <p>Numero: 5</p>
+          <p>Edad: 16</p>
+        </div>
+      </div>
+          <!-- Jugador 3 -->
+          <div class="teamMember">
       <div class="memberImage">
-        <img src="../assets/jugadores/Yū Nishinoya.jpeg" alt="Player 1">
+        <img src="../assets/jugadores/Chikara Ennoshita.jpeg" alt="Player 3">
       </div>
       <div class="memberDetails">
-        <h3 class="h3-equipo memberOne">Yū Nishinoya</h3>
-        <p>Posición: Libero</p>
-        <p>Altura: 159,3 cm</p>
-        <p>Peso: 51,1 kg</p>
-        <p>Numero: 4</p>
-        <p>Edad: 17</p>
-      </div>
-    </div>
-    <!-- Jugador 2 -->
-    <div class="teamMember">
-      <div class="memberImage">
-        <img src="../assets/jugadores/Ryūnosuke Tanaka.jpeg" alt="Player 2">
-      </div>
-      <div class="memberDetails">
-        <h3 class="h3-equipo">Ryūnosuke Tanaka</h3>
-        <p>Posición: Punta Receptor</p>
-        <p>Altura: 177,2 cm</p>
-        <p>Peso: 68,8 kg</p>
-        <p>Numero: 5</p>
-        <p>Edad: 16</p>
-      </div>
-    </div>
-        <!-- Jugador 3 -->
-        <div class="teamMember">
-    <div class="memberImage">
-      <img src="../assets/jugadores/Chikara Ennoshita.jpeg" alt="Player 3">
-    </div>
-    <div class="memberDetails">
-      <h3 class="h3-equipo">Chikara Ennoshita</h3>
-      <p>Posición: Punta receptor</p>
-      <p>Altura: 175,4 cm</p>
-      <p>Peso: 66,4 kg</p>
-      <p>Numero: 6</p>
-      <p>Edad: 18</p>
-    </div>
-    </div>
-    <!-- Jugador 4 -->
-    <div class="teamMember">
-      <div class="memberImage">
-        <img src="../assets/jugadores/Asahi Azumane.jpeg" alt="Player 4">
-      </div>
-      <div class="memberDetails">
-        <h3 class="h3-equipo">Asahi Azumane</h3>
+        <h3 class="h3-equipo">Chikara Ennoshita</h3>
         <p>Posición: Punta receptor</p>
-        <p>Altura: 184,7 cm</p>
-        <p>Peso: 75,2 kg</p>
-        <p>Numero: 3</p>
+        <p>Altura: 175,4 cm</p>
+        <p>Peso: 66,4 kg</p>
+        <p>Numero: 6</p>
         <p>Edad: 18</p>
       </div>
-    </div>
-    <!-- Jugador 5 -->
-    <div class="teamMember">
-      <div class="memberImage">
-        <img src="../assets/jugadores/Daichi Sawamura.jpeg" alt="Player 5">
       </div>
-      <div class="memberDetails">
-        <h3 class="h3-equipo">Daichi Sawamura</h3>
-        <p>Posición: Capitan/Opuesto</p>
-        <p>Altura: 17,.8 cm</p>
-        <p>Peso: 70,1 kg</p>
-        <p>Numero: 1</p>
-        <p>Edad: 18</p>
+      <!-- Jugador 4 -->
+      <div class="teamMember">
+        <div class="memberImage">
+          <img src="../assets/jugadores/Asahi Azumane.jpeg" alt="Player 4">
+        </div>
+        <div class="memberDetails">
+          <h3 class="h3-equipo">Asahi Azumane</h3>
+          <p>Posición: Punta receptor</p>
+          <p>Altura: 184,7 cm</p>
+          <p>Peso: 75,2 kg</p>
+          <p>Numero: 3</p>
+          <p>Edad: 18</p>
+        </div>
       </div>
-    </div>
-    </div>
+      <!-- Jugador 5 -->
+      <div class="teamMember">
+        <div class="memberImage">
+          <img src="../assets/jugadores/Daichi Sawamura.jpeg" alt="Player 5">
+        </div>
+        <div class="memberDetails">
+          <h3 class="h3-equipo">Daichi Sawamura</h3>
+          <p>Posición: Capitan/Opuesto</p>
+          <p>Altura: 17,.8 cm</p>
+          <p>Peso: 70,1 kg</p>
+          <p>Numero: 1</p>
+          <p>Edad: 18</p>
+        </div>
+      </div>
+      </div>
     <div class="teamFourOne2">
     <!-- Jugador 6 -->
     <div class="teamMember">
@@ -149,6 +150,7 @@
     </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -166,9 +168,12 @@ export default {
 .teamFull {
   display: flex;
   flex-direction: column;
-  background-color: #ff9900;
+  background-color: rgb(255, 123, 0);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.equip-container--all{
+  background-color: blue;
 }
 .topTitle{
   display: flex;

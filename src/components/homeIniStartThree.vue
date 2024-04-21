@@ -136,7 +136,7 @@ export default {
   display: flex;
   justify-content: center;
   font-family: Arial, sans-serif;
-  background-color: #ff9900;
+  background-color: rgb(255, 123, 0);
   margin: 0;
   padding: 0;
 }
@@ -167,6 +167,7 @@ export default {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 60%;
+  margin-top: 1.3em;
 }
 .logoLeft{
   width: auto;
