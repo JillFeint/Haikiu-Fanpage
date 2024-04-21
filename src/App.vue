@@ -30,7 +30,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
       <div class="homeIni" v-show="appView">
     <!-- Video -->
     <section class="seccion1">
-      <carrucelDeVideos/>
+      <carruselDeVideos/>
     </section>
       <!-- Cuerpo -->
       <section class="seccion2">
@@ -116,7 +116,7 @@ import homeIniStartTwo from "./components/homeIniStartTwo.vue";
 import homeIniStartThree from "./components/homeIniStartThree.vue";
 import homeIniStartFour from "./components/homeIniStartFour.vue";
 import homeIniStartFive from "./components/homeIniStartFive.vue";
-import carrucelDeVideos from "./components/carrucelDeVideos.vue";
+import carruselDeVideos from "./components/carruselDeVideos.vue";
 import botonRedes from './components/botonRedes.vue';
 export default {
   components: {
@@ -127,7 +127,7 @@ export default {
   homeIniStartThree,
   homeIniStartFour,
   homeIniStartFive,
-  carrucelDeVideos, 
+  carruselDeVideos, 
   botonRedes,
 },
   data() 
@@ -275,7 +275,7 @@ export default {
 .seccion1 {
   position: relative;
   width: 100%;
-  height: 23em;
+  height: 100%;
   overflow: hidden;
 }
 .videoContainer{
