@@ -1,20 +1,26 @@
 <template>
-  <div class="body-carrucel">
-    <div class="container-carrucel">
+  <div class="body-carrusel">
+    <div class="container-carrusel">
       <div class="mySlides">
+        <div class="image-container">
         <img src="../assets/1.jpeg" alt="imagen-1">
       </div>
+      </div>
       <div class="mySlides">
+        <div class="image-container">
         <img src="../assets/2.jpeg" alt="">
       </div>
+      </div>
       <div class="mySlides">
+        <div class="image-container">
         <img src="../assets/3.jpeg" alt="">
       </div>
-      
-      <a class="prev-carrucel" @click="plusSlides(-1)">&#10094;</a>
-      <a class="next-carrucel" @click="plusSlides(1)">&#10095;</a>
-
-      <div class="elements-carrucel">
+      </div>
+      <div class="flechas-carrusel">
+        <a class="prev-carrusel" @click="plusSlides(-1)">&#10094;</a>
+        <a class="next-carrusel" @click="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="elements-carrusel">
         <span class="quadrate" @click="currentSlide(1)"></span>
         <span class="quadrate" @click="currentSlide(2)"></span>
         <span class="quadrate" @click="currentSlide(3)"></span>
@@ -64,30 +70,37 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
-.body-carrucel{
+.body-carrusel{
   width: 100%;
   max-width: 1450px;
   height: 80%;
   padding: 40px;
   background-color: rgb(255, 123, 0);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container-carrucel{
+.container-carrusel{
   width: 50%;
   position: relative;
 }
 .mySlides{
   display: none;
 }
-.mySlides img{
+.image-container {
   width: 100%;
+  height: 100%;
+  padding-bottom: 75%;
+  position: relative;
 }
-.prev-carrucel, .next-carrucel{
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.prev-carrusel, .next-carrusel{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -102,14 +115,14 @@ export default {
   user-select: none;
   border:  solid #fff 2px;
 }
-.next-carrucel{
+.next-carrusel{
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev-carrucel:hover, .next-carrucel:hover{
+.prev-carrusel:hover, .next-carrusel:hover{
   background-color: rgba(0, 0, 0, 0.8);
 }
-.elements-carrucel{
+.elements-carrusel{
   text-align: center;
 }
 .quadrate{
@@ -126,15 +139,15 @@ export default {
   background-color: #fff;
 }
 @media screen and (max-width:900px) {
-  .container-carrucel{
+  .container-carrusel{
       width: 100%;
   }
 }
 @media screen and (max-width:500px) {
-  .container-carrucel{
+  .container-carrusel{
       width: 100%;
   }
-  .prev-carrucel, .next-carrucel{
+  .prev-carrusel, .next-carrusel{
       padding: 5px;
   }
 }
