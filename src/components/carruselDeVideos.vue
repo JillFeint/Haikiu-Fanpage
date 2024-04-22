@@ -81,7 +81,7 @@ export default {
   align-items: center;
 }
 .container-carrusel{
-  width: 50%;
+  width: 35%;
   position: relative;
 }
 .mySlides{
