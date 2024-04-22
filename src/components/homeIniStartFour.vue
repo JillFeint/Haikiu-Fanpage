@@ -24,15 +24,21 @@
             </div>
             <div class="details-right">
               <br>
+              <br>
+              <br>
                 <p><strong class="info-titles--font">Título:</strong> Haikyu!!</p>
-                <p><strong class="info-titles--font">Género:</strong> Deporte, Comedia, Drama, Escolar, Shonen</p>
-                <p><strong class="info-titles--font">Estudio de animación:</strong> Production I.G</p>
+                <p><strong class="info-titles--font">Género</strong></p>
+                <p class="info-titles--font">Deporte, comedia, drama, shonen</p>
+                <p><strong class="info-titles--font">Estudio de animación:</strong> </p>
+                <p class="info-titles--font">Production I.G</p>
                 <p><strong class="info-titles--font">Director:</strong> Susumu Mitsunaka</p>
                 <p><strong class="info-titles--font">Año de emisión:</strong> 2014 - 2020</p>
                 <p><strong class="info-titles--font">Número de temporadas:</strong> 4</p>
                 <p><strong class="info-titles--font">Número de episodios:</strong> 85</p>
-                <p><strong class="info-titles--font">Manga original:</strong> Escrito por Haruichi Furudate</p>
-                <p><strong class="info-titles--font">Fecha de publicación del manga:</strong> 20 de febrero de 2012 - presente</p>
+                <p><strong class="info-titles--font">Manga original:</strong></p>
+                <p class="info-titles--font"> Escrito por Haruichi Furudate</p>
+                <p><strong class="info-titles--font">Fecha de publicación del manga:</strong></p>
+                <p class="info-titles--font">20 de febrero de 2012 - presente</p>
                 <p><strong class="info-titles--font">Editorial del manga:</strong> Shueisha</p>
             </div>
             <div class="info-img--right"> 
@@ -84,7 +90,7 @@ export default {
 #title-info {
   display: flex;
   justify-content: center;
-  margin-top: 0.5em;
+  margin-top: 0.4em;
   margin-bottom: 1em;
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 1px;

@@ -44,7 +44,7 @@ export default {
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 1px;
   color: #000000;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 .contactWeGlobal {
   display: flex;

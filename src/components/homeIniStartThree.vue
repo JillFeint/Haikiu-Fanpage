@@ -87,7 +87,7 @@ export default {
     // Define los días que deseas resaltar para cada mes
     const highlightedDays = {
       'Enero': [1, 15, 28],
-      'Febrero': [14],
+      'Febrero': [14, 7, 11],
       'Marzo': [8, 20, 21, 22, 23, 28],
       'Junio': [8, 10, 14, 15, 16, 20],
       'Julio': [1, 3, 5, 8, 20, 22, 26 , 28],
