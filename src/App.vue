@@ -98,7 +98,8 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
         <div class="socialMedia">
         <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
-        </section>
+      </section>
+      <footerBeatiful/>
     </div>
     <botonRedes/>
     </div> 
@@ -123,6 +124,7 @@ import homeIniStartFour from "./components/homeIniStartFour.vue";
 import homeIniStartFive from "./components/homeIniStartFive.vue";
 import carruselDeVideos from "./components/carruselDeVideos.vue";
 import botonRedes from './components/botonRedes.vue';
+import footerBeatiful from './components/footerBeatiful.vue';
 export default {
   components: {
   galleryNoCarru,
@@ -134,6 +136,7 @@ export default {
   homeIniStartFive,
   carruselDeVideos, 
   botonRedes,
+  footerBeatiful,
 },
   data() 
   {
