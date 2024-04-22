@@ -1,10 +1,14 @@
 <template>
   <div class="teamFull">
-    <div class="topTitle">
-      <h2 class="titleTop">Equipo de Haikyu</h2></div>
     <div class="equip-container--all">    
+      <div class="divStartTwoBig">
+        <div class="topTitle">
+          <div class="titleAsqueroso">
+          <h2 class="titleTop">Equipo de Haikyu</h2>
+        </div>
+        </div>
       <div class="teamFourOrden">
-      <div class="teamFourOne">
+        <div class="teamFourOne">
       <!-- Jugador 1 -->
       <div class="teamMember">
         <div class="memberImage">
@@ -150,7 +154,8 @@
     </div>
     </div>
   </div>
-  </div>
+</div>
+</div>
 </template>
 
 <script>
@@ -173,16 +178,30 @@ export default {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .equip-container--all{
-  background-color: blue;
+  /* background-color: blue; */
+}
+.titleAsqueroso {
+  display: flex;
+  background-color: rgb(53, 54, 68);
+  width: 56.67em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.divStartTwoBig {
+  display: flex;
+  flex-direction: column;
+  /* background-color: brown; */
+  justify-content: center;
 }
 .topTitle{
-  display: flex;
-  justify-content: center;
+  margin-left: 4.14em;
+  /* background-color: aqua; */
 }
 .titleTop{
   color: #000000;
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 2px;
+  margin-left: 37%;
 }
 .titleTop:hover{
   color: rgb(222, 222, 222);
@@ -197,25 +216,23 @@ export default {
 }
 .teamFourOne{
   background-color: rgb(53, 54, 68);
-  border-top-left-radius: 10px;
+  /* border-top-left-radius: 10px; */
   border-bottom-left-radius: 10px;
   box-shadow: 10px solid black;
   padding: 30px;
 }
 .teamFourOne2{
   background-color: rgb(53, 54, 68);  
-  border-top-right-radius: 10px;
+  /* border-top-right-radius: 10px; */
   border-bottom-right-radius: 10px;
   box-shadow: 10px solid black;
   padding: 33px;
 }
 .teamFull h2 {
   font-size: 24px;
-  margin-bottom: 2px;
+  margin-top: 5px;
   background-color: rgb(255, 123, 0);
-  padding: 7px;
-  margin-bottom: 10px;
-  width: 20%;
+  padding: 10px;
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
 }
