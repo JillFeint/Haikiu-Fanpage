@@ -1,7 +1,7 @@
 <template>
   <div class="contactWeGlobal">
     <div class="contactWe1">
-      <h2 class="fiveTitleContactanos">Contactanos</h2>
+      <h2 id="fiveTitleContactanos">Contactanos</h2>
       <p class="pComponentContac">Por favor, envíanos tus consultas y comentarios. Estaremos encantados de ayudarte.</p>
       <form class="contactForm">
         <div  class="formGroup">
@@ -37,10 +37,14 @@ export default {
 .pComponentContac{
   color:#fff
 }
-.fiveTitleContactanos {
+#fiveTitleContactanos {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 1px;
   color: #000000;
+  font-size: 2.2em;
 }
 .contactWeGlobal {
   display: flex;
@@ -73,7 +77,7 @@ export default {
   gap: 15px;
 }
 
-.formGroup {
+.formGroup{
   display: flex;
   flex-direction: column;
 }
@@ -81,7 +85,7 @@ export default {
   background-color:  rgb(255, 255, 255);
   color: black;
 }
-.formGroup label {
+.formGroup label{
   font-size: 18px;
   color: #000000;
   margin-bottom: 5px;

@@ -28,10 +28,6 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
     </header> 
     <div class="bodyHide" v-show="bodyHideBd">
       <div class="homeIni" v-show="appView">
-    <!-- Video -->
-    <section class="seccion1">
-      <carruselDeVideos/>
-    </section>
       <!-- Cuerpo -->
       <section class="seccion2">
         <div class="div1-seccion2">
@@ -39,11 +35,16 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
             <p class="divInvi"></p>
           </div>
         <div class="textDown-1">
-          <h2>Quienes Somos</h2>
+          <h2 class="main-h2-top">Quienes Somos</h2>
         <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
           deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
-        <p class="textDownParr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit similique nam tempora id quia esse officia porro nobis eaque.
-          Asperiores similique molestias culpa a quisquam vel voluptatibus repellat doloremque numquam.</p>
+        <p class="textDownParr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit similique nam tempora id quia esse officia porro nobis eaque
+          Asperiores similique molestias culpa a quisquam vel voluptatibus repellat doloremque numquam.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+          deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+          deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
+        </p>
         </div>
         </div>
         <div class="div2-seccion2">
@@ -51,7 +52,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
             <p class="divInvi2"></p>
           </div>
           <div class="textDown-2">
-          <h2>Reglas</h2>
+          <h2 class="main-h2-down">Reglas</h2>
           <div class="subText-2">
             <img src="./assets/reglas.jpg" alt="">
             <p class="textDownParr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
@@ -73,6 +74,10 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
             </iframe>
           </div>
         </section>
+                      <!-- Video -->
+    <section class="seccion1">
+      <carruselDeVideos/>
+    </section>
       <!-- Galeria -->  
       <section class="seccion3">
           <div class="div-seccion3">
@@ -294,13 +299,28 @@ export default {
   grid-template-columns: 8fr 2fr;
   grid-template-rows: 1fr 1fr;
 }
-h2 {
-  padding: 25px;
+.main-h2-top{
+  display: flex;
+  justify-content: center;
+  padding: 1em;
   text-align: center;
+  color: rgb(8, 8, 8);
+  font-family: 'DIMISTRI', sans-serif;
+}
+.main-h2-top:hover{
   color: rgb(255, 123, 0);
 }
-h2:hover{
-  color: white;
+.main-h2-down{
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin-left: 6em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'DIMISTRI', sans-serif;
+}
+.main-h2-down:hover{
+  color: rgb(255, 123, 0);
 }
 p{
   display: flex;
@@ -318,12 +338,10 @@ p{
   padding: 10px;
   height: 26em;
   text-align: justify;
-  padding-top: 0;
   padding-bottom: 5px;
 }
 .div1SeccionTwo{
   background-color: rgba(31, 33, 70, 0);
-  border-bottom: 0.4vh solid rgb(0, 0, 0, 0.2);
 }
 .div2-seccion2 {
     /* Izquierda abajo */
@@ -335,11 +353,12 @@ p{
   padding-top: 5px;
 }
 .textDown-1{
-  background-color: rgb(56, 56, 56); 
+  display: flex;
+  justify-content: center;
+  background-color: rgb(53, 54, 68); 
   flex-direction: column;
-  box-shadow: 0px 0px 7px rgba(196, 196, 196, 0.5);
-  color: azure;
   height: 100%;
+  border-radius: 15px;
 }
 .textDown-1 p {
   display: flex;
@@ -350,14 +369,13 @@ p{
   margin: 15px auto;
 }
 .textDown-2{
-  background-color: rgb(56, 56, 56); 
-  flex-direction: column;
-  box-shadow: 0px 0px 7px rgba(196, 196, 196, 0.5);
-  color: azure;
+  background-color: rgb(53, 54, 68); 
+  flex-direction: column;  
   height: 100%;
+  border-radius: 15px;
 }
 .textDownParr{
-  color: azure;
+  color: rgb(255, 255, 255);
 }
 .subText-2 {
   display: flex;
@@ -378,7 +396,7 @@ p{
   padding-left: 30px;
 }
 .textDownParr-2{
-  color: azure;
+  color: rgb(253, 253, 253);
   display: flex;
   flex-direction: column;
 }

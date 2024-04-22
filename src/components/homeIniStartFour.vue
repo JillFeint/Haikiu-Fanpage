@@ -84,18 +84,22 @@ export default {
 #title-info {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 1px;
   color: #000000;
+  font-size: 2.3em;
 }
 #title-info--map{
   display: flex;
   justify-content: center;  
-  margin-top: 1em;
+  margin-top: 2em;
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 1px;
   color: #000000;
+  padding-bottom: 1em;
+  font-size: 2.4em;
 }
 .description {
   margin-bottom: 20px;
@@ -137,7 +141,6 @@ export default {
 }
 
 .info-img--left-dimension{
-
   height: auto;
   width: 100%;
 }
@@ -157,6 +160,7 @@ export default {
   font-weight: bold;
 }
 .detail-container {
+  padding-bottom: 2em;
   padding-left: 40px;
 }
 .info-titles--font{
