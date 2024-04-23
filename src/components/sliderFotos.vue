@@ -55,7 +55,7 @@ export default {
 <style>
 .body-sliderFotos {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -64,7 +64,7 @@ export default {
 
 .container-sliderFotos {
     width: 100%;
-    height: 90vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,7 +73,7 @@ export default {
 
 .imgContainer-sliderFotos {
     width: 100%;
-    height: 600px;
+    height: 37.5em;
     position: relative;
     display: flex;
     justify-content: space-between; /* Separación entre las imágenes */
@@ -91,8 +91,8 @@ export default {
 }
 
 .img-sliderFotos {
-    height: 370px;
-    width: 240px;
+    height: 23em;
+    width: 15em;
     filter: saturate(10%);
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;

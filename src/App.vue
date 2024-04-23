@@ -91,6 +91,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
             </div>
           </div>
           <div class="app-sliderbox">
+            <sliderFotos/>
           </div>
           <div class="app-slider--old">
             <!-- Video -->
@@ -114,7 +115,6 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
         <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
       </section> -->
-      <sliderFotos/>
     </div>
     <botonRedes/>
     </div> 
@@ -209,8 +209,8 @@ export default {
 }
 .app-container--main{
   display: grid;
-  grid-template-columns: repeat(6, 1f);
-  grid-template-rows: repeat(4, 1f);
+  grid-template-columns: repeat(3, 1f);
+  grid-template-rows: 1fr 1fr 0.7fr 1fr;
   background-color: rgb(39, 40, 40);
   width: 100%;
 }
@@ -218,10 +218,11 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  grid-column: 1/7;
+  grid-column: 1/5;
   grid-row: 1;
   width: 100%;
 }
+/* reglas con foto */
 .app-boxes-two{
   grid-column: 1;
   grid-row: 4;
@@ -231,7 +232,7 @@ export default {
   display: flex;
   justify-content: center;
   width: 100%;  
-  grid-column: 1/2;
+  grid-column: 1;
   grid-row: 2;
   background-color: rgb(53, 54, 68); 
 }
@@ -249,38 +250,39 @@ export default {
 }
 /* cuadro en la mitad de las redes */
 .app-boxes-four{
-  grid-column: 2/3;
+  grid-column: 2;
   grid-row: 2;
 }
 /* facebook */
 .app-boxes-five{
   display: flex;
-  justify-content: start;
-  height: 100%;
-  width: 100%; 
-  grid-column: 5/6;
+  /* justify-content: start; */
+  /* height: 100%;
+  width: 100%;  */
+  grid-column: 3;
   grid-row: 2;
   background-color: rgb(53, 54, 68); 
 }
 .app-sliderbox{
-  grid-column: 1/6;
+  height: 100%;
+  grid-column: 1/5;
   grid-row: 3;
   display: flex;
   justify-content: center;
   background-color: rgb(39, 36, 34);
-  width: 100%;
+  overflow: hidden;
 }
 .app-slider--old{
   display: flex;
   justify-content: center;
   align-content: flex-end;
-  grid-column: 2/4;
+  grid-column: 2;
   grid-row: 4;
   height: 100%;
   width: 100%;
 }
 .app-boxes-six{
-  grid-column: 5;
+  grid-column: 3;
   grid-row: 4;
 }
 @font-face {
