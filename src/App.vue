@@ -91,7 +91,6 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
             </div>
           </div>
           <div class="app-sliderbox">
-asdfsdf
           </div>
           <div class="app-slider--old">
             <!-- Video -->
@@ -107,14 +106,14 @@ asdfsdf
             <galleryNoCarru/>
           </div>
         </section>
-        <section class="seccion4">
+        <!-- <section class="seccion4">
           <p class="footerText"> pLorem ipsum dolor sit amet.
           pLorem ipsum1 dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!
           pLorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!4</p>
         <div class="socialMedia">
         <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
-      </section>
+      </section> -->
       <sliderFotos/>
     </div>
     <botonRedes/>
