@@ -1,7 +1,7 @@
 <template>
-      <div class="btnsSec3">
-        <a @click="clickChangeToVideo('grid-container')" class="btnSec3" href="#"><i class="animation"></i>Fotos<i class="animation"></i></a>
-        <a @click="clickChangeToVideo('gridVideos')" class="btnSec3" href="#"><i class="animation"></i>Videos<i class="animation"></i></a>
+      <div class="div-btnsSec3">
+        <button @click="clickChangeToVideo('gridVideos')" class="btnSec3"><span class="span-gallery">Videos</span></button>
+        <button @click="clickChangeToVideo('grid-container')" class="btnSec3"><span class="span-gallery">Fotos</span></button>
     </div>
   <div class="seccionG3">
     <div class="grid-container" v-if="seccionG3Show">
@@ -233,40 +233,48 @@ export default {
 .hoverAll:hover::after {
   opacity: 1; /* Agrega esta línea para garantizar que la opacidad sea 1 al hacer hover */
 }
+.div-btnsSec3 {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
 .btnSec3 {
-  outline: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: rgb(255, 123, 0);
-  min-width: 180px;
-  border: black solid 1px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
-  box-sizing: border-box;
-  padding: 7px 20px;
-  color: #fff;
-  font-size: 20px;
-  letter-spacing: 1.3px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
   text-transform: uppercase;
-  overflow: hidden;
   cursor: pointer;
-  text-decoration: none;
-  font-family: 'DIMISTRI';
-  margin: 8px;
+  transform: skew(-21deg);
 }
-
+.span-gallery {
+  display: inline-block;
+  transform: skew(21deg);
+}
+.btnSec3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
 .btnSec3:hover {
-  opacity: .95;
-  background-color: rgb(53, 54, 68);
-  color: #ff8800;
+  color: #fff;
 }
-
-.btnSec3 .animation {
-  border-radius: 100%;
-  animation: ripple 0.6s linear infinite;
+.btnSec3:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
-
 @keyframes ripple {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
