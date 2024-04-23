@@ -102,7 +102,7 @@
     <div class="team-boxes-r5ll">
       <div class="memberDetails">
         <h3 class="h3-equipo">Shōyō Hinata</h3>
-        <p>Posición: Bloqueador Central</p>
+        <p>Posición: Bloq Central</p>
         <p>Altura: 162,8 cm</p>
         <p>Peso: 51,9 kg</p>
         <p>Numero: 10</p>
@@ -132,7 +132,7 @@
     <div class="team-boxes-r6ll">
       <div class="memberDetails">
         <h3 class="h3-equipo">Tadashi Yamaguchi</h3>
-        <p>Posición: Cen/Sacador apoyo</p>
+        <p>Pos: Centro/Sacador apoyo</p>
         <p>Altura: 179,5 cm</p>
         <p>Peso: 63 kg</p>
         <p>Numero: 12</p>
@@ -180,10 +180,11 @@ export default {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 7em repeat(5, 1fr);
-  background-color:   rgb(53, 54, 68);
+  background-color:   rgb(255, 255, 255);
   border-radius: 1em;
   width: 70%;
   margin-top: 1.3em;
+  gap: 1em;
 }
 .team-boxes-one{
   display: flex;
@@ -345,9 +346,10 @@ export default {
 }
 /* el titulo */
 .titleTop{
-  color: rgb(255, 123, 0);
+  color: rgb(0, 0, 0);
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 2px;
+  font-size: 2.4em;
 }
 /* Imagenes */
 .memberImage img {
@@ -356,7 +358,7 @@ export default {
   border-radius: 60%;
 }
 .team-img-border{
-  border: solid 5px white;
+  border: solid 4px rgb(255, 123, 0);
 }
 /* Texto de las imagenes */
 .memberDetails{

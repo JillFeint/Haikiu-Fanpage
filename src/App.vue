@@ -29,66 +29,82 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
     <div class="bodyHide" v-show="bodyHideBd">
       <div class="homeIni" v-show="appView">
       <!-- Cuerpo -->
-      <section class="seccion2">
-        <div class="div1-seccion2">
-          <div class="div1SeccionTwo">
-            <p class="divInvi"></p>
+      <section class="app-main--estructure">
+        <div class="app-container--main">
+          <div class="app-boxes-one">    
+                <div class="videoContainer">
+                <video autoplay loop muted class="video-seccion">
+                  <source src="./assets/seccion.mp4" type="video/mp4">
+                </video>
+              </div> 
           </div>
-        <div class="textDown-1">
-          <h2 class="main-h2-top">Quienes Somos</h2>
-        <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
-          deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
-        <p class="textDownParr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit similique nam tempora id quia esse officia porro nobis eaque
-          Asperiores similique molestias culpa a quisquam vel voluptatibus repellat doloremque numquam.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
-          deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
-          deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
-        </p>
-        </div>
-        </div>
-        <div class="div2-seccion2">
-          <div class="div1SeccionTwo">
-            <p class="divInvi2"></p>
+          <div class="app-boxes-two">
+            <div class="textDown-2">
+                <h2 class="main-h2-down">Reglas</h2>
+              <div class="subText-2">
+                <img src="./assets/reglas.jpg" alt="">
+                <p class="textDownParr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
+                  itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!<br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+                  deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="textDown-2">
-          <h2 class="main-h2-down">Reglas</h2>
-          <div class="subText-2">
-            <img src="./assets/reglas.jpg" alt="">
-            <p class="textDownParr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
-              itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!<br><br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
-              deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
+          <div class="app-boxes-three">  
+            <div class="div4-seccion2">
+              <h3 class="redes-sociales">Instagram</h3>
+            <iframe class="instaGram" src="https://www.instagram.com/haikyuuu.official/embed/">
+            </iframe>
+          </div>      
           </div>
+          <div class="app-boxes-four">
+            <div class="textDown-1">
+              <h2 class="main-h2-top">Quienes Somos</h2>
+              <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+                deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
+              <p class="textDownParr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit similique nam tempora id quia esse officia porro nobis eaque
+                Asperiores similique molestias culpa a quisquam vel voluptatibus repellat doloremque numquam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+                deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+                deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
+              </p>
+            </div>
           </div>
-          </div>
-          <div class="div3-seccion2">
+          <div class="app-boxes-five">
             <div class="div-faceb">
               <h3 class="redes-sociales">Facebook</h3>
               <apiFacebookReal/>             
             </div>
           </div>
-          <div class="div4-seccion2">
-              <h3 class="redes-sociales">Instagram</h3>
-            <iframe class="instaGram" src="https://www.instagram.com/haikyuuu.official/embed/">
-            </iframe>
+          <div class="app-boxes-six">          
+              <div class="textDown-2">
+                <h2 class="main-h2-down">Reglas</h2>
+              <div class="subText-2">
+                <p class="textDownParr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
+                  itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!<br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
+                  deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
+                </p>
+              </div>
+            </div>
           </div>
-        </section>
-                      <!-- Video -->
-    <section class="seccion1">
-      <carruselDeVideos/>
-    </section>
+          <div class="app-sliderbox">
+asdfsdf
+          </div>
+          <div class="app-slider--old">
+            <!-- Video -->
+            <section class="seccion1">
+              <carruselDeVideos/>
+            </section>
+          </div>
+        </div>
+      </section>
       <!-- Galeria -->  
       <section class="seccion3">
           <div class="div-seccion3">
             <galleryNoCarru/>
-            <div>            
-              <div class="videoContainer">
-              <video autoplay loop muted class="video-seccion">
-                <source src="./assets/seccion.mp4" type="video/mp4">
-              </video>
-              </div>
-            </div>
           </div>
         </section>
         <section class="seccion4">
@@ -183,6 +199,87 @@ export default {
   </script>
 
 <style>
+.app-main--estructure{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 123, 0);
+}
+.app-container--main{
+  display: grid;
+  grid-template-columns: repeat(6, 1f);
+  grid-template-rows: repeat(4, 1f);
+  background-color: rgb(39, 40, 40);
+  width: 100%;
+}
+.app-boxes-one{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 1/7;
+  grid-row: 1;
+  width: 100%;
+}
+.app-boxes-two{
+  grid-column: 1;
+  grid-row: 4;
+}
+/* Instagram */
+.app-boxes-three{
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+  grid-column: 1/2;
+  grid-row: 2;
+  background-color: rgb(53, 54, 68); 
+}
+.div4-seccion2 {
+  height: 100%;
+  font-family: 'DIMISTRI';
+}
+.instaGram{
+  display: flex;
+  justify-content: flex-end;
+  height: 93%; 
+  width: 23em;  
+  border: 0.3em;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+/* cuadro en la mitad de las redes */
+.app-boxes-four{
+  grid-column: 2/3;
+  grid-row: 2;
+}
+/* facebook */
+.app-boxes-five{
+  display: flex;
+  justify-content: start;
+  height: 100%;
+  width: 100%; 
+  grid-column: 5/6;
+  grid-row: 2;
+  background-color: rgb(53, 54, 68); 
+}
+.app-sliderbox{
+  grid-column: 1/6;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(39, 36, 34);
+  width: 100%;
+}
+.app-slider--old{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  grid-column: 2/4;
+  grid-row: 4;
+  height: 100%;
+  width: 100%;
+}
+.app-boxes-six{
+  grid-column: 5;
+  grid-row: 4;
+}
 @font-face {
   font-family: 'DIMIS___';
   src: url('./assets/fonts/DIMIS___.TTF') format('truetype');
@@ -281,19 +378,20 @@ export default {
 }
 /* Video */
 .seccion1 {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .videoContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 123, 0, 0.853);
+  /* background-color: rgba(255, 123, 0, 0.853); */
+  width: 100%;
 }
 .video-seccion {
-  width: 50em;
+  width: 60%;
   height: auto;
 } 
 /* Cuerpo con Grid */
@@ -361,7 +459,6 @@ p{
   background-color: rgb(53, 54, 68); 
   flex-direction: column;
   height: 100%;
-  border-radius: 15px;
 }
 .textDown-1 p {
   display: flex;
@@ -429,23 +526,7 @@ p{
   width: 100%;
   overflow: hidden;
 }
-.instaGram{
-  width: 270px;  
-  height: 93%; 
-  border: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-.div4-seccion2 {
-  /* Instagram */
-  border-left: rgb(56, 56, 56, 0.3) 2px solid;
-  grid-row: 2;
-  grid-column: 2;
-  background-color: blue;
-  padding: 10px 0;
-  background-color: #353644;
-  height: 100%;
-  font-family: 'DIMISTRI';
-}
+
 /* Gallery */
 .div-seccion3{
   background-color: rgb(56, 56, 56); 
