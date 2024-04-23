@@ -210,7 +210,7 @@ export default {
 .app-container--main{
   display: grid;
   grid-template-columns: repeat(3, 1f);
-  grid-template-rows: 1fr 1fr 0.9fr 1fr;
+  grid-template-rows: auto 1fr 0.9fr 1fr;
   background-color: rgb(39, 40, 40);
   width: 100%;
 }
@@ -221,7 +221,7 @@ export default {
   grid-column: 1/4;
   grid-row: 1;
   width: 100%;
-  /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); */
+  margin:1em 0;
 }
 /* reglas con foto */
 .app-boxes-two{
@@ -236,6 +236,7 @@ export default {
   grid-column: 1;
   grid-row: 2;
   background-color: rgb(53, 54, 68); 
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
 }
 .div4-seccion2 {
   height: 100%;
@@ -253,6 +254,7 @@ export default {
 .app-boxes-four{
   grid-column: 2;
   grid-row: 2;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
 }
 /* facebook */
 .app-boxes-five{
@@ -263,6 +265,7 @@ export default {
   grid-column: 3;
   grid-row: 2;
   background-color: rgb(53, 54, 68); 
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
 }
 .app-sliderbox{
   height: 100%;
