@@ -262,13 +262,10 @@ export default {
   bottom: 0;
   right: 100%;
   left: 0;
-  background: rgb(20, 20, 20);
+  background-color: rgba(255, 10, 6, 0.883);
   opacity: 0;
   z-index: -1;
   transition: all 0.5s;
-}
-.btnSec3:hover {
-  color: #fff;
 }
 .btnSec3:hover::before {
   left: 0;
