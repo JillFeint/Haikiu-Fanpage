@@ -218,9 +218,10 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  grid-column: 1/5;
+  grid-column: 1/4;
   grid-row: 1;
   width: 100%;
+  /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); */
 }
 /* reglas con foto */
 .app-boxes-two{
@@ -396,7 +397,7 @@ export default {
   width: 100%;
 }
 .video-seccion {
-  width: 60%;
+  width: 83%;
   height: auto;
 } 
 /* Cuerpo con Grid */
