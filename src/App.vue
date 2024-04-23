@@ -115,6 +115,7 @@ asdfsdf
         <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
       </section>
+      <sliderFotos/>
       <footerBeatiful/>
     </div>
     <botonRedes/>
@@ -141,6 +142,8 @@ import homeIniStartFive from "./components/homeIniStartFive.vue";
 import carruselDeVideos from "./components/carruselDeVideos.vue";
 import botonRedes from './components/botonRedes.vue';
 import footerBeatiful from './components/footerBeatiful.vue';
+import sliderFotos from "./components/sliderFotos.vue";
+
 export default {
   components: {
   galleryNoCarru,
@@ -151,6 +154,7 @@ export default {
   homeIniStartFour,
   homeIniStartFive,
   carruselDeVideos, 
+  sliderFotos,
   botonRedes,
   footerBeatiful,
 },
