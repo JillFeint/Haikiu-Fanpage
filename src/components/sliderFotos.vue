@@ -59,7 +59,7 @@ export default {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(53, 54, 68);
 }
 
 .container-sliderFotos {

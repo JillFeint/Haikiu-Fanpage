@@ -210,7 +210,7 @@ export default {
 .app-container--main{
   display: grid;
   grid-template-columns: repeat(3, 1f);
-  grid-template-rows: 1fr 1fr 0.7fr 1fr;
+  grid-template-rows: 1fr 1fr 0.9fr 1fr;
   background-color: rgb(39, 40, 40);
   width: 100%;
 }
@@ -269,7 +269,7 @@ export default {
   grid-row: 3;
   display: flex;
   justify-content: center;
-  background-color: rgb(39, 36, 34);
+  background-color: rgb(53, 54, 68);
   overflow: hidden;
 }
 .app-slider--old{
