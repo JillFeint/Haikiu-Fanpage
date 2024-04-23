@@ -45,6 +45,10 @@
   height: auto;
   margin: 1em 0;
 }
+.footerBeatifulImg:hover {
+  /* background-color: chocolate; */
+  transform: translatey(-5px); /* Cambia la distancia que se moverá */
+}
 .footerBeatifulTexto {
   background-color: rgba(31, 33, 70, 0);
   text-align: justify;
