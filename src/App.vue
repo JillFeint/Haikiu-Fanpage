@@ -115,7 +115,7 @@ asdfsdf
         <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
       </section>
-      <footerBeatiful/>
+      <sliderFotos/>
     </div>
     <botonRedes/>
     </div> 
