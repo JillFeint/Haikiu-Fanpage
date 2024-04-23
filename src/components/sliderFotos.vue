@@ -1,41 +1,27 @@
 <template>
     <div class="body-sliderFotos">
-        <div class="container-sliderFotos">
-            <span class="slider-fotos" id="slider1"></span>
-            <span class="slider-fotos" id="slider2"></span>
-            <span class="slider-fotos" id="slider3"></span>
-            <span class="slider-fotos" id="slider4"></span>
-            <span class="slider-fotos" id="slider5"></span>
-            <span class="slider-fotos" id="slider6"></span>
-            <span class="slider-fotos" id="slider7"></span>
-            <div class="imgContainer-sliderFotos">
-                <div class="slide_div-fotos" id="slide_1">
-                    <img src="../assets/1.jpeg" alt="" class="img-sliderFotos" id="img1">
-                    <a href="#slider1" class="button-sliderFotos" id="button1"></a>
+        <div class="container-sliderFotos" ref="container">
+            <div class="imgContainer-sliderFotos" ref="imgContainer">
+                <div class="slide_div-fotos">
+                    <img src="../assets/1.jpeg" alt="" class="img-sliderFotos" :id="'img1'" @click="activateImage(1)">
                 </div>
-                <div class="slide_div-fotos" id="slide_2">
-                    <img src="../assets/2.jpeg" alt="" class="img-sliderFotos" id="img2">
-                    <a href="#slider2" class="button-sliderFotos" id="button2"></a>
+                <div class="slide_div-fotos">
+                    <img src="../assets/2.jpeg" alt="" class="img-sliderFotos" :id="'img2'" @click="activateImage(2)">
                 </div>
-                <div class="slide_div-fotos" id="slide_3">
-                    <img src="../assets/3.jpeg" alt="" class="img-sliderFotos" id="img3">
-                    <a href="#slider3" class="button-sliderFotos" id="button3"></a>
+                <div class="slide_div-fotos">
+                    <img src="../assets/3.jpeg" alt="" class="img-sliderFotos" :id="'img3'" @click="activateImage(3)">
                 </div>
-                <div class="slide_div-fotos" id="slide_4">
-                    <img src="../assets/4.jpeg" alt="" class="img-sliderFotos" id="img4">
-                    <a href="#slider4" class="button-sliderFotos" id="button4"></a>
+                <div class="slide_div-fotos">
+                    <img src="../assets/4.jpeg" alt="" class="img-sliderFotos" :id="'img4'" @click="activateImage(4)">
                 </div>
-                <div class="slide_div-fotos" id="slide_5">
-                    <img src="../assets/5.jpeg" alt="" class="img-sliderFotos" id="img5">
-                    <a href="#slider5" class="button-sliderFotos" id="button5"></a>
+                <div class="slide_div-fotos">
+                    <img src="../assets/5.jpeg" alt="" class="img-sliderFotos" :id="'img5'" @click="activateImage(5)">
                 </div>
-                <div class="slide_div-fotos" id="slide_6">
-                    <img src="../assets/6.jpeg" alt="" class="img-sliderFotos" id="img6">
-                    <a href="#slider6" class="button-sliderFotos" id="button6"></a>
+                <div class="slide_div-fotos">
+                    <img src="../assets/6.jpeg" alt="" class="img-sliderFotos" :id="'img6'" @click="activateImage(6)">
                 </div>
-                <div class="slide_div-fotos" id="slide_7">
-                    <img src="../assets/7.jpeg" alt="" class="img-sliderFotos" id="img7">
-                    <a href="#slider7" class="button-sliderFotos" id="button7"></a>
+                <div class="slide_div-fotos">
+                    <img src="../assets/7.jpeg" alt="" class="img-sliderFotos" :id="'img7'" @click="activateImage(7)">
                 </div>
             </div>
         </div>
@@ -44,12 +30,30 @@
 
 <script>
 export default {
+    methods: {
+        activateImage(index) {
+            
+            const images = document.querySelectorAll('.img-sliderFotos');
+            images.forEach(img => img.classList.remove('active'));
 
+            const selectedImg = document.getElementById('img' + index);
+            selectedImg.classList.add('active');
+
+            const imgContainer = this.$refs.imgContainer;
+            const selectedImgRect = selectedImg.getBoundingClientRect();
+            const imgContainerRect = imgContainer.getBoundingClientRect();
+            imgContainer.scrollBy({
+                top: selectedImgRect.top - imgContainerRect.top - (imgContainerRect.height / 2) + (selectedImgRect.height / 2),
+                left: selectedImgRect.left - imgContainerRect.left - (imgContainerRect.width / 2) + (selectedImgRect.width / 2),
+                behavior: 'smooth'
+            });
+        }
+    }
 }
 </script>
 
 <style>
-.body-sliderFotos{
+.body-sliderFotos {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -58,7 +62,7 @@ export default {
     background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));
 }
 
-.container-sliderFotos{
+.container-sliderFotos {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -67,117 +71,38 @@ export default {
     overflow: hidden;
 }
 
-.imgContainer-sliderFotos{
+.imgContainer-sliderFotos {
     width: 100%;
     height: 600px;
-    position: absolute;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-}
-
-.slide_div-fotos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 30px 0 30px;
-}
-
-.img-sliderFotos{
     position: relative;
+    display: flex;
+    justify-content: space-between; /* Separación entre las imágenes */
+    align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.slide_div-fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px; /* Espacio entre las imágenes */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img-sliderFotos {
     height: 370px;
     width: 240px;
     filter: saturate(10%);
-    transition: 0.7s;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.button-sliderFotos{
-    position: absolute;
-    width: 240px;
-    height: 370px;
-    transition: 0.7s;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-}
-.button-sliderFotos:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-}
-#slider1:target ~ .imgContainer-sliderFotos #img1,
-#slider1:target ~ .imgContainer-sliderFotos #button1{
-    width: 390px;
-    height: 600px;
-    background-color: transparent;
+.img-sliderFotos.active {
     filter: saturate(100%);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-#slider2:target ~ .imgContainer-sliderFotos #img2,
-#slider2:target ~ .imgContainer-sliderFotos #button2{
-    width: 390px;
-    height: 600px;
-    background-color: transparent;
-    filter: saturate(100%);
-}
-#slider3:target ~ .imgContainer-sliderFotos #img3,
-#slider3:target ~ .imgContainer-sliderFotos #button3{
-    width: 390px;
-    height: 600px;
-    background-color: transparent;
-    filter: saturate(100%);
-}
-#slider4:target ~ .imgContainer-sliderFotos #img4,
-#slider4:target ~ .imgContainer-sliderFotos #button4{
-    width: 390px;
-    height: 600px;
-    background-color: transparent;
-    filter: saturate(100%);
-}
-#slider5:target ~ .imgContainer-sliderFotos #img5,
-#slider5:target ~ .imgContainer-sliderFotos #button5{
-    width: 390px;
-    height: 600px;
-    background-color: transparent;
-    filter: saturate(100%);
-}
-#slider6:target ~ .imgContainer-sliderFotos #img6,
-#slider6:target ~ .imgContainer-sliderFotos #button6{
-    width: 390px;
-    height: 600px;
-    background-color: transparent;
-    filter: saturate(100%);
-}
-#slider7:target ~ .imgContainer-sliderFotos #img7,
-#slider7:target ~ .imgContainer-sliderFotos #button7{
-    width: 390px;
-    height: 600px;
-    background-color: transparent;
-    filter: saturate(100%);
-}
-#slider1:target ~ .imgContainer-sliderFotos{
-    left: 60%;
-}
-#slider2:target ~ .imgContainer-sliderFotos{
-    left: 40%;
-}
-#slider3:target ~ .imgContainer-sliderFotos{
-    left: 20%;
-}
-#slider4:target ~ .imgContainer-sliderFotos{
-    left: 0%;
-}
-#slider5:target ~ .imgContainer-sliderFotos{
-    left: -20%;
-}
-#slider6:target ~ .imgContainer-sliderFotos{
-    left: -40%;
-}
-#slider7:target ~ .imgContainer-sliderFotos{
-    left: -60%;
-}
-.img-sliderFotos{
-    height: 370px;
-}
-
 </style>
