@@ -115,7 +115,6 @@ asdfsdf
         <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
       </section>
-      <sliderFotos/>
       <footerBeatiful/>
     </div>
     <botonRedes/>
@@ -126,9 +125,10 @@ asdfsdf
   <div v-show="isVisibleShow3" class="partidosAll"><homeIniStartThree/></div>
   <div v-show="isVisibleShow4" class="infoProject"><homeIniStartFour/></div>
   <div v-show="isVisibleShow5" class="contactWe"><homeIniStartFive/></div>
-  <footer class="footer">
+  <footerBeatiful/>
+  <!-- <footer class="footer">
     &copy; Moncada, Ballestero & Jill Angel LLC, a subsidiary of Compas del codigo de hierro, 2024 Inc. All Rights Reserved.
-  </footer>
+  </footer> -->
 </template>
 
 <script>
@@ -541,35 +541,14 @@ p{
   padding: 10px;
   height: 100%;
 }
-/* Antes del footer */
-.seccion4 {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(255, 123, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  color: white;
-  padding: 15px;
-}
-.footerText{
-  border-right: rgb(56, 56, 56, 0.5) 1px solid;
-  padding: 10px;
-}
-.footerLogo {
-  width: 180px;
-  height: 200px;
-}
 /* Footer */
 .footer{
+  height: 2em;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   color: azure;
-  padding-top: 15px;
-  padding-bottom: 4px;
 }
 .footer:hover{
   color: rgba(255, 10, 6, 0.883);
