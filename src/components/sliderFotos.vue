@@ -59,7 +59,7 @@ export default {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));
+    background-color: rgb(56, 56, 56);
 }
 
 .container-sliderFotos {
