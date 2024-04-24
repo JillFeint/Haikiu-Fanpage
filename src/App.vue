@@ -33,6 +33,10 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
         <div class="app-container--main">
           <div class="app-boxes-one">    
                 <div class="videoContainer">
+                  <div class="videoContainerDivFloat">
+                    <p class="videoContainerTextoOne">Escuela Karasuno</p>
+                    <p class="videoContainerTextoTwo">"Surca los cielos"</p>
+                  </div>
                 <video autoplay loop muted class="video-seccion">
                   <source src="./assets/seccion.mp4" type="video/mp4">
                 </video>
@@ -396,6 +400,34 @@ export default {
   align-items: center;
   /* background-color: rgba(255, 123, 0, 0.853); */
   width: 100%;
+  position: relative;
+}
+.videoContainerDivFloat {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 55%;
+  z-index: 2;
+}
+.videoContainerTextoOne {
+  font-size: 70px;
+  color: white; 
+  text-shadow: -2px -2px 0 #000,  
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000; /* Contorno negro */
+  padding: 0 1em;
+  border-bottom: 2px solid black;
+}
+.videoContainerTextoTwo {
+  font-size: 40px;
+  color: white; 
+  text-shadow: -2px -2px 0 #000,  
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000; /* Contorno negro */
 }
 .video-seccion {
   width: 83%;

@@ -8,13 +8,13 @@
     </div>
     <div class="footerBeatifulBotones">
       <div class="footerBeatifulBotonPoliticas footerBeatifulSpace">
-        <a href="" class="footerBeatifulEnlacePoliticas footerBeatifulEnlaces ">Políticas</a>
+        <buttom class="footerBeatifulEnlacePoliticas footerBeatifulEnlaces ">Políticas</buttom>
       </div>
       <div class="footerBeatifulBotonInformacion footerBeatifulSpace">
-        <a href="" class="footerBeatifulEnlaceInformacion footerBeatifulEnlaces">Informacion</a>
+        <buttom class="footerBeatifulEnlaceInformacion footerBeatifulEnlaces">Informacion</buttom>
       </div>
       <div class="footerBeatifulBotonPrivacidad footerBeatifulSpace">
-        <a href="" class="footerBeatifulEnlacePrivacidad footerBeatifulEnlaces">Privacidad</a>
+        <buttom class="footerBeatifulEnlacePrivacidad footerBeatifulEnlaces">Privacidad</buttom>
       </div>
     </div>
   </div>
@@ -44,6 +44,7 @@
   width: 11%;
   height: auto;
   margin: 1em 0;
+  cursor: pointer;
 }
 .footerBeatifulImg:hover {
   /* background-color: chocolate; */
@@ -91,6 +92,7 @@
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
 }
 .footerBeatifulEnlaces:hover {
   background-color: rgb(255, 123, 0);
