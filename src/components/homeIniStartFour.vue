@@ -77,7 +77,7 @@ export default {
 }
 .haikyu-info {
   max-width: 100%;
-  margin: 0;
+  margin: 2px auto;
   padding: 50px;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -86,6 +86,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding-top: 20px;
+  margin-bottom: 0.8em;
 }
 #title-info {
   display: flex;

@@ -185,6 +185,7 @@ export default {
   width: 70%;
   margin-top: 1.3em;
   gap: 1em;
+  margin: 20px auto;
 }
 .team-boxes-one{
   display: flex;

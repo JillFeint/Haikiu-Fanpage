@@ -58,7 +58,7 @@ export default {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 1.3em;
+  margin: 25px auto;
 }
 .contactWe1 h2 {
   font-size: 24px;
