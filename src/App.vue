@@ -259,9 +259,7 @@ export default {
 /* facebook */
 .app-boxes-five{
   display: flex;
-  /* justify-content: start; */
-  /* height: 100%;
-  width: 100%;  */
+  justify-content: center;
   grid-column: 3;
   grid-row: 2;
   background-color: rgb(53, 54, 68); 
@@ -529,11 +527,9 @@ p{
   color: rgb(255, 123, 0);
 }
 .div-faceb {
-  position: relative;
   padding: 0;
-  height: 27em; 
-  width: 100%;
-  overflow: hidden;
+  height: 100%; 
+
 }
 
 /* Gallery */
