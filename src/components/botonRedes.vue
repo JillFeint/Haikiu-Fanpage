@@ -80,9 +80,10 @@
   position: absolute;
   top: 34%;
   width: 80px;
-  height: 10em;
+  height: auto;
   display: flex;
   flex-direction: column;
+  z-index: 100;
 }
 .redes a {
   display: flex;
