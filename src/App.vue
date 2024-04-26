@@ -126,7 +126,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
         </div>
       </section> -->
     </div>
-    <!-- <botonRedes/> -->
+    <botonRedes/>
   </div> 
   </div>   
   <!-- <div v-show="isVisibleShow" class="homeIni1"><homeIniStart/></div> No tocar -->
@@ -149,7 +149,7 @@ import homeIniStartThree from "./components/homeIniStartThree.vue";
 import homeIniStartFour from "./components/homeIniStartFour.vue";
 import homeIniStartFive from "./components/homeIniStartFive.vue";
 import carruselDeVideos from "./components/carruselDeVideos.vue";
-// import botonRedes from './components/botonRedes.vue';
+import botonRedes from './components/botonRedes.vue';
 import footerBeatiful from './components/footerBeatiful.vue';
 import sliderFotos from "./components/sliderFotos.vue";
 
@@ -164,7 +164,7 @@ export default {
   homeIniStartFive,
   carruselDeVideos, 
   sliderFotos,
-  // botonRedes,
+  botonRedes,
   footerBeatiful,
 },
 data() 
@@ -404,7 +404,7 @@ methods: {
 .labelMenu {
   height: 1px;
 }
-@media only screen and (min-width: 100px) and (max-width: 2000px) {
+@media only screen and (min-width: 100px) and (max-width: 700px) {
   .header {
     position: relative;
   }
@@ -419,17 +419,16 @@ methods: {
     top: auto;
     bottom: 0;
     background-color: rgb(255, 123, 0);
-    height: 3em;
+    height: 2em;
     width: 100%;
     line-height: 40px;
     z-index: 100;
   }
   .menuIcono {
-    height: 50px;
+    height: 1.7em;
     /* margin-right: 10px; */
     display: initial;
     z-index: 130;
-    width: 100;
   }
   #labelMenu{
     display: none;
@@ -439,7 +438,7 @@ methods: {
     background: #234;
     width: 100%;
     height: 18em;
-    top: 22em;
+    top: auto;
     left: 0;
     display: block;
     transition: all 500ms ease;
