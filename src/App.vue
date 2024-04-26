@@ -496,6 +496,7 @@ methods: {
   border-bottom: 2px solid black;
 }
 .videoContainerTextoTwo {
+  text-align: center;
   width: 100%;
   font-size: 40px;
   color: white; 
@@ -537,13 +538,6 @@ methods: {
 }
 .main-h2-down:hover{
   color: rgb(255, 123, 0);
-}
-p{
-  display: flex;
-  justify-content: center;
-  text-align: justify;
-  color: rgb(0, 0, 0);
-  width: 95%;
 }
 /* Cajas del Grid */
 .div1-seccion2 {
