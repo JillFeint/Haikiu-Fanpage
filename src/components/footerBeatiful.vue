@@ -3,18 +3,18 @@
     <div class="footerBeatifulLogo">
       <img class="footerBeatifulImg" src="../assets/logoCorto.png" alt="">
     </div>
-    <div class="footerBeatifulTexto">
+    <div class="footerBeatifulTexto footerBeatifulTextoMedia">
       &copy; Moncada, Ballesteros & Jill Angel LLC, a subsidiary of Compas del codigo de hierro, 2024 Inc. All Rights Reserved.
     </div>
     <div class="footerBeatifulBotones">
       <div class="footerBeatifulBotonPoliticas footerBeatifulSpace">
-        <buttom class="footerBeatifulEnlacePoliticas footerBeatifulEnlaces ">Políticas</buttom>
+        <buttom class="footerBeatifulEnlacePoliticas footerBeatifulEnlaces footerBeatifulTextoMedia">Políticas</buttom>
       </div>
       <div class="footerBeatifulBotonInformacion footerBeatifulSpace">
-        <buttom class="footerBeatifulEnlaceInformacion footerBeatifulEnlaces">Informacion</buttom>
+        <buttom class="footerBeatifulEnlaceInformacion footerBeatifulEnlaces footerBeatifulTextoMedia">Informacion</buttom>
       </div>
       <div class="footerBeatifulBotonPrivacidad footerBeatifulSpace">
-        <buttom class="footerBeatifulEnlacePrivacidad footerBeatifulEnlaces">Privacidad</buttom>
+        <buttom class="footerBeatifulEnlacePrivacidad footerBeatifulEnlaces footerBeatifulTextoMedia">Privacidad</buttom>
       </div>
     </div>
   </div>
@@ -60,6 +60,18 @@
   color: #fff;
   border-bottom: 1px solid black;
 }
+@media only screen and (min-width: 100px) and (max-width: 750px) {
+  .footerBeatifulTextoMedia {
+  font-size: 11px;
+  }
+  .footerBeatifulImg {
+  width: 20%;
+  height: auto;
+  margin: 1em 0;
+  cursor: pointer;
+}
+}
+
 .footerBeatifulTexto:hover {
   color: rgb(255, 123, 0);
 }
