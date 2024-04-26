@@ -78,9 +78,9 @@
 /* boton redes */
 .redes {
   position: absolute;
-  top: 14em;
+  top: 34%;
   width: 80px;
-  height: auto;
+  height: 10em;
   display: flex;
   flex-direction: column;
 }
