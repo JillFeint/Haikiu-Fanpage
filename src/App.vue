@@ -561,7 +561,7 @@ p{
 .div-faceb {
   padding: 0;
   height: 100%; 
-
+  font-family: 'DIMISTRI';
 }
 
 /* Gallery */
@@ -586,7 +586,7 @@ p{
 .footer:hover{
   color: rgba(255, 10, 6, 0.883);
 }
-@media(min-width: 700px){
+@media(max-width:767px){
   .header {
   width: 100%;
   height: 32vh;
@@ -600,6 +600,10 @@ p{
   box-sizing: border-box;
   justify-content: center;
   align-items: end;
-}
+  }
+  .div-header{
+  background-color: coral;
+  width: 100%;
+  }
 }
 </style>
