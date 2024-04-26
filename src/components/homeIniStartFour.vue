@@ -50,7 +50,6 @@
     <h2 id="title-info--map"> Mapa</h2>
     <div class="iframe-container">
       <br>
-
         <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5929918232378!2d139.7414604751261!3d35.66239817259337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7dabe6e4c7%3A0x2e63cece78e68104!2sShueisha%20Manga%20Art%20Heritage!5e0!3m2!1ses-419!2sco!4v1706982028625!5m2!1ses-419!2sco" 
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -114,6 +113,7 @@ export default {
 .description p {
   margin-bottom: 20px;
   color: #000000;
+  /* background-color: aqua; */
 }
 .details-left{
   flex-wrap: wrap;
@@ -168,7 +168,7 @@ export default {
 }
 .detail-container {
   padding-bottom: 2em;
-  padding-left: 40px;
+  padding-left: 5%;
 }
 .info-titles--font{
   color: #ff9900;

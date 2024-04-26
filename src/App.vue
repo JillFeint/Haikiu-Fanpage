@@ -416,8 +416,11 @@ export default {
   right: auto;
   width: 55%;
   z-index: 2;
+  /* background-color: chartreuse; */
 }
 .videoContainerTextoOne {
+  text-align: center;
+  width: 100%;
   font-size: 70px;
   color: white; 
   text-shadow: -2px -2px 0 #000,  
@@ -425,15 +428,18 @@ export default {
                 -2px 2px 0 #000,
                 2px 2px 0 #000; /* Contorno negro */
   padding: 0 1em;
+  /* background-color: aqua; */
   border-bottom: 2px solid black;
 }
 .videoContainerTextoTwo {
+  width: 100%;
   font-size: 40px;
   color: white; 
   text-shadow: -2px -2px 0 #000,  
                 2px -2px 0 #000,
                 -2px 2px 0 #000,
                 2px 2px 0 #000; /* Contorno negro */
+                /* background-color: blue; */
 }
 .video-seccion {
   width: 83%;
