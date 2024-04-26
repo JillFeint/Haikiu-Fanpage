@@ -17,6 +17,12 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
     <!-- Header -->
     <header class="header"> 
       <div class="div-header">
+        <div class="botonMenu">
+          <label for="labelMenu" class="menuLabel1">
+            <img src="./assets/menu.png" class="menuIcono" alt="">
+          </label>
+        </div>
+        <input type="checkbox" name="menu" id="labelMenu">
         <ul class="ul-header">
           <li class="btn-header sepBtn border-li1"><a @click="clickEvent('homeIni')" class="aBtn" href="#">Inicio</a></li>
           <li class="btn-header sepBtn"><a @click="clickEvent('teamFull')" class="aBtn" href="#">Equipo</a></li>
@@ -586,24 +592,43 @@ p{
 .footer:hover{
   color: rgba(255, 10, 6, 0.883);
 }
-@media(max-width:767px){
-  .header {
-  width: 100%;
-  height: 32vh;
-  display: flex;
-  background-image: url("./assets/header.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  margin: 0;
-  padding: 0; 
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: end;
+@media only screen and (min-width: 100px) and (max-width: 750px) {
+  .divHeader {
+    height: 40px;
+    justify-content: flex-end;
   }
-  .div-header{
-  background-color: coral;
-  width: 100%;
+  .menuIcono {
+    margin-right: 10px;
+    display: initial;
+    z-index: 30;
+  }
+  .botonMenu {
+    line-height: 40px;
+  }
+  #labelMenu{
+    display: none;
+  }
+  .ul-header {
+    position: absolute;
+    background: #234;
+    width: 100%;
+    height:15em;
+    top: 3em;
+    left: 0;
+    display: block;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #labelMenu:checked ~ .ul-header {
+    transform: translateX(0%);
+  }
+  .ul-header a {
+    display: block;
+    /* margin-top: 10px; */
   }
 }
 </style>
