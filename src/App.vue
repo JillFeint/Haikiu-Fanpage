@@ -122,12 +122,12 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
           pLorem ipsum1 dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!
           pLorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!4</p>
         <div class="socialMedia">
-        <img class="footerLogo" src="./assets/logo.png" alt="">
+          <img class="footerLogo" src="./assets/logo.png" alt="">
         </div>
       </section> -->
     </div>
-    <botonRedes/>
-    </div> 
+    <!-- <botonRedes/> -->
+  </div> 
   </div>   
   <!-- <div v-show="isVisibleShow" class="homeIni1"><homeIniStart/></div> No tocar -->
   <div v-show="isVisibleShow2" class="teamFull"><homeIniStartTwo/></div>
@@ -149,13 +149,13 @@ import homeIniStartThree from "./components/homeIniStartThree.vue";
 import homeIniStartFour from "./components/homeIniStartFour.vue";
 import homeIniStartFive from "./components/homeIniStartFive.vue";
 import carruselDeVideos from "./components/carruselDeVideos.vue";
-import botonRedes from './components/botonRedes.vue';
+// import botonRedes from './components/botonRedes.vue';
 import footerBeatiful from './components/footerBeatiful.vue';
 import sliderFotos from "./components/sliderFotos.vue";
 
 export default {
   components: {
-  galleryNoCarru,
+    galleryNoCarru,
   apiFacebookReal,
   // homeIniStart No tocar,
   homeIniStartTwo,
@@ -164,12 +164,12 @@ export default {
   homeIniStartFive,
   carruselDeVideos, 
   sliderFotos,
-  botonRedes,
+  // botonRedes,
   footerBeatiful,
 },
-  data() 
-  {
-    return {
+data() 
+{
+  return {
     bodyHideBd: true,
     appView: true,
     isVisibleShow: false,
@@ -177,10 +177,10 @@ export default {
     isVisibleShow3: false,
     isVisibleShow4: false,
     isVisibleShow5: false,
-    };
-  },
-  methods: {
-    clickEvent(componentName) {
+  };
+},
+methods: {
+  clickEvent(componentName) {
       this.appView = false;
       this.isVisibleShow = false;
       this.isVisibleShow2 = false;
@@ -194,21 +194,21 @@ export default {
         case 'teamFull':
           this.isVisibleShow2 = true;
           break;
-        case 'partidosAll':
-          this.isVisibleShow3 = true;
-          break;
-        case 'infoProject':
-          this.isVisibleShow4 = true;
-          break;
-        case 'contactWe':
-          this.isVisibleShow5 = true;
+          case 'partidosAll':
+            this.isVisibleShow3 = true;
+            break;
+            case 'infoProject':
+              this.isVisibleShow4 = true;
+              break;
+              case 'contactWe':
+                this.isVisibleShow5 = true;
           break;
         default:
           break;
+        }
       }
-    }
-  },
-}
+    },
+  }
   </script>
 
 <style>
@@ -362,7 +362,7 @@ export default {
   box-shadow: 6px 6px 0 black;
   transform: skewX(-15deg);
   animation: color_anim 1s infinite 0.2s;
-
+  
 }
 .border-li2 a {
   display: flex;
@@ -392,6 +392,70 @@ export default {
   /* Otra subclass del ul-header */
   padding-left: 5px;
   width: 10em;
+}
+/* .botonMenu {
+  background-color: rgb(255, 123, 0);
+  height: 3em;
+  width: 40em;
+} */
+.menuIcono {
+  height: 1px;
+}
+.labelMenu {
+  height: 1px;
+}
+@media only screen and (min-width: 100px) and (max-width: 2000px) {
+  .header {
+    position: relative;
+  }
+  .divHeader {
+    height: 40px;
+    justify-content: flex-end;
+  }
+  .botonMenu {
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: auto;
+    bottom: 0;
+    background-color: rgb(255, 123, 0);
+    height: 3em;
+    width: 100%;
+    line-height: 40px;
+    z-index: 100;
+  }
+  .menuIcono {
+    height: 50px;
+    /* margin-right: 10px; */
+    display: initial;
+    z-index: 130;
+    width: 100;
+  }
+  #labelMenu{
+    display: none;
+  }
+  .ul-header {
+    position: absolute;
+    background: #234;
+    width: 100%;
+    height: 18em;
+    top: 22em;
+    left: 0;
+    display: block;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #labelMenu:checked ~ .ul-header {
+    transform: translateX(0%);
+  }
+  .ul-header a {
+    display: block;
+    /* margin-top: 10px; */
+  }
 }
 /* Video */
 .seccion1 {
@@ -597,44 +661,5 @@ p{
 }
 .footer:hover{
   color: rgba(255, 10, 6, 0.883);
-}
-@media only screen and (min-width: 100px) and (max-width: 750px) {
-  .divHeader {
-    height: 40px;
-    justify-content: flex-end;
-  }
-  .menuIcono {
-    margin-right: 10px;
-    display: initial;
-    z-index: 30;
-  }
-  .botonMenu {
-    line-height: 40px;
-  }
-  #labelMenu{
-    display: none;
-  }
-  .ul-header {
-    position: absolute;
-    background: #234;
-    width: 100%;
-    height:15em;
-    top: 3em;
-    left: 0;
-    display: block;
-    transition: all 500ms ease;
-    transform: translateX(-100%);
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #labelMenu:checked ~ .ul-header {
-    transform: translateX(0%);
-  }
-  .ul-header a {
-    display: block;
-    /* margin-top: 10px; */
-  }
 }
 </style>
