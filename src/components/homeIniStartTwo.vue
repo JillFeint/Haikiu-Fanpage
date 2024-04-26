@@ -72,7 +72,7 @@
     <div class="team-boxes-r4ll">
       <div class="memberDetails">
         <h3 class="h3-equipo">Daichi Sawamura</h3>
-        <p>Posición: Capitan/Opuesto</p>
+        <p>Pos: Capitan/Opuesto</p>
         <p>Altura: 17,.8 cm</p>
         <p>Peso: 70,1 kg</p>
         <p>Numero: 1</p>
@@ -132,7 +132,7 @@
     <div class="team-boxes-r6ll">
       <div class="memberDetails">
         <h3 class="h3-equipo">Tadashi Yamaguchi</h3>
-        <p>Pos: Centro/Sacador apoyo</p>
+        <p>Pos: Cen/Sacador apoyo</p>
         <p>Altura: 179,5 cm</p>
         <p>Peso: 63 kg</p>
         <p>Numero: 12</p>
@@ -147,7 +147,7 @@
     <div class="team-boxes-r6rr">
       <div class="memberDetails">
         <h3 class="h3-equipo">Koshi Sugawara</h3>
-        <p>Posición: Armador suplente</p>
+        <p>Posición: Armador sup</p>
         <p>Altura: 174,3 cm</p>
         <p>Peso: 63,5 kg</p>
         <p>Numero: 2</p>
