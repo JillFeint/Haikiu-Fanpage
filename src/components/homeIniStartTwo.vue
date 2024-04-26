@@ -385,13 +385,13 @@ export default {
   grid-template-rows: auto;
   background-color:   rgb(255, 255, 255);
   border-radius: 1em;
-  width: 70%;
-  gap: 1em;
+  width: 90%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   justify-items: center; 
   align-items: center; 
+  margin-bottom: 1.3em;
 }
 .team-boxes-one{
   display: flex;
@@ -410,6 +410,11 @@ export default {
   grid-row: 2;
   /* background-color: rgb(146, 21, 236); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-three{
   position: relative;
@@ -420,6 +425,11 @@ export default {
   grid-row: 3;
   /* background-color: rgb(236, 21, 193); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-four{
   display: flex;
@@ -429,6 +439,11 @@ export default {
   grid-row: 4;
   /* background-color: rgb(0, 79, 148); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-five{
   display: flex;
@@ -438,6 +453,11 @@ export default {
   grid-row: 5;
   /* background-color: rgb(1, 137, 255); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-six{
   display: flex;
@@ -447,6 +467,11 @@ export default {
   grid-row: 6;
   /* background-color: rgb(146, 21, 236); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-seven{
   display: flex;
@@ -456,6 +481,11 @@ export default {
   grid-row: 7;
   /* background-color: rgb(236, 21, 193); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-eight{
   display: flex;
@@ -465,6 +495,11 @@ export default {
   grid-row: 8;
   /* background-color: rgb(0, 79, 148); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-nine{
   display: flex;
@@ -474,6 +509,11 @@ export default {
   grid-row: 9;
   /* background-color: rgb(1, 137, 255); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r4l{
   display: flex;
@@ -483,6 +523,11 @@ export default {
   grid-row: 10;
   /* background-color: rgb(146, 21, 236); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r4ll{
   display: flex;
@@ -492,6 +537,11 @@ export default {
   grid-row: 11;
   /* background-color: rgb(236, 21, 193); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r4r{
   display: flex;
@@ -501,6 +551,11 @@ export default {
   grid-row: 12;
   /* background-color: rgb(0, 79, 148); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r4rr{
   display: flex;
@@ -510,6 +565,11 @@ export default {
   grid-row: 13;
   /* background-color: rgb(1, 137, 255); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r5l{
   display: flex;
@@ -519,6 +579,11 @@ export default {
   grid-row: 14;
   /* background-color: rgb(146, 21, 236); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r5ll{
   display: flex;
@@ -528,6 +593,11 @@ export default {
   grid-row: 15;
   /* background-color: rgb(236, 21, 193); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r5r{
   display: flex;
@@ -537,6 +607,11 @@ export default {
   grid-row: 16;
   /* background-color: rgb(0, 79, 148); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r5rr{
   display: flex;
@@ -546,6 +621,11 @@ export default {
   grid-row: 17;
   /* background-color: rgb(1, 137, 255); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r6l{
   display: flex;
@@ -555,6 +635,11 @@ export default {
   grid-row: 18;
   /* background-color: rgb(146, 21, 236); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r6ll{
   display: flex;
@@ -564,6 +649,11 @@ export default {
   grid-row: 19;
   /* background-color: rgb(236, 21, 193); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
 }
 .team-boxes-r6r{
   display: flex;
@@ -582,6 +672,12 @@ export default {
   grid-row: 21;
   /* background-color: rgb(1, 137, 255); */
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center; 
+  align-items: center; 
+  margin-bottom: 2em;
 }
 /* el titulo */
 .titleTop{
@@ -591,7 +687,8 @@ export default {
   color: rgb(0, 0, 0);
   font-family: 'DIMISTRI', sans-serif;
   letter-spacing: 2px;
-  font-size: 2.4em;
+  font-size: 1.5em;
+  margin-top: 1em;
 }
 /* Imagenes */
 .memberImage img {
@@ -606,6 +703,7 @@ export default {
   background-color: aliceblue;
   font-size: 20px;
   border: solid 1px black;
+  width: 90%;
 }
 }
 </style>

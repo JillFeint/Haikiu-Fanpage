@@ -271,7 +271,7 @@ export default {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 60%;
+  width: 90%;
   margin-top: 1.3em;
 }
 .buttonsCalendar{
@@ -280,7 +280,7 @@ export default {
   justify-content: center;
   align-items: center;
   gap:5px;
-  background-color: #007bff;
+  /* background-color: #007bff; */
   width: 100%;
 }
 .buttonCalendar{
@@ -331,7 +331,8 @@ display: none;
 .days {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  width: 90%;
 }
 
 .day {
