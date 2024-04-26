@@ -4,7 +4,7 @@
       <img class="footerBeatifulImg" src="../assets/logoCorto.png" alt="">
     </div>
     <div class="footerBeatifulTexto">
-      &copy; Moncada, Ballestero & Jill Angel LLC, a subsidiary of Compas del codigo de hierro, 2024 Inc. All Rights Reserved.
+      &copy; Moncada, Ballesteros & Jill Angel LLC, a subsidiary of Compas del codigo de hierro, 2024 Inc. All Rights Reserved.
     </div>
     <div class="footerBeatifulBotones">
       <div class="footerBeatifulBotonPoliticas footerBeatifulSpace">
