@@ -586,4 +586,20 @@ p{
 .footer:hover{
   color: rgba(255, 10, 6, 0.883);
 }
+@media(min-width: 700px){
+  .header {
+  width: 100%;
+  height: 32vh;
+  display: flex;
+  background-image: url("./assets/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: end;
+}
+}
 </style>
