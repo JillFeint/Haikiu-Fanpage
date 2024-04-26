@@ -156,6 +156,7 @@ export default {
     color: white;
     padding: 1em 0;
     padding-left: 1em;
+    padding-right: 1em;
     margin: 1em 0;
     overflow-y: auto;
   }
