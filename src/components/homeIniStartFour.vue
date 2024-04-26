@@ -75,15 +75,13 @@ export default {
   padding-top: 1.5em;
 }
 .haikyu-info {
-  max-width: 100%;
-  margin: 2px auto;
-  padding: 50px;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 2px auto;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
   padding-top: 20px;
   margin-bottom: 0.8em;
 }
@@ -119,13 +117,17 @@ export default {
   margin-bottom: 20px;
   color: #000000;
 }
+.details{
+  display: flex;
+  justify-content: center;
+
+}
 .details-left{
-  flex-wrap: wrap;
   display: grid;
   grid-template-columns: 1f, 1f, 1f;
   grid-auto-rows: 1f;
   padding: 0;
-  width: 100%;
+  width: 90%;
   background-color: rgb(247, 242, 213);
   border-radius: 50% 50% 50% 50%;
 }
@@ -191,7 +193,56 @@ export default {
   border: 0;
 }
 @media only screen and (min-width: 100px) and (max-width: 750px) {
-
+.detail-container{
+  width: 95%;
+  /* background-color: rgb(180, 24, 224); */
+}
+.infocontainerTexto{
+  width: 100%;
+}
+.info-img--right-dimension{
+  display: none;
+}
+.info-img--left-dimension{
+  display: none;
+}
+.details-left{
+  background-color: rgb(247, 242, 213);
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  border-radius: 60% 60% 60% 60%;
+}
+.details-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0;
+  margin-bottom: 4em;
+  margin-right: 5em;
+  width: 90%;
+  font-size: 12px;
+}
+.iframe-container {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  padding-bottom: 40%;
+  border: solid 1px rgb(255, 123, 0, 0.1);}
+}
+#title-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+  font-family: 'DIMISTRI', sans-serif;
+  letter-spacing: 1px;
+  color: #000000;
+  font-size: 2em;
+  text-align: center;
 }
 </style>
 
