@@ -4,16 +4,16 @@
       <h2 id="title-info">Información de Haikyu!!</h2>
       <div class="description">
         <div class="detail-container">
-          <p>"Haikyuu!!" es un popular manga y anime japonés que gira en torno al vóley masculino de preparatoria. 
+          <p class="infocontainerTexto">"Haikyuu!!" es un popular manga y anime japonés que gira en torno al vóley masculino de preparatoria. 
             Fue creado por Haruichi Furudate. La serie se centra en Shoyo Hinata, un estudiante de secundaria con una
             estatura baja pero una gran pasión por el vóley. A pesar de sus limitaciones físicas, Hinata se une al equipo de 
             vóley de su escuela secundaria y se embarca en un viaje para convertirse en un jugador destacado.</p>
-          <p>La trama sigue las experiencias de Hinata y sus compañeros de equipo mientras participan en diferentes
+          <p class="infocontainerTexto">La trama sigue las experiencias de Hinata y sus compañeros de equipo mientras participan en diferentes
             torneos y compiten contra otros equipos poderosos. La serie no solo se enfoca en los partidos emocionantes,
             sino también en el desarrollo de los personajes, sus relaciones y cómo superan desafíos tanto dentro como fuera de la cancha.</p>
-          <p>"Haikyuu!!" ha sido elogiado por su animación de alta calidad, su emocionante acción deportiva y sus personajes carismáticos y 
+          <p class="infocontainerTexto">"Haikyuu!!" ha sido elogiado por su animación de alta calidad, su emocionante acción deportiva y sus personajes carismáticos y 
             bien desarrollados. Ha ganado una gran base de fanáticos tanto en Japón como en el extranjero desde su debut en 2012.</p>
-          <p>Además del manga y el anime, "Haikyuu!!" ha inspirado películas, obras de teatro, videojuegos y una variedad 
+          <p class="infocontainerTexto">Además del manga y el anime, "Haikyuu!!" ha inspirado películas, obras de teatro, videojuegos y una variedad 
             de productos de mercancía. Es considerado uno de los mejores trabajos en su género y ha contribuido significativamente 
             a aumentar el interés en el vóley en Japón y en todo el mundo.</p>
         </div>
@@ -96,6 +96,7 @@ export default {
   letter-spacing: 1px;
   color: #000000;
   font-size: 2.3em;
+  text-align: center;
 }
 #title-info--map{
   display: flex;
@@ -107,13 +108,16 @@ export default {
   padding-bottom: 1em;
   font-size: 2.4em;
 }
-.description {
+/* .description {
   margin-bottom: 20px;
-}
-.description p {
+} */
+/* .description p {
   margin-bottom: 20px;
   color: #000000;
-  /* background-color: aqua; */
+} */
+.infocontainerTexto {
+  margin-bottom: 20px;
+  color: #000000;
 }
 .details-left{
   flex-wrap: wrap;
@@ -185,6 +189,9 @@ export default {
   width: 100%;
   height: 100%;
   border: 0;
+}
+@media only screen and (min-width: 100px) and (max-width: 750px) {
+
 }
 </style>
 

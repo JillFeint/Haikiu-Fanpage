@@ -69,7 +69,7 @@
   height: auto;
   margin: 1em 0;
   cursor: pointer;
-}
+  }
 }
 
 .footerBeatifulTexto:hover {
