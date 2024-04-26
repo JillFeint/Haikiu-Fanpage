@@ -254,5 +254,129 @@ export default {
 .match-opponent a:hover {
   text-decoration: underline;
 }
+@media only screen and (min-width: 100px) and (max-width: 1024px) {
+.galleryGlobalContainer3 {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 123, 0);
+  margin: 0;
+  padding: 0;
+}
+.calendar {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin-top: 1.3em;
+}
+.buttonsCalendar{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  background-color: #007bff;
+  width: 100%;
+}
+.buttonCalendar{
+  padding: 5px;
+  background-color: rgb(255, 123, 0);
+  border: rgb(48, 48, 48, 0.3) solid 0.5px;
+  font-size: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  color: white;
+}
+.buttonCalendar:hover{
+  background-color: rgba(255, 10, 6, 0.883);
+}
 
+.logoLeft{
+  display: none;
+}
+.logoRight{
+display: none;
+}
+.logosTop{
+  display: none;
+}
+.titleCalen{
+  text-align: center;
+  color: #333;
+  font-family: 'DIMISTRI', sans-serif;
+}
+.months {
+  margin-top: 20px;
+}
+
+.month {
+  margin-bottom: 20px;
+}
+
+.month h2 {
+  background-color: rgb(255, 123, 0);
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.days {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+/* Partidos futuros */
+.match-list {
+  list-style: none;
+  padding: 0;
+}
+/* Clase de los partidos en naranja*/
+#otherColor{
+  background-color: rgb(53, 54, 68);
+  color: white;
+}
+.match-list li:hover{
+  background-color: rgb(255, 123, 0);
+}
+.match-list li {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.match-date {
+  font-weight: bold;
+  color: #333333;
+}
+.match-opponent {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #666666;
+}
+.match-opponent:before {
+  content: "- ";
+}
+.match-opponent a {
+  text-decoration: none;
+  color: #007bff;
+}
+.match-opponent a:hover {
+  text-decoration: underline;
+}
+}
 </style>
