@@ -106,16 +106,15 @@ export default {
   padding-bottom: 1em;
   font-size: 2.4em;
 }
-/* .description {
-  margin-bottom: 20px;
-} */
-/* .description p {
-  margin-bottom: 20px;
-  color: #000000;
-} */
 .infocontainerTexto {
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  align-items: center;
   margin-bottom: 20px;
   color: #000000;
+  width: 95%;
+  background-color: aqua;
 }
 .details{
   display: flex;
@@ -195,6 +194,7 @@ export default {
 @media only screen and (min-width: 100px) and (max-width: 750px) {
 .detail-container{
   width: 95%;
+  text-align: justify;
   /* background-color: rgb(180, 24, 224); */
 }
 .infocontainerTexto{
