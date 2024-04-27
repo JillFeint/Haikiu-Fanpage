@@ -709,7 +709,6 @@ methods: {
   align-items: center;
   text-align: justify;
   width: 80%;
-  margin: 15px auto;
 }
 .textDown-2{
   display: flex;
