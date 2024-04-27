@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="team-boxes-three">
-      <div class="memberDetails">
+      <div class="memberDetails ">
         <h3 class="h3-equipo memberOne">Yū Nishinoya</h3>
         <p>Posición: Libero</p>
         <p>Altura: 159,3 cm</p>
@@ -183,9 +183,9 @@ export default {
   background-color:   rgb(255, 255, 255);
   border-radius: 1em;
   width: 70%;
-  margin-top: 1.3em;
-  gap: 1em;
+  gap: 1.5em;
   margin: 20px auto;
+  padding-bottom: 1em;
 }
 .team-boxes-one{
   display: flex;
@@ -200,9 +200,9 @@ export default {
   grid-column: 1/3;
   grid-row: 2;
   /* background-color: rgb(146, 21, 236); */
-  width: 77%;
+  width: 75.5%;
   margin-left: 1.8em;
-  margin-bottom: 2em;
+
 }
 .team-boxes-three{
   grid-column: 2/5;
@@ -354,8 +354,8 @@ export default {
 }
 /* Imagenes */
 .memberImage img {
-  width: 10em;
-  height: 10em;
+  width: 100%;
+  height: 80%;
   border-radius: 60%;
 }
 .team-img-border{
@@ -364,12 +364,12 @@ export default {
 /* Texto de las imagenes */
 .memberDetails{
   display: flex;
-  justify-content: center;
   flex-direction: column;
   background-color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
   border: solid 1px black;
   margin-top: 0.8em;
+  margin-left: 0
 }
 .memberDetails h3 {
   display: flex;
