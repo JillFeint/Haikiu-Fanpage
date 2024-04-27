@@ -849,7 +849,7 @@ methods: {
 .instaGram{
   display: flex;
   height: 93%;  
-  border: 0.3em;
+  width: 100%;
 }
 }
 </style>
