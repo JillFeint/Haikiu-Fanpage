@@ -117,27 +117,15 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
             <galleryNoCarru/>
           </div>
         </section>
-        <!-- <section class="seccion4">
-          <p class="footerText"> pLorem ipsum dolor sit amet.
-          pLorem ipsum1 dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!
-          pLorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis ullam fugit sint natus quis quaerat! Dolorum, debitis. Soluta totam molestias, dolorem neque unde esse nisi quod facilis laudantium quibusdam!4</p>
-        <div class="socialMedia">
-          <img class="footerLogo" src="./assets/logo.png" alt="">
-        </div>
-      </section> -->
     </div>
     <botonRedes/>
   </div> 
   </div>   
-  <!-- <div v-show="isVisibleShow" class="homeIni1"><homeIniStart/></div> No tocar -->
   <div v-show="isVisibleShow2" class="teamFull"><homeIniStartTwo/></div>
   <div v-show="isVisibleShow3" class="partidosAll"><homeIniStartThree/></div>
   <div v-show="isVisibleShow4" class="infoProject"><homeIniStartFour/></div>
   <div v-show="isVisibleShow5" class="contactWe"><homeIniStartFive/></div>
   <footerBeatiful/>
-  <!-- <footer class="footer">
-    &copy; Moncada, Ballestero & Jill Angel LLC, a subsidiary of Compas del codigo de hierro, 2024 Inc. All Rights Reserved.
-  </footer> -->
 </template>
 
 <script>
@@ -265,6 +253,7 @@ methods: {
   grid-column: 2;
   grid-row: 2;
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+  width: 33vw;
 }
 /* facebook */
 .app-boxes-five{
@@ -393,17 +382,13 @@ methods: {
   padding-left: 5px;
   width: 10em;
 }
-/* .botonMenu {
-  background-color: rgb(255, 123, 0);
-  height: 3em;
-  width: 40em;
-} */
 .menuIcono {
   height: 1px;
 }
-.labelMenu {
-  height: 1px;
+#labelMenu {
+  display: none;
 }
+/* Mediaquery del header */
 @media only screen and (min-width: 100px) and (max-width: 700px) {
   .header {
     position: relative;
@@ -519,9 +504,9 @@ methods: {
 .main-h2-top{
   display: flex;
   justify-content: center;
-  padding: 1em;
   text-align: center;
   color: rgb(8, 8, 8);
+  margin-top: 0.5em;
   font-family: 'DIMISTRI', sans-serif;
 }
 .main-h2-top:hover{
@@ -530,9 +515,8 @@ methods: {
 .main-h2-down{
   display: flex;
   justify-content: center;
-  padding: 25px;
-  margin-left: 6em;
   text-align: center;
+  padding: 2em;
   color: rgb(0, 0, 0);
   font-family: 'DIMISTRI', sans-serif;
 }
@@ -568,6 +552,7 @@ methods: {
   background-color: rgb(53, 54, 68); 
   flex-direction: column;
   height: 100%;
+  margin: 0;
 }
 .textDown-1 p {
   display: flex;
@@ -575,20 +560,18 @@ methods: {
   align-items: center;
   text-align: justify;
   width: 90%;
-  margin: 15px auto;
+  margin: 1em auto;
 }
 .textDown-2{
   background-color: rgb(53, 54, 68); 
   flex-direction: column;  
-  height: 100%;
-  border-radius: 15px;
 }
 .textDownParr{
+  margin: 0;
   color: rgb(255, 255, 255);
 }
 .subText-2 {
   display: flex;
-  flex-direction: row;
   height: 50%;
   width: 90%;
 }
@@ -627,6 +610,8 @@ methods: {
   justify-content: center;
   font-size: 30px;
   color: rgb(255, 123, 0);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 .div-faceb {
   padding: 0;
@@ -655,5 +640,211 @@ methods: {
 }
 .footer:hover{
   color: rgba(255, 10, 6, 0.883);
+}
+/* Medidaquery del responsive */
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+/* Texto del video abajo de los botones */
+  .videoContainerTextoOne {
+  text-align: center;
+  width: 100%;
+  font-size: 2.28em;
+  color: white; 
+  text-shadow: -2px -2px 0 #000,  
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000; /* Contorno negro */
+  padding: 0 1em;
+  /* background-color: aqua; */
+  border-bottom: 2px solid black;
+}
+.videoContainerTextoTwo {
+  text-align: center;
+  width: 100%;
+  font-size: 1.4em;
+  color: white; 
+  text-shadow: -2px -2px 0 #000,  
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000; /* Contorno negro */
+                /* background-color: blue; */
+}
+  /* Cuerpo con Grid */
+.seccion2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+/* Cajas del Grid */
+.div1-seccion2 {
+  /* Izquierda arriba */
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgb(255, 123, 0);
+  padding: 10px;
+  height: 26em;
+  text-align: justify;
+  padding-bottom: 5px;
+}
+.div1SeccionTwo{
+  background-color: rgba(31, 33, 70, 0);
+}
+.div2-seccion2 {
+    /* Izquierda abajo */
+  grid-column: 1;
+  grid-row: 2;
+  background-color: rgb(255, 123, 0);
+  padding: 15px 10px;
+  height: 26em;
+  padding-top: 5px;
+}
+.textDown-1{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(53, 54, 68); 
+  flex-direction: column;
+}
+.textDown-1 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 80%;
+  margin: 15px auto;
+}
+.textDown-2{
+  display: flex;
+  background-color: rgb(53, 54, 68); 
+  flex-direction: column;  
+  height: 100%;
+}
+.textDownParr{
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+.subText-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 90%;
+}
+.subText-2 img {
+  height: 20em;
+  width: 14em;
+}
+.subText-2 p {
+  text-align: justify;
+}
+.textDownParr-2{
+  color: rgb(253, 253, 253);
+  display: flex;
+  flex-direction: column;
+}
+.div3-seccion2 {
+  /* Facebook */
+  background-color: #353644;
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  height: 26em;
+  width: 100%;
+  border-left: rgb(56, 56, 56, 0.3) 2px solid;
+  font-family: 'DIMISTRI';
+}
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: rgb(255, 123, 0);
+}
+.div-faceb {
+  padding: 0;
+  height: 100%; 
+  font-family: 'DIMISTRI';
+}
+.app-container--main{
+  display: grid;
+  grid-template-columns: repeat(1f);
+  grid-template-rows: auto 1fr 0.9fr 1fr;
+  background-color: rgb(39, 40, 40);
+  width: 100%;
+}
+.app-boxes-one{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  margin:1em 0;
+}
+/* reglas con foto */
+.app-boxes-two{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 6;
+}
+/* Instagram */
+.app-boxes-three{
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+  grid-column: 1;
+  grid-row: 5;
+  background-color: rgb(53, 54, 68); 
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+/* cuadro en la mitad de las redes */
+.app-boxes-four{
+  display: flex;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 2;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+/* facebook */
+.app-boxes-five{
+  display: flex;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 3;
+  background-color: rgb(53, 54, 68); 
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+.app-sliderbox{
+  height: 100%;
+  grid-column: 1;
+  grid-row: 7;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(53, 54, 68);
+  overflow: hidden;
+}
+.app-slider--old{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  grid-column: 1;
+  grid-row: 4;
+  height: 100%;
+  width: 100%;
+}
+.app-boxes-six{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 8;
+}
+
 }
 </style>

@@ -109,12 +109,11 @@ export default {
 .infocontainerTexto {
   display: flex;
   justify-content: center;  
-  text-align: center;
+  text-align: justify;
   align-items: center;
   margin-bottom: 20px;
   color: #000000;
   width: 95%;
-  background-color: aqua;
 }
 .details{
   display: flex;
