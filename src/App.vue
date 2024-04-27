@@ -506,23 +506,23 @@ methods: {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: rgb(8, 8, 8);
+  color: rgb(255, 123, 0);
   margin-top: 0.5em;
   font-family: 'DIMISTRI', sans-serif;
 }
 .main-h2-top:hover{
-  color: rgb(255, 123, 0);
+  color: rgb(255, 255, 255);
 }
 .main-h2-down{
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: rgb(53, 54, 68); 
-  color: rgb(0, 0, 0);
+  color: rgb(255, 123, 0);
   font-family: 'DIMISTRI', sans-serif;
 }
 .main-h2-down:hover{
-  color: rgb(255, 123, 0);
+  color: rgb(255, 255, 255);
 }
 .textDown-1{
   display: flex;
@@ -599,6 +599,9 @@ methods: {
   color: rgb(255, 123, 0);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+.redes-sociales:hover{
+  color: rgb(255, 255, 255);
 }
 .div-faceb {
   padding: 0;
@@ -682,8 +685,11 @@ methods: {
   height: 100%;
 }
 .subText-2{
-  display: flex;
+  /* display: flex; */
   height: 100%;
+}
+.subText-2 p {
+  padding-left: 0;
 }
 .textDownParr{
   display: flex;
@@ -735,6 +741,7 @@ methods: {
   display: flex;
   flex-direction: column;
   text-align: justify;
+  width: 72%;
 }
 .redes-sociales {
   display: flex;
