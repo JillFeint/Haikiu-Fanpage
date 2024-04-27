@@ -104,4 +104,22 @@ export default {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+@media only screen and (min-width: 100px) and (max-width: 700px){
+    .img-sliderFotos {
+        height: 15em;
+        width: 9em;
+        filter: saturate(10%);
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .img-sliderFotos.active {
+        width: 230px;
+        height: 240px;
+        filter: saturate(100%);
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+}
 </style>
