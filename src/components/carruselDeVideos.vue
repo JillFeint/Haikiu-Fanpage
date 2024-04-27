@@ -73,7 +73,7 @@ export default {
 .body-carrusel{
   width: 100%;
   max-width: 1450px;
-  height: 80%;
+  height: 100%;
   padding: 40px;
   background-color: rgb(255, 123, 0);
   display: flex;

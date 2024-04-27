@@ -73,7 +73,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
               <h2 class="main-h2-top">Quienes Somos</h2>
               <p class="textDownParr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
                 deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?</p>
-              <p class="textDownParr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit similique nam tempora id quia esse officia porro nobis eaque
+              <p class="textDownParr3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit similique nam tempora id quia esse officia porro nobis eaque
                 Asperiores similique molestias culpa a quisquam vel voluptatibus repellat doloremque numquam.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
                 deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
@@ -231,6 +231,7 @@ methods: {
   display: flex;
   justify-content: center;
   width: 100%;  
+  height: 100%;
   grid-column: 1;
   grid-row: 2;
   background-color: rgb(53, 54, 68); 
@@ -724,6 +725,13 @@ methods: {
   color: rgb(255, 255, 255);
   margin: 0;
 }
+.textDownParr3{
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-bottom: 2em;
+}
 .subText-2 {
   display: flex;
   flex-direction: column;
@@ -765,8 +773,10 @@ methods: {
 }
 .div-faceb {
   padding: 0;
+  margin: 0;
   height: 100%; 
   font-family: 'DIMISTRI';
+  padding-bottom: 2em;
 }
 .app-container--main{
   display: grid;
@@ -816,6 +826,7 @@ methods: {
 .app-boxes-five{
   display: flex;
   justify-content: center;
+  align-items: center;
   grid-column: 1;
   grid-row: 3;
   background-color: rgb(53, 54, 68); 
@@ -849,8 +860,14 @@ methods: {
 }
 .instaGram{
   display: flex;
-  height: 93%;  
+  height: 100%;  
   width: 100%;
+}
+.div4-seccion2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'DIMISTRI';
 }
 }
 </style>
