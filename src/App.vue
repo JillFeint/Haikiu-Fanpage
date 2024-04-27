@@ -437,7 +437,7 @@ methods: {
     position: absolute;
     background: #234;
     width: 100%;
-    height: 18em;
+    height: auto;
     top: auto;
     left: 0;
     display: block;
@@ -447,6 +447,7 @@ methods: {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1em 0;
   }
   #labelMenu:checked ~ .ul-header {
     transform: translateX(0%);

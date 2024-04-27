@@ -77,7 +77,7 @@
 <style>
 /* boton redes */
 .redes {
-  position: absolute;
+  position: fixed;
   top: 34%;
   width: 80px;
   height: auto;
@@ -117,5 +117,13 @@
 .redes a:hover {
   width: 130%;
   border-radius: 0 10px 10px 0;
+}
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+  .redes {
+    position: fixed;
+    top: 50%;
+    bottom: auto;
+    width: 40px;
+  }
 }
 </style>
