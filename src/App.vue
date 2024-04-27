@@ -49,24 +49,22 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
               </div> 
           </div>
           <div class="app-boxes-two">
-            <div class="textDown-2">
-                <h2 class="main-h2-down">Reglas</h2>
-              <div class="subText-2">
-                <img src="./assets/reglas.jpg" alt="">
-                <p class="textDownParr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
+            <h2 class="main-h2-down">Reglas</h2>
+            <div class="textDown-3">
+                <img class="subText-3" src="./assets/reglas.jpg" alt="">
+                <p class="textDownParr-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex aliquam temporibus dolore quam consequuntur
                   itaque porro sapiente minus voluptate illum quaerat architecto voluptatem assumenda quisquam nesciunt, facilis cum consequatur!<br><br>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
                   deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
                 </p>
-              </div>
             </div>
           </div>
           <div class="app-boxes-three">  
             <div class="div4-seccion2">
               <h3 class="redes-sociales">Instagram</h3>
-            <iframe class="instaGram" src="https://www.instagram.com/haikyuuu.official/embed/">
-            </iframe>
-          </div>      
+              <iframe class="instaGram" src="https://www.instagram.com/haikyuuu.official/embed/">
+              </iframe>
+            </div>      
           </div>
           <div class="app-boxes-four">
             <div class="textDown-1">
@@ -78,7 +76,7 @@ más adelante colocar un grupo de fans con usuario registrado para hacer comunid
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
                 deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima voluptatum nisi earum sapiente
-                deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus vitae?
+                deserunt. Repellendus repudiandae nostrum, non quas facere perferendis rerum eos adipisci harum minus porro natus nalte?
               </p>
             </div>
           </div>
@@ -225,6 +223,8 @@ methods: {
 .app-boxes-two{
   grid-column: 1;
   grid-row: 4;
+  height: 100%;
+  background-color: rgb(53, 54, 68); 
 }
 /* Instagram */
 .app-boxes-three{
@@ -287,6 +287,7 @@ methods: {
 .app-boxes-six{
   grid-column: 3;
   grid-row: 4;
+  background-color: rgb(53, 54, 68); 
 }
 @font-face {
   font-family: 'DIMIS___';
@@ -446,10 +447,8 @@ methods: {
 }
 /* Video */
 .seccion1 {
-  /* position: relative; */
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
 }
 .videoContainer{
   display: flex;
@@ -518,35 +517,12 @@ methods: {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 2em;
+  background-color: rgb(53, 54, 68); 
   color: rgb(0, 0, 0);
   font-family: 'DIMISTRI', sans-serif;
 }
 .main-h2-down:hover{
   color: rgb(255, 123, 0);
-}
-/* Cajas del Grid */
-.div1-seccion2 {
-  /* Izquierda arriba */
-  grid-column: 1;
-  grid-row: 1;
-  background-color: rgb(255, 123, 0);
-  padding: 10px;
-  height: 26em;
-  text-align: justify;
-  padding-bottom: 5px;
-}
-.div1SeccionTwo{
-  background-color: rgba(31, 33, 70, 0);
-}
-.div2-seccion2 {
-    /* Izquierda abajo */
-  grid-column: 1;
-  grid-row: 2;
-  background-color: rgb(255, 123, 0);
-  padding: 15px 10px;
-  height: 26em;
-  padding-top: 5px;
 }
 .textDown-1{
   display: flex;
@@ -565,24 +541,45 @@ methods: {
   margin: 1em auto;
 }
 .textDown-2{
+  display: flex;
   background-color: rgb(53, 54, 68); 
-  flex-direction: column;  
+  flex-direction: column;
+}
+.textDown-3{
+  display: flex;
+  background-color: rgb(53, 54, 68); 
+  gap: 0.4em;
 }
 .textDownParr{
   margin: 0;
   color: rgb(255, 255, 255);
+}
+.textDownParr3{
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding-bottom: 2em;
 }
 .subText-2 {
   display: flex;
   height: 50%;
   width: 90%;
 }
-.subText-2 img {
+.subText-3{
   height: 20em;
-  width: 14em;
+  width: 10em;
   padding-bottom: 80px;
-  padding-left: 30px;
-  padding-right: 20px;
+  margin-top: 5em;
+  margin-left: 0.5em;
+}
+.textDownParr-3{
+  color: rgb(253, 253, 253);
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 50%;
+  margin-top: 1em;
 }
 .subText-2 p {
   padding-top: 10px;
@@ -593,19 +590,7 @@ methods: {
   color: rgb(253, 253, 253);
   display: flex;
   flex-direction: column;
-}
-.div3-seccion2 {
-  /* Facebook */
-  background-color: #353644;
-  grid-column: 2;
-  grid-row: 1;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  height: 26em;
-  width: 100%;
-  border-left: rgb(56, 56, 56, 0.3) 2px solid;
-  font-family: 'DIMISTRI';
+  text-align: justify;
 }
 .redes-sociales {
   display: flex;
@@ -672,32 +657,8 @@ methods: {
 }
   /* Cuerpo con Grid */
 .seccion2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-/* Cajas del Grid */
-.div1-seccion2 {
-  /* Izquierda arriba */
-  grid-column: 1;
-  grid-row: 1;
-  background-color: rgb(255, 123, 0);
-  padding: 10px;
-  height: 26em;
-  text-align: justify;
-  padding-bottom: 5px;
-}
-.div1SeccionTwo{
-  background-color: rgba(31, 33, 70, 0);
-}
-.div2-seccion2 {
-    /* Izquierda abajo */
-  grid-column: 1;
-  grid-row: 2;
-  background-color: rgb(255, 123, 0);
-  padding: 15px 10px;
-  height: 26em;
-  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
 }
 .textDown-1{
   display: flex;
@@ -711,12 +672,17 @@ methods: {
   align-items: center;
   text-align: justify;
   width: 80%;
-  margin: 15px auto;
 }
 .textDown-2{
   display: flex;
-  background-color: rgb(53, 54, 68); 
+  justify-content: center;
+  align-items: center;
   flex-direction: column;  
+  background-color: rgb(53, 54, 68); 
+  height: 100%;
+}
+.subText-2{
+  display: flex;
   height: 100%;
 }
 .textDownParr{
@@ -732,38 +698,43 @@ methods: {
   margin: 0;
   padding-bottom: 2em;
 }
-.subText-2 {
+.app-boxes-two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 6;
+}
+.textDown-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(53, 54, 68); 
+  margin-top: 1em;
+}
+.subText-3{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
-  width: 90%;
-}
-.subText-2 img {
-  height: 20em;
-  width: 14em;
-}
-.subText-2 p {
-  text-align: justify;
+  padding: 0;
+  margin: 0;
+  height: 45%;
+  width: 35%;
 }
 .textDownParr-2{
   color: rgb(253, 253, 253);
   display: flex;
   flex-direction: column;
+  padding-bottom: 1em;
 }
-.div3-seccion2 {
-  /* Facebook */
-  background-color: #353644;
-  grid-column: 1;
-  grid-row: 1;
+.textDownParr-3{
+  color: rgb(253, 253, 253);
   display: flex;
-  justify-content: center;
-  padding: 5px;
-  height: 26em;
-  width: 100%;
-  border-left: rgb(56, 56, 56, 0.3) 2px solid;
-  font-family: 'DIMISTRI';
+  flex-direction: column;
+  text-align: justify;
 }
 .redes-sociales {
   display: flex;
@@ -794,25 +765,6 @@ methods: {
   width: 100%;
   margin:1em 0;
 }
-/* reglas con foto */
-.app-boxes-two{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1;
-  grid-row: 6;
-}
-/* Instagram */
-.app-boxes-three{
-  display: flex;
-  justify-content: center;
-  width: 100%;  
-  grid-column: 1;
-  grid-row: 5;
-  background-color: rgb(53, 54, 68); 
-  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
-}
 /* cuadro en la mitad de las redes */
 .app-boxes-four{
   display: flex;
@@ -832,15 +784,6 @@ methods: {
   background-color: rgb(53, 54, 68); 
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
 }
-.app-sliderbox{
-  height: 100%;
-  grid-column: 1;
-  grid-row: 7;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(53, 54, 68);
-  overflow: hidden;
-}
 .app-slider--old{
   display: flex;
   justify-content: center;
@@ -850,6 +793,40 @@ methods: {
   height: 100%;
   width: 100%;
 }
+.seccion1 {
+  width: 100%;
+  height: 100%;
+}
+/* Instagram */
+.app-boxes-three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;  
+  grid-column: 1;
+  grid-row: 5;
+  background-color: rgb(53, 54, 68); 
+}
+.div4-seccion2 {
+  height: 100vh;
+  font-family: 'DIMISTRI';
+}
+.instaGram{
+  display: flex;
+  height: 90%;  
+  width: 100%;
+}
+/* reglas con foto */
+.app-sliderbox{
+  height: 100%;
+  grid-column: 1;
+  grid-row: 7;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(53, 54, 68);
+  overflow: hidden;
+}
 .app-boxes-six{
   display: flex;
   justify-content: center;
@@ -857,17 +834,20 @@ methods: {
   flex-direction: column;
   grid-column: 1;
   grid-row: 8;
-}
-.instaGram{
-  display: flex;
-  height: 100%;  
-  width: 100%;
-}
-.div4-seccion2 {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  font-family: 'DIMISTRI';
+}
+.main-h2-down{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  background-color: rgb(53, 54, 68); 
+  font-family: 'DIMISTRI', sans-serif;
+  margin-top: 1em;
+}
+.main-h2-down:hover{
+  color: rgb(255, 123, 0);
 }
 }
 </style>

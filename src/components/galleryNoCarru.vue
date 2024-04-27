@@ -1,7 +1,7 @@
 <template>
       <div class="div-btnsSec3">
-        <button @click="clickChangeToVideo('gridVideos')" class="btnSec3"><span class="span-gallery">Videos</span></button>
         <button @click="clickChangeToVideo('grid-container')" class="btnSec3"><span class="span-gallery">Fotos</span></button>
+        <button @click="clickChangeToVideo('gridVideos')" class="btnSec3"><span class="span-gallery">Videos</span></button>
     </div>
   <div class="seccionG3">
     <div class="grid-container" v-if="seccionG3Show">
@@ -243,7 +243,7 @@ export default {
   background-color: rgb(255, 123, 0);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 11px 20px;
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
