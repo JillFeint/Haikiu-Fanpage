@@ -105,6 +105,15 @@ export default {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (min-width: 100px) and (max-width: 700px){
+    .imgContainer-sliderFotos {
+    width: 100%;
+    height: 22em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
     .img-sliderFotos {
         height: 15em;
         width: 9em;
