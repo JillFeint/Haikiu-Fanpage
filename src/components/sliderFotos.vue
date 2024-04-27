@@ -3,25 +3,25 @@
         <div class="container-sliderFotos" ref="container">
             <div class="imgContainer-sliderFotos" ref="imgContainer">
                 <div class="slide_div-fotos">
-                    <img src="../assets/1.jpeg" alt="" class="img-sliderFotos" :id="'img1'" @click="activateImage(1)">
+                    <img src="../assets/HD/hd-1.jpg" alt="" class="img-sliderFotos" :id="'img1'" @click="activateImage(1)">
                 </div>
                 <div class="slide_div-fotos">
-                    <img src="../assets/2.jpeg" alt="" class="img-sliderFotos" :id="'img2'" @click="activateImage(2)">
+                    <img src="../assets/HD/hd-2.jpg" alt="" class="img-sliderFotos" :id="'img2'" @click="activateImage(2)">
                 </div>
                 <div class="slide_div-fotos">
-                    <img src="../assets/3.jpeg" alt="" class="img-sliderFotos" :id="'img3'" @click="activateImage(3)">
+                    <img src="../assets/HD/hd-3.jpg" alt="" class="img-sliderFotos" :id="'img3'" @click="activateImage(3)">
                 </div>
                 <div class="slide_div-fotos">
-                    <img src="../assets/4.jpeg" alt="" class="img-sliderFotos" :id="'img4'" @click="activateImage(4)">
+                    <img src="../assets/HD/hd-4.jpg" alt="" class="img-sliderFotos" :id="'img4'" @click="activateImage(4)">
                 </div>
                 <div class="slide_div-fotos">
-                    <img src="../assets/5.jpeg" alt="" class="img-sliderFotos" :id="'img5'" @click="activateImage(5)">
+                    <img src="../assets/HD/hd-5.jpg" alt="" class="img-sliderFotos" :id="'img5'" @click="activateImage(5)">
                 </div>
                 <div class="slide_div-fotos">
-                    <img src="../assets/6.jpeg" alt="" class="img-sliderFotos" :id="'img6'" @click="activateImage(6)">
+                    <img src="../assets/HD/hd-6.jpg" alt="" class="img-sliderFotos" :id="'img6'" @click="activateImage(6)">
                 </div>
                 <div class="slide_div-fotos">
-                    <img src="../assets/7.jpeg" alt="" class="img-sliderFotos" :id="'img7'" @click="activateImage(7)">
+                    <img src="../assets/HD/hd-7.jpg" alt="" class="img-sliderFotos" :id="'img7'" @click="activateImage(7)">
                 </div>
             </div>
         </div>

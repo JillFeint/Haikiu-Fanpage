@@ -3,17 +3,17 @@
     <div class="container-carrusel">
       <div class="mySlides">
         <div class="image-container">
-        <img src="../assets/1.jpeg" alt="imagen-1">
+        <img src="../assets/HD/hd-1.jpg" alt="imagen-1">
       </div>
       </div>
       <div class="mySlides">
         <div class="image-container">
-        <img src="../assets/2.jpeg" alt="">
+        <img src="../assets/HD/hd-2.jpg" alt="">
       </div>
       </div>
       <div class="mySlides">
         <div class="image-container">
-        <img src="../assets/3.jpeg" alt="">
+        <img src="../assets/HD/hd-3.jpg" alt="">
       </div>
       </div>
       <div class="flechas-carrusel">
