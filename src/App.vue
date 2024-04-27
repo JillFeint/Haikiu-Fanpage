@@ -259,6 +259,7 @@ methods: {
 .app-boxes-five{
   display: flex;
   justify-content: center;
+  align-items: center;
   grid-column: 3;
   grid-row: 2;
   background-color: rgb(53, 54, 68); 
