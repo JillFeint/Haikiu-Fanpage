@@ -709,6 +709,7 @@ methods: {
   align-items: center;
   text-align: justify;
   width: 80%;
+  margin: 15px auto;
 }
 .textDown-2{
   display: flex;
@@ -720,6 +721,7 @@ methods: {
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
+  margin: 0;
 }
 .subText-2 {
   display: flex;
