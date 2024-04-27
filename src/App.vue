@@ -846,6 +846,10 @@ methods: {
   grid-column: 1;
   grid-row: 8;
 }
-
+.instaGram{
+  display: flex;
+  height: 93%;  
+  border: 0.3em;
+}
 }
 </style>
