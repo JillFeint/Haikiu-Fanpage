@@ -1,5 +1,6 @@
 <template>
   <div class="redes">
+    hola perrasss
 <a class="instagram" href="#">
   <svg
     xmlns="http://www.w3.org/2000/svg"
