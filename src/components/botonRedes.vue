@@ -1,6 +1,6 @@
 <template>
   <div class="redes">
-<a class="instagram" href="#">
+<a class="instagram" href="https://www.instagram.com/haikyuuu.official/?hl=es">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="#ffffff"
@@ -14,7 +14,7 @@
   </svg>
 </a>
 
-<a class="twitter" href="#">
+<a class="twitter" href="https://twitter.com/Haikyu_EN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
   <svg
     fill="white"
     class="svgIcon"
@@ -28,7 +28,7 @@
   </svg>
 </a>
 
-<a class="facebook" href="#">
+<a class="facebook" href="https://www.facebook.com/haikyuu.fans/?locale=es_LA">
   <svg
     class="icon icons8-Facebook-Filled"
     style="null"
@@ -43,7 +43,7 @@
   </svg>
 </a>
 
-<a class="whatsapp" href="#">
+<a class="whatsapp" href="https://wa.me/57312#######">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -55,16 +55,12 @@
   </svg>
 </a>
 
-<a class="discord" href="#"
-  ><svg
-    height="25px"
-    width="25px"
-    viewBox="0 0 48 48"
-    xmlns="http://www.w3.org/2000/svg"
-    class="discord">
-    <path
-      d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"
-    ></path>
+<a class="google" href="https://es.wikipedia.org/wiki/Haiky%C5%AB!!">
+  <svg xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" viewBox="0 0 256 262" class="google">
+    <path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path>
+    <path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path>
+    <path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"></path>
+    <path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path>
   </svg>
 </a>
 </div>
@@ -97,8 +93,8 @@
   width: 30px;
   fill: #ffffff;
 }
-.redes .discord {
-  background-color: rgb(0, 60, 255);
+.redes .google {
+  background-color: rgb(244, 244, 244);
   border-radius: 0 0 10px 0;
 }
 .redes .instagram {
