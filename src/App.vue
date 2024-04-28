@@ -683,6 +683,8 @@ methods: {
   flex-direction: column;  
   background-color: rgb(53, 54, 68); 
   height: 100%;
+  box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.5), 0px 3px 3px rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 .subText-2{
   /* display: flex; */
@@ -711,6 +713,9 @@ methods: {
   flex-direction: column;
   grid-column: 1;
   grid-row: 6;
+  box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.5), 0px 3px 3px rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.6em;
+  z-index: 5;
 }
 .textDown-3{
   display: flex;
@@ -758,8 +763,8 @@ methods: {
 }
 .app-container--main{
   display: grid;
-  grid-template-columns: repeat(1f);
-  grid-template-rows: auto 1fr 0.9fr 1fr;
+  grid-template-columns: 1f;
+  grid-template-rows: auto auto 1fr 20em auto;
   background-color: rgb(39, 40, 40);
   width: 100%;
 }
@@ -789,7 +794,7 @@ methods: {
   grid-column: 1;
   grid-row: 3;
   background-color: rgb(53, 54, 68); 
-  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5);
 }
 .app-slider--old{
   display: flex;
@@ -799,6 +804,7 @@ methods: {
   grid-row: 4;
   height: 100%;
   width: 100%;
+  margin: 0.2em 0;
 }
 .seccion1 {
   width: 100%;
@@ -814,6 +820,9 @@ methods: {
   grid-column: 1;
   grid-row: 5;
   background-color: rgb(53, 54, 68); 
+  /* box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5); */
+  margin-top: 0.4em;
+  padding-bottom: 1.5em;
 }
 .div4-seccion2 {
   height: 100vh;
