@@ -138,42 +138,39 @@ export default {
 .active, .quadrate:hover{
   background-color: #fff;
 }
-@media screen and (max-width:1025px) {
-  .container-carrusel{
+@media screen and (min-width: 767px) and (max-width: 1025px){
+  .body-carrusel{
   width: 100%;
+  height: 100%;
+  padding: 0 30%; 
+  background-color: rgb(53, 54, 68);
+  display: flex;
+
+ } 
+  .container-carrusel{
+  width: 70%;
   }
   .image-container {
-  width: auto;
   height: 100%;
   position: absolute;
-  left: 30%;
-  right: 30%;
-  background-color: aqua;
-  }
-  /* .container-carrusel{
-  width: 40%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
   }
   .image-container img {
   position: relative;
-  top: 0;
-  left: 50;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  } */
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
 }
-@media screen and (max-width:500px) {
+}
+@media screen and (min-width: 100px) and (max-width: 767px){
   .container-carrusel{
-      width: 100%;
+      width: 80%;
   }
   .prev-carrusel, .next-carrusel{
       padding: 5px;
   }
-  /* .image-container img{
-  width: auto;
-  height: 100%;
-  } */
 }
 
 </style>
