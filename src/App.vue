@@ -206,7 +206,7 @@ methods: {
 .app-container--main{
   display: grid;
   grid-template-columns: repeat(3, 1f);
-  grid-template-rows: auto 1fr 0.9fr 1fr;
+  grid-template-rows: auto 1fr 0.9fr auto;
   background-color: rgb(39, 40, 40);
   width: 100%;
 }
@@ -547,8 +547,9 @@ methods: {
 }
 .textDown-3{
   display: flex;
-  background-color: rgb(53, 54, 68); 
-  gap: 0.4em;
+  align-items: center;
+  background-color: rgb(53, 54, 68);
+  gap: 1em;
 }
 .textDownParr{
   margin: 0;
@@ -579,7 +580,6 @@ methods: {
   flex-direction: column;
   text-align: justify;
   width: 50%;
-  margin-top: 1em;
 }
 .subText-2 p {
   padding-top: 10px;

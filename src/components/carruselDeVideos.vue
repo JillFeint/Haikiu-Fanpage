@@ -72,16 +72,16 @@ export default {
 }
 .body-carrusel{
   width: 100%;
-  max-width: 1450px;
   height: 100%;
-  padding: 40px;
-  background-color: rgb(255, 123, 0);
+  padding: 50px;
+  background-color: rgb(53, 54, 68);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .container-carrusel{
-  width: 35%;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .mySlides{

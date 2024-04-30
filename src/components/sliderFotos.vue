@@ -99,7 +99,7 @@ export default {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .img-sliderFotos.active {
-    width: 500px;
+    width: 400px;
     filter: saturate(100%);
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
