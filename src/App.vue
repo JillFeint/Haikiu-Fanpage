@@ -826,7 +826,8 @@ methods: {
   padding-bottom: 1.5em;
 }
 .div4-seccion2 {
-  height: 100vh;
+  height: 30rem;
+  padding-bottom: 3em;
   font-family: 'DIMISTRI';
 }
 .instaGram{
