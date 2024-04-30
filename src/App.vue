@@ -392,7 +392,7 @@ methods: {
   display: none;
 }
 /* Mediaquery del header */
-@media only screen and (min-width: 100px) and (max-width: 700px) {
+@media only screen and (min-width: 100px) and (max-width: 1025px) {
   .header {
     position: relative;
   }
@@ -633,7 +633,7 @@ methods: {
   color: rgba(255, 10, 6, 0.883);
 }
 /* Medidaquery del responsive */
-@media only screen and (min-width: 100px) and (max-width: 700px) {
+@media only screen and (min-width: 100px) and (max-width: 1025px) {
 /* Texto del video abajo de los botones */
   .videoContainerTextoOne {
   text-align: center;
