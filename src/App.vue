@@ -550,6 +550,7 @@ methods: {
   align-items: center;
   background-color: rgb(53, 54, 68);
   gap: 1em;
+  height: auto;
 }
 .textDownParr{
   margin: 0;

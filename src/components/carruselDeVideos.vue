@@ -90,11 +90,11 @@ export default {
 .image-container {
   width: 100%;
   height: 100%;
-  padding-bottom: 75%;
-  position: relative;
+  /* padding-bottom: 75%; */
+  position: absolute;
 }
 .image-container img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
